@@ -4,7 +4,7 @@ BASEVER := a9de223
 
 include ../latex/make.bookvars
 
-FIGURES := ../../figures/$(THISBOOK)
+FIGURES := ../figures/phy356-qmI
 
 SOURCE_DIRS += chapters
 SOURCE_DIRS += $(FIGURES)
