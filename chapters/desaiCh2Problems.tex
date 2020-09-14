@@ -2,7 +2,6 @@
 % Copyright © 2013 Peeter Joot.  All Rights Reserved.
 % Licenced as described in the file LICENSE under the root directory of this GIT repository.
 %
-
 \makeoproblem{Cauchy-Schwartz identity}{problem:desaiCh2Problems:1}{\citep{desai2009quantum} pr 2.1}{
 FIXME: describe.
 \index{Cauchy-Schwartz identity}
@@ -10,21 +9,18 @@ FIXME: describe.
 
 \makeanswer{problem:desaiCh2Problems:1}{
 We wish to find the value of \(\lambda\) that is just right to come up with the desired identity.  The starting point is the expansion of the inner product
-
 \begin{equation}\label{eqn:desaiCh2Problems:2020}
 \braket{a + \lambda b}
 {a + \lambda b}
-= \braket{a}{a} + \lambda \lambda^\conj \braket{b}{b} + \lambda \braket{a}{b} + \lambda^\conj \braket{b}{a}
+= \braket{a}{a} + \lambda \lambda^\conj \braket{b}{b} + \lambda \braket{a}{b} + \lambda^\conj \braket{b}{a}.
 \end{equation}
 
 There is a trial and error approach to this problem, where one magically picks \(\lambda \propto \braket{b}{a}/\braket{b}{b}^n\), and figures out the proportionality constant and scale factor for the denominator to do the job.  A nicer way is to set up the problem as an extreme value exercise.  We can write this inner product as a function of \(\lambda\), and proceed with setting the derivative equal to zero
-
 \begin{equation}\label{eqn:desaiCh2Problems:2040}
 f(\lambda) =
-\braket{a}{a} + \lambda \lambda^\conj \braket{b}{b} + \lambda \braket{a}{b} + \lambda^\conj \braket{b}{a}
+\braket{a}{a} + \lambda \lambda^\conj \braket{b}{b} + \lambda \braket{a}{b} + \lambda^\conj \braket{b}{a}.
 \end{equation}
-
-Its derivative is
+The derivative is
 \begin{equation}\label{eqn:desaiCh2Problems:2060}
 \begin{aligned}
 \frac{df}{d\lambda}
@@ -1527,8 +1523,10 @@ e^{ i \Bk \cdot \Br} (\Hbar \Bk \cdot \Bp) e^{-i \Bk \cdot \Br}
 \end{equation}
 
 \paragraph{Attempt 2}
-
-I was going in circles above.  With the help of betel on \href{http://www.physicsforums.com/showthread.php?t=432923}{physicsforums}, I got pointed in the right direction.  Here is a rework of this problem from scratch, also benefiting from hindsight.
+I was going in circles above.  With the help of betel on
+%\href{http://www.physicsforums.com/showthread.php?t=432923}{physicsforums}
+\href{https://www.physicsforums.com/threads/double-commutator-used-to-obtain-energy-relationship-summed-over-energy-differences.432923/}{physicsforums}
+, I got pointed in the right direction.  Here is a rework of this problem from scratch, also benefiting from hindsight.
 
 Our starting point is the same, with the evaluation of the first commutator
 

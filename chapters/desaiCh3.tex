@@ -7,40 +7,32 @@
 \label{chap:desaiCh3}
 %\blogpage{http://sites.google.com/site/peeterjoot/math2010/desaiCh3.pdf}
 %\date{Oct 1, 2010}
-
 %\section{Notes}
 %
 %Chapter III notes and problems for \citep{desai2009quantum}.
 %
 %FIXME:
 %Some puzzling stuff in the interaction section and superposition of time-dependent states sections.  Work through those here.
-
 \makeoproblem{Virial Theorem}{problem:desaiCh3:1}{\citep{desai2009quantum} pr 3.1}{
 \index{virial theorem}
 With the assumption that \(\expectation{\Br \cdot \Bp}\) is independent of time, and
-
 \begin{equation}\label{eqn:desaiCh3:100}
-H = \frac{\Bp^2}{2m} + V(\Br) = T + V
+H = \frac{\Bp^2}{2m} + V(\Br) = T + V,
 \end{equation}
-
 show that
-
 \begin{equation}\label{eqn:desaiCh3:102}
 2 \expectation{T} = \expectation{ \Br \cdot \spacegrad V}.
 \end{equation}
-
 } % problem
-
 \makeanswer{problem:desaiCh3:1}{
-
-I floundered with this a bit, but found the required hint in \href{http://www.physicsforums.com/showthread.php?t=164682}{physicsforums}.  We can start with the Hamiltonian time derivative relation
-
+I floundered with this a bit, but found the required hint in
+%\href{htts://www.physicsforums.com/showthread.php?t=164682}{physicsforums}
+\href{https://www.physicsforums.com/threads/three-dimensional-virial-theorem-quantum-mechanics.164682/}{physicsforums}
+.  We can start with the Hamiltonian time derivative relation
 \begin{equation}\label{eqn:desaiCh3:103}
-i\Hbar \frac{d A_H}{dt} = \antisymmetric{A_H}{H}
+i\Hbar \frac{d A_H}{dt} = \antisymmetric{A_H}{H}.
 \end{equation}
-
 So, with the assumption that \(\expectation{\Br \cdot \Bp}\) is independent of time, and the use of a stationary state \(\ket{\psi}\) for the expectation calculation we have
-
 \begin{equation}\label{eqn:desaiCh3:1121}
 \begin{aligned}
 0 &=

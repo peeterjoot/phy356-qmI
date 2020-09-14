@@ -1,0 +1,5 @@
+phy356.V0.1.9.pdf (in progress.)
+
+- update email address.
+- url fixes.
+- fix hyphenation in the listing.
