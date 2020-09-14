@@ -246,12 +246,11 @@ Asking the prof about this, he says:
 
 ``I think it means that the result of a measurement of the x component of spin is \(+1\). This corresponds to the eigenvalue of \(\sigma_x\) being \(+1\). The spin operator \(S_x\) has eigenvalue \(+\Hbar/2\)''.
 
-Aside: Question to consider later.  Is is significant that \(\bra{1} \sigma_x \ket{1} = \bra{2} \sigma_x \ket{2} = 0\)?
+Aside: Question to consider later.  Is it significant that \(\bra{1} \sigma_x \ket{1} = \bra{2} \sigma_x \ket{2} = 0\)?
 
 So, how do we translate this into a mathematical statement?
 
 First let us recall a couple of details.  Recall that the x spin operator has the matrix representation
-
 \begin{equation}\label{eqn:desaiCh5:204}
 \begin{aligned}
 \sigma_x = \PauliX.
@@ -259,7 +258,6 @@ First let us recall a couple of details.  Recall that the x spin operator has th
 \end{equation}
 
 This has eigenvalues \(\pm 1\), with eigenstates \((1,\pm 1)/\sqrt{2}\).  At the point when the x component spin is observed to be \(+1\), the state of the system was then
-
 \begin{equation}\label{eqn:desaiCh5:205}
 \begin{aligned}
 \ket{x+} =
@@ -506,32 +504,24 @@ Each of these expectation values are real as expected due to the Hermitian natur
 
 So a vector formed with the expectation values as components is a unit vector.  This does not seem too unexpected from the section on the projection operators in the text where it was stated that \(\bra{\chi} \Bsigma \ket{\chi} = \Bp\), where \(\Bp\) was a unit vector, and this seems similar.  Let us now consider the arbitrarily oriented spin vector \(\Bsigma \cdot \Bn\), and look at its expectation value.
 
-With \(\Bn\) as the the rotated image of \(\zcap\) by an azimuthal angle \(\beta\), and polar angle \(\alpha\), we have
-
+With \(\Bn\) as the rotated image of \(\zcap\) by an azimuthal angle \(\beta\), and polar angle \(\alpha\), we have
 \begin{equation}\label{eqn:desaiCh5:304}
-\begin{aligned}
-\Bn = (\sin\alpha \cos\beta,\sin\alpha \sin\beta,\cos\alpha)
-\end{aligned}
+\Bn = (\sin\alpha \cos\beta,\sin\alpha \sin\beta,\cos\alpha).
 \end{equation}
-
-that is
-
+That is
 \begin{equation}\label{eqn:desaiCh5:305}
 \begin{aligned}
-\Bsigma \cdot \Bn &= \sin\alpha \cos\beta \sigma_x + \sin\alpha \sin\beta \sigma_y + \cos\alpha \sigma_z
+\Bsigma \cdot \Bn &= \sin\alpha \cos\beta \sigma_x + \sin\alpha \sin\beta \sigma_y + \cos\alpha \sigma_z.
 \end{aligned}
 \end{equation}
 
 The \(k = x,y,y\) projections of this operator
-
 \begin{equation}\label{eqn:desaiCh5:306}
 \begin{aligned}
-\inv{2} \tr { \sigma_k (\Bsigma \cdot \Bn)} \sigma_k
+\inv{2} \tr { \sigma_k (\Bsigma \cdot \Bn)} \sigma_k,
 \end{aligned}
 \end{equation}
-
 are just the Pauli matrices scaled by the components of \(\Bn\)
-
 \begin{equation}\label{eqn:desaiCh5:307}
 \begin{aligned}
 \inv{2} \tr { \sigma_x (\Bsigma \cdot \Bn)} \sigma_x &= \sin\alpha \cos\beta \sigma_x  \\

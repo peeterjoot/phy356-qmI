@@ -13,33 +13,26 @@
 \makeproblem{A problem of spherical harmonics (2010 PHY356 final exam)}{problem:qmIexam2010:1}{
 %\subsection{Motivation}
 \index{spherical harmonics}
-One of the PHY356 exam questions from the final I recall screwing up on, and figuring it out after the fact on the drive home.  The question actually clarified a difficulty I had had, but unfortunately I had not had the good luck to perform such a question, to help figure this out before the exam.
+One of the PHY356 exam questions from the final I recall screwing up on, and figuring it out after the fact on the drive home.  The question actually clarified a difficulty I had, but unfortunately I had not had the good luck to perform such a question, to help figure this out before the exam.
 
 From what I recall the question provided an initial state, with some degeneracy in \(m\), perhaps of the following form
-
 \begin{equation}\label{eqn:qmIexam2010:10}
 \ket{\phi(0)} =
 \sqrt{\frac{1}{7}} \ket{ 12 }
 +\sqrt{\frac{2}{7}} \ket{ 10 }
 +\sqrt{\frac{4}{7}} \ket{ 20 },
 \end{equation}
-
 and a Hamiltonian of the form
-
 \begin{equation}\label{eqn:qmIexam2010:20}
 H = \alpha L_z
 \end{equation}
-
 } % problem
 
 %From what I recall of the problem, I am going to reattempt it here now.
 \makeanswer{problem:qmIexam2010:1}{
-
 \paragraph{Evolved state}
 \index{evolved state}
-
 One part of the question was to calculate the evolved state.  Application of the time evolution operator gives us
-
 \begin{equation}\label{eqn:qmIexam2010:30}
 \ket{\phi(t)} =
 e^{-i \alpha L_z t/\Hbar} \left(
@@ -49,17 +42,15 @@ e^{-i \alpha L_z t/\Hbar} \left(
 \end{equation}
 
 Now we note that \(L_z \ket{12} = 2 \Hbar \ket{12}\), and \(L_z \ket{ l 0} = 0 \ket{l 0}\), so the exponentials reduce this nicely to just
-
 \begin{equation}\label{eqn:qmIexam2010:40}
 \ket{\phi(t)} =
 \sqrt{\frac{1}{7}} e^{ -2 i \alpha t } \ket{ 12 }
 +\sqrt{\frac{2}{7}} \ket{ 10 }
 +\sqrt{\frac{4}{7}} \ket{ 20 }.
 \end{equation}
-
 \paragraph{Probabilities for \(L_z\) measurement outcomes}
 
-I believe we were also asked what the probabilities for the outcomes of a measurement of \(L_z\) at this time would be.  Here is one place that I think that I messed up, and it is really a translation error, attempting to get from the English description of the problem to the math description of the same.  I had had trouble with this process a few times in the problems, and managed to blunder through use of language like ``measure'', and ``outcome'', but do not think I really understood how these were used properly.
+I believe we were also asked what the probabilities for the outcomes of a measurement of \(L_z\) at this time would be.  Here is one place that I think that I messed up, and it is really a translation error, attempting to get from the English description of the problem to the math description of the same.  I had trouble with this process a few times in the problems, and managed to blunder through use of language like ``measure'', and ``outcome'', but do not think I really understood how these were used properly.
 
 What are the outcomes that we measure?  We measure operators, but the result of a measurement is the eigenvalue associated with the operator.  What are the eigenvalues of the \(L_z\) operator?  These are the \(m \Hbar\) values, from the operation \(L_z \ket{l m} = m \Hbar \ket{l m}\).  So, given this initial state, there are really two outcomes that are possible, since we have two distinct eigenvalues.  These are \(2 \Hbar\) and \(0\) for \(m = 2\), and \(m= 0\) respectively.
 
