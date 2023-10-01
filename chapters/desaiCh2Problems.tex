@@ -6,7 +6,6 @@
 FIXME: describe.
 \index{Cauchy-Schwartz identity}
 } % problem
-
 \makeanswer{problem:desaiCh2Problems:1}{
 We wish to find the value of \(\lambda\) that is just right to come up with the desired identity.  The starting point is the expansion of the inner product
 \begin{equation}\label{eqn:desaiCh2Problems:2020}
@@ -52,21 +51,16 @@ This is easily rearranged to obtain the desired result:
 \begin{equation}\label{eqn:desaiCh2Problems:2120}
 \braket{a}{a} \braket{b}{b} \ge \braket{b}{a}\braket{a}{b}.
 \end{equation}
-
 } % answer
-
 \makeoproblem{Uncertainty relation}{problem:desaiCh2Problems:2}{\citep{desai2009quantum} pr 2.2}{
 FIXME: describe.
 } % problem
-
 \makeanswer{problem:desaiCh2Problems:2}{
-
 Using the Schwartz inequality of problem 1, and a symmetric and antisymmetric (anticommutator and commutator) sum of products that
 
 \begin{equation}\label{eqn:desaiCh2Problems:200}
 \Abs{\Delta A \Delta B}^2 \ge  \inv{4}\Abs{ \antisymmetric{A}{B}}^2,
 \end{equation}
-
 and that this result implies
 \begin{equation}\label{eqn:desaiCh2Problems:201}
 \Delta x \Delta p \ge \frac{\Hbar}{2}.
@@ -283,30 +277,21 @@ This usage seems consistent with that, so I think that it is a reasonable assump
 This is in fact what was proved arriving at \eqnref{eqn:desaiCh2Problems:210}.
 
 Ah ha!  Found it.  Referring to equation 2.93 in the text, I see that a lower case notation \(\Delta x = \sqrt{(\Delta X)^2}\), was introduced.  This explains what seemed like ambiguous notation ... it was just tricky notation, perfectly well explained, but done in passing in the text in a somewhat hidden seeming way.
-
 } % answer
-
 \makeoproblem{Hermitian radial differential operator}{problem:desaiCh2Problems:5}{\citep{desai2009quantum} pr 2.5}{
 \index{operator!radial differential}
 Show that the operator
-
 \begin{equation}\label{eqn:desaiCh2Problems:2380}
 R = -i \Hbar \PD{r}{},
 \end{equation}
-
 is not Hermitian, and find the constant \(a\) so that
-
 \begin{equation}\label{eqn:desaiCh2Problems:2400}
 T = -i \Hbar \left( \PD{r}{} + \frac{a}{r} \right),
 \end{equation}
-
 is Hermitian.
-
 } % problem
-
 \makeanswer{problem:desaiCh2Problems:5}{
 For the first part of the problem we can show that
-
 \begin{equation}\label{eqn:desaiCh2Problems:2420}
 \left( \bra{\psicap} R \ket{\phicap} \right)^\conj \ne \bra{\phicap} R \ket{\psicap}.
 \end{equation}
@@ -364,19 +349,14 @@ So \(a = 1\), and our Hermitian operator is
 T = -i \Hbar \left( \PD{r}{} + \frac{1}{r} \right).
 \end{equation}
 } % answer
-
-
 \makeoproblem{Radial directional derivative operator}{problem:desaiCh2Problems:6}{\citep{desai2009quantum} pr 2.6}{
 \index{operator!radial directional derivative}
 Show that
-
 \begin{equation}\label{eqn:desaiCh2Problems:2560}
 D = \Bp \cdot \rcap + \rcap \cdot \Bp,
 \end{equation}
-
 is Hermitian.  Expand this operator in spherical coordinates.  Compare result to problem 5.
 } % problem
-
 \makeanswer{problem:desaiCh2Problems:6}{
 Tackling the spherical coordinates expression of the operator \(D\), we have
 \begin{equation}\label{eqn:desaiCh2Problems:2580}
@@ -626,10 +606,8 @@ and
 
 Working backwards one sees that the comparison of the wave function integrals in explicit inner product notation is sufficient to demonstrate the Hermitian property.
 } % answer
-
 \makeoproblem{Some commutators}{problem:desaiCh2Problems:7}{\citep{desai2009quantum} pr 2.7}{
 For \(D\) in problem 6, obtain
-
 \begin{itemize}
 \item i) \([D, x_i]\)
 \item ii) \([D, p_i]\)
@@ -637,10 +615,8 @@ For \(D\) in problem 6, obtain
 \item iv) Show that \(e^{i\alpha D/\Hbar} x_i e^{-i\alpha D/\Hbar} = e^\alpha x_i\)
 \end{itemize}
 } % problem
-
 \makeanswer{problem:desaiCh2Problems:7}{
 \paragraph{Expansion of \(\antisymmetric{D}{x_i}\)}
-
 While expressing the operator as \(D = -2 i \Hbar (1/r) (1 + \partial_r)\) has less complexity than the \(D = \Bp \cdot \rcap + \rcap \cdot \Bp\), since no operation on \(\rcap\) is required, this does not look particularly convenient for use with Cartesian coordinates.  Slightly better perhaps is
 
 \begin{equation}\label{eqn:desaiCh2Problems:3020}
@@ -1013,32 +989,24 @@ Note that this is not the value we are supposed to get.  Either my value for \(D
 %%%%1 + i \Hbar
 %%%%\right) \right) \\
 %%%%\end{align*}
-
 } % answer
-
-
-\makeoproblem{Reduction of some commutators using the fundamental commutator relation}{problem:desaiCh2Problems:8}{\citep{desai2009quantum} pr 2.8}{
+%\makeoproblem{Reduction of some commutators using the fundamental commutator relation}{problem:desaiCh2Problems:8}{\citep{desai2009quantum} pr 2.8}
+\makeoproblem{Fundamental commutator relation.}{problem:desaiCh2Problems:8}{\citep{desai2009quantum} pr 2.8}{
 Using the fundamental commutation relation
-
 \begin{equation}\label{eqn:desaiCh2Problems:3420}
 \begin{aligned}
 \antisymmetric{p}{x} = -i \Hbar,
 \end{aligned}
 \end{equation}
-
 which we can also write as
-
 \begin{equation}\label{eqn:desaiCh2Problems:3440}
 \begin{aligned}
 p x = x p -i \Hbar,
 \end{aligned}
 \end{equation}
-
 expand \(\antisymmetric{x}{p^2}\), \(\antisymmetric{x^2}{p}\), and \(\antisymmetric{x^2}{p^2}\).
 } % problem
-
 \makeanswer{problem:desaiCh2Problems:8}{
-
 The first is
 \begin{equation}\label{eqn:desaiCh2Problems:3460}
 \begin{aligned}

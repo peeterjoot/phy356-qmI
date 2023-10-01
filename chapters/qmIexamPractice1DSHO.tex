@@ -73,18 +73,24 @@ For \(\expectation{X^2}\) we have
 \right)  \\
 &=
 \frac{\alpha^2}{2}
-\bra{n}
-\Bigl( (n+1) \ket{n} + \sqrt{n(n-1)} \ket{n-2}
-+ \sqrt{(n+1)(n+2)} \ket{n+2} + n \ket{n} \Bigr).
+\bra{n} (n+1) \ket{n} 
++ 
+\frac{\alpha^2}{2}
+\bra{n} \sqrt{n(n-1)} \ket{n-2} \\
+&\quad
++ 
+\frac{\alpha^2}{2}
+\bra{n} \sqrt{(n+1)(n+2)} \ket{n+2} 
++ 
+\frac{\alpha^2}{2}
+\bra{n} n \ket{n}.
 \end{aligned}
 \end{equation}
 
 We are left with just
-
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:3:140}
 \expectation{X^2} = \frac{\Hbar}{2 m \omega} (2n + 1).
 \end{equation}
-
 \makeSubAnswer{}{problem:qmIexamPractice:5:b}
 
 The probability that we started in state \(\ket{\psi(0)}\) and ended up in position \(x\) is governed by the amplitude \(\braket{x}{\psi(0)}\), and the probability of being within an interval \(\Delta x\), surrounding the point \(x\) is given by

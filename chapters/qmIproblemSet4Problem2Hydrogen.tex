@@ -37,14 +37,14 @@ Additionally, the radial form of the delta function will be required, which is
 Two applications of the identity operator to the braket yield
 \begin{equation}\label{eqn:qmIproblemSet4Problem2Hydrogen:246}
 \begin{aligned}
-&\bra{nlm} A(R) \ket{nlm} \\
-&=\bra{nlm} \BOne A(R) \BOne \ket{nlm} \\
+&\bra{nlm} A(R) \ket{nlm} = \bra{nlm} \BOne A(R) \BOne \ket{nlm} \\
 &=
 \int
 dr d\theta d\phi
 dr' d\theta' d\phi'
 r^2 \sin\theta
-{r'}^2 \sin\theta'
+{r'}^2 \sin\theta' \\
+&\quad
 \braket{nlm}{ r \theta \phi}
 \bra{ r \theta \phi} A(R)
 \ket{ r' \theta' \phi'}
@@ -54,7 +54,8 @@ r^2 \sin\theta
 dr d\theta d\phi
 dr' d\theta' d\phi'
 r^2 \sin\theta
-{r'}^2 \sin\theta'
+{r'}^2 \sin\theta' \\
+&\quad
 R_{nl}(r) Y_{lm}^\conj(\theta, \phi)
 \bra{ r \theta \phi} A(R) \ket{ r' \theta' \phi'}
 R_{nl}(r') Y_{lm}(\theta', \phi') \\
@@ -62,7 +63,6 @@ R_{nl}(r') Y_{lm}(\theta', \phi') \\
 \end{equation}
 
 To continue an assumption about the matrix element \(\bra{ r \theta \phi} A(R) \ket{ r' \theta' \phi'}\) is required.  It seems reasonable that this would be
-
 \begin{equation}\label{eqn:qmIproblemSet4:206}
 \bra{ r \theta \phi} A(R) \ket{ r' \theta' \phi'} = \\
 \delta(\Bx - \Bx') A(r) = \inv{r^2 \sin\theta} \delta(r-r') \delta(\theta -\theta')\delta(\phi-\phi') A(r).
@@ -225,7 +225,6 @@ Interestingly, the physical quantity that we associate with the operator \(R\) h
 \paragraph{ASIDE: Comparing to the general case}
 
 As a confirmation of the results obtained, we can check \eqnref{eqn:qmIproblemSet4:220}, and \eqnref{eqn:qmIproblemSet4:225} against the general form of the expectation values \(\expectation{R^s}\) for various powers \(s\) of the radial position operator.  These can be found in locations such as \href{http://farside.ph.utexas.edu/teaching/qmech/lectures/node81.html}{farside.ph.utexas.edu} which gives for \(Z=1\) (without proof), and in \citep{liboff2003iqm} (where these and harder looking ones expectation values are left as an exercise for the reader to prove).  Both of those give:
-
 \begin{equation}\label{eqn:qmIproblemSet4:226}
 \begin{aligned}
 \expectation{R} &= \frac{a_0}{2} ( 3 n^2 -l (l+1) ) \\
@@ -234,9 +233,7 @@ As a confirmation of the results obtained, we can check \eqnref{eqn:qmIproblemSe
 \end{equation}
 
 It is curious to me that the general expectation values noted in \eqnref{eqn:qmIproblemSet4:226} we have a \(l\) quantum number dependence for \(\expectation{R}\), but only the \(n\) quantum number dependence for \(\expectation{1/R}\).  It is not obvious to me why this would be the case.
-
 } % answer
-
 %%%\subsection{Suggested non-submission problem 1}
 %%%\subsubsection{Statement}
 %%%In Section 8.1.1, why are boundary conditions imposed on \(u(x)\) at \(x=\pm a\)?
