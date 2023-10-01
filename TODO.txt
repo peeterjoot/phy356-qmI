@@ -1,15 +1,22 @@
-  
+   - 
+ 
+   - pruned lots of blanks surrounding equations, ... -- probably too agressively.
+ 
    - makeproblem -> makeoproblem
  
-   - lots of leading and trailing blank lines before and after equations, paragraphs, sections, problems, ...
-
    - section, chapter, figure headings not sentances.
 
-   - equation grammar is missing.
+   - equation grammar is often missing.
 
    - \left( ... \right) instead of \lr{}
 
-   - gutters and margins.
+   - gutters and margins: mostly fixed.  have archived kdp version used to check.
+
+      -- one rogue bit of barely visible text at bottom of first page of contents.  Had that in other notes -- how did I fix?
+
+         see that here I have Contents.tex , but in GAEE ContentsAndFigures.tex 
+
+      Am also using different dir for template.
 
    - put better outline of what to find in these notes in the preface.
 
