@@ -1,5 +1,5 @@
-   - 
- 
+   - make dist rules not working as expected -- don't see kdp in the name.
+
    - pruned lots of blanks surrounding equations, ... -- probably too agressively.
  
    - makeproblem -> makeoproblem
