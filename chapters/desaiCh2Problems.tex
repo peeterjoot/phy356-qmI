@@ -1227,19 +1227,14 @@ A change of variables \(x = x' -d\) gives us
 \end{aligned}
 \end{equation}
 } % answer
-
-\makeoproblem{Hamiltonian position commutator and double commutator}{problem:desaiCh2Problems:10}{\citep{desai2009quantum} pr 2.10}{
+\makeoproblem{Hamiltonian commutators}{problem:desaiCh2Problems:10}{\citep{desai2009quantum} pr 2.10}{
 \index{commutator!Hamiltonian}
 For
-
 \begin{equation}\label{eqn:desaiCh2Problems:3800}
 H = \inv{2m} p^2 + V(x)
 \end{equation}
-
 calculate \(\antisymmetric{H}{x}\), and \(\antisymmetric{\antisymmetric{H}{x}}{x}\).
-
 } % problem
-
 \makeanswer{problem:desaiCh2Problems:10}{
 These are
 \begin{equation}\label{eqn:desaiCh2Problems:3820}
@@ -1255,7 +1250,6 @@ These are
 -\frac{i\Hbar p}{m} \\
 \end{aligned}
 \end{equation}
-
 and
 \begin{equation}\label{eqn:desaiCh2Problems:3840}
 \begin{aligned}
@@ -1578,19 +1572,16 @@ e^{i \Bk \cdot \Br} 2 (\Hbar \Bk \cdot \Bp) e^{-i \Bk \cdot \Br}
 -2 \Hbar \Bk \cdot \Bp,
 \end{aligned}
 \end{equation}
-
 so for the double commutator we have just a scalar
-
 \begin{equation}\label{eqn:desaiCh2Problems:114}
 \antisymmetric{\antisymmetric{H}{e^{i \Bk \cdot \Br}}}{e^{-i \Bk \cdot \Br}}
 = -\frac{(\Hbar \Bk)^2}{m}.
 \end{equation}
 
 Now consider the expectation of this double commutator, expanded with some unintuitive steps that have been motivated by working backwards
-
 \begin{equation}\label{eqn:desaiCh2Problems:4180}
 \begin{aligned}
-\bra{s} \antisymmetric{\antisymmetric{H}{e^{i \Bk \cdot \Br}}}{e^{-i \Bk \cdot \Br}} \ket{s}
+\bra{s} &\antisymmetric{\antisymmetric{H}{e^{i \Bk \cdot \Br}}}{e^{-i \Bk \cdot \Br}} \ket{s} \\
 &=
 \bra{s} 2 H
 - e^{i \Bk \cdot \Br} H e^{-i \Bk \cdot \Br}

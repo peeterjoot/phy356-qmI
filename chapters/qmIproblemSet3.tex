@@ -124,17 +124,18 @@ Our probability density is
 \inv{(\alpha + i t \Hbar /2m)} + \inv{(\alpha - i t \Hbar /2m)}
 \right) \right) \\
 &=
-\inv{2 \pi} \sqrt{\frac{2 \alpha}{\pi} } \frac{\pi}{\sqrt{\alpha^2 + (t \Hbar/2m)^2 }} \exp\left( - \frac{x^2}{4}
+\inv{2 \pi} \sqrt{\frac{2 \alpha}{\pi} } \frac{\pi}{\sqrt{\alpha^2 + (t \Hbar/2m)^2 }} \times \\
+&\quad
+\exp\left( - \frac{x^2}{4}
 \inv{\alpha^2 + (t \Hbar/2m)^2 } \left(
 \alpha - i t \Hbar /2m + \alpha + i t \Hbar /2m
 \right)
-\right) \\
-&=
+\right).
+% \\
+%&=
 \end{aligned}
 \end{equation}
-
 With a final regrouping of terms, this is
-
 \begin{equation}\label{eqn:qmIproblemSet3:110}
 \Abs{ \psi(x,t) }^2 =
 \sqrt{\frac{ \alpha }{ 2 \pi (\alpha^2 + (t \Hbar/2m)^2 }) }
@@ -144,7 +145,6 @@ With a final regrouping of terms, this is
 \end{equation}
 
 As a sanity check we observe that this integrates to unity for all \(t\) as desired.  The probability that we find the particle at position \(x > x_0\) is then
-
 \begin{equation}\label{eqn:qmIproblemSet3:111}
 P_{x>x_0}(t) = \sqrt{\frac{ \alpha }{ 2 \pi (\alpha^2 + (t \Hbar/2m)^2 }) }
 \int_{x=x_0}^\infty dx \exp\left( - \frac{x^2}{2}

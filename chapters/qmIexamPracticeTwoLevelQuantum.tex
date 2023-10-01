@@ -121,26 +121,22 @@ Since we are asked for this in terms of \(\ket{a}\), and \(\ket{b}\), the projec
 \end{equation}
 
 Substitution into \eqnref{eqn:qmIexamPractice2008Dec:2:80} and a fair amount of algebra leads to
-
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:2:100}
-U(t) =
-\cos(\delta t/2) \Bigl( \ket{a}\bra{a} + \ket{b}\bra{b} \Bigr)
-+ i \frac{\Omega}{\delta} \sin(\delta t/2) \Bigl(
+\begin{aligned}
+U(t) &= \cos(\delta t/2) \Bigl( \ket{a}\bra{a} + \ket{b}\bra{b} \Bigr) \\
+&\quad
++ i \frac{\Omega}{\delta} \sin(\delta t/2) \Biglr{
 \ket{a}\bra{a} - \ket{b}\bra{b}
 -i (\ket{a}\bra{b} - \ket{b}\bra{a} )
-\Bigr).
+}.
+\end{aligned}
 \end{equation}
-
 Note that while a big cumbersome, we can also verify that we can recover the original Hamiltonian from \eqnref{eqn:qmIexamPractice2008Dec:2:70} and \eqnref{eqn:qmIexamPractice2008Dec:2:90}.
 
 \paragraph{Q: (b)}
-
 Suppose that the initial state of the system at time \(t = 0\) is \(\ket{\phi(0)}= \ket{b}\).  Find an expression for the state at some later time \(t > 0\), \(\ket{\phi(t)}\).
-
 \paragraph{A:}
-
 Most of the work is already done.  Computation of \(\ket{\phi(t)} = U(t) \ket{\phi(0)}\) follows from \eqnref{eqn:qmIexamPractice2008Dec:2:100}
-
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:2:110}
 \ket{\phi(t)} =
 \cos(\delta t/2) \ket{b}

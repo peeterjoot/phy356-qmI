@@ -1,3 +1,12 @@
+   - lots of leading and trailing blank lines before and after equations, paragraphs, sections, problems, ...
+
+   - section, chapter, figure headings not sentances.
+
+   - equation grammar is missing.
+
+   - \left( ... \right) instead of \lr{}
+
+   - gutters and margins.
 
    - put better outline of what to find in these notes in the preface.
 

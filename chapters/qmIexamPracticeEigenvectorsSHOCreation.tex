@@ -3,30 +3,24 @@
 % Licenced as described in the file LICENSE under the root directory of this GIT repository.
 %
 
-\makeproblem{Eigenvectors of the Harmonic oscillator creation operator (2008 PHY355H1F final 1e.)}{problem:qmIexamPractice:3}{
-
+%\makeproblem{Eigenvectors of the Harmonic oscillator creation operator (2008 PHY355H1F final 1e.)}{problem:qmIexamPractice:3}{
+\makeproblem{Harmonic oscillator creation operator (2008 PHY355H1F final 1e.)}{problem:qmIexamPractice:3}{
 Prove that the only eigenvector of the Harmonic oscillator creation operator is \(\ket{\text{null}}\).
-
 } % problem
 
 \makeanswer{problem:qmIexamPractice:3}{
-
 Recall that the creation (raising) operator was given by
-
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:1e:10}
 a^\dagger
 = \sqrt{\frac{m \omega}{2 \Hbar}} X - \frac{ i }{\sqrt{2 m \omega \Hbar} } P
 = \inv{ \alpha \sqrt{2} } X - \frac{ i \alpha }{\sqrt{2} \Hbar } P,
 \end{equation}
-
 where \(\alpha = \sqrt{\Hbar/m \omega}\).  Now assume that \(a^\dagger \ket{\phi} = \lambda \ket{\phi}\) so that
-
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:1e:20}
 \bra{x} a^\dagger \ket{\phi} = \bra{x} \lambda \ket{\phi}.
 \end{equation}
 
 Write \(\braket{x}{\phi} = \phi(x)\), and expand the LHS using \eqnref{eqn:qmIexamPractice2008Dec:1e:10} for
-
 \begin{equation}\label{eqn:qmIexamPractice:650}
 \begin{aligned}
 \lambda \phi(x)
@@ -38,7 +32,6 @@ Write \(\braket{x}{\phi} = \phi(x)\), and expand the LHS using \eqnref{eqn:qmIex
 \end{equation}
 
 As usual write \(\xi = x/\alpha\), and rearrange.  This gives us
-
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:1e:30}
 \PD{\xi}{\phi} +\sqrt{2} \lambda \phi - \xi \phi = 0.
 \end{equation}

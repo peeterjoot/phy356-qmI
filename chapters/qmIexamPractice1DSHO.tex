@@ -127,25 +127,25 @@ e^{-x^2/\alpha^2}
 This \href{http://www.wolframalpha.com/input/?i=graph+e^(-x^2)+(1+\%2B+2x^2)}{is parabolic near the origin and then quickly tapers off}.
 
 \makeSubAnswer{}{problem:qmIexamPractice:5:c}
-
 Our time evolved state is
-
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:3:300}
-U(t) \ket{\psi(0)} = \inv{\sqrt{2}}
+\begin{aligned}
+U(t) \ket{\psi(0)} 
+&= \inv{\sqrt{2}}
 \left(
 e^{-i \Hbar \omega \left( 0 + \inv{2} \right) t/\Hbar } \ket{0}
 + i e^{-i \Hbar \omega \left( 1 + \inv{2} \right) t/\Hbar } \ket{0}
-\right)
-=
+\right) \\
+&=
 \inv{\sqrt{2}}
 \left(
 e^{-i \omega t/2 } \ket{0}
 + i e^{- 3 i \omega t/2 } \ket{1}
 \right).
+\end{aligned}
 \end{equation}
 
 The position expectation is therefore
-
 \begin{equation}\label{eqn:qmIexamPractice:750}
 \begin{aligned}
 \bra{\psi(t)} X \ket{\psi(t)}
@@ -175,10 +175,9 @@ We have already demonstrated that \(\bra{n} X \ket{n} = 0\), so we must only exp
 \end{equation}
 
 For the squared position expectation
-
 \begin{equation}\label{eqn:qmIexamPractice:770}
 \begin{aligned}
-\bra{\psi(t)} X^2 \ket{\psi(t)}
+&\bra{\psi(t)} X^2 \ket{\psi(t)} \\
 &=
 \frac{\alpha^2}{4 (2)}
 \left(

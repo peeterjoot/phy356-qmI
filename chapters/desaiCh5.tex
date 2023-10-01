@@ -270,7 +270,6 @@ This has eigenvalues \(\pm 1\), with eigenstates \((1,\pm 1)/\sqrt{2}\).  At the
 \end{equation}
 
 Let us look at the ways that this state can be formed as linear combinations of our states \(\ket{1}\), and \(\ket{2}\).  That is
-
 \begin{equation}\label{eqn:desaiCh5:206}
 \begin{aligned}
 \inv{\sqrt{2}}
@@ -283,9 +282,7 @@ Let us look at the ways that this state can be formed as linear combinations of 
 + \beta \ket{2},
 \end{aligned}
 \end{equation}
-
 or
-
 \begin{equation}\label{eqn:desaiCh5:207}
 \begin{aligned}
 \begin{bmatrix}
@@ -297,8 +294,8 @@ or
 \begin{bmatrix}
 i a \\
 b - \sqrt{a^2 + b^2}
-\end{bmatrix}
-+\frac{\beta}{\sqrt{(a^2 + b^2) + b \sqrt{a^2 + b^2}}}
+\end{bmatrix} \\
+&\quad+\frac{\beta}{\sqrt{(a^2 + b^2) + b \sqrt{a^2 + b^2}}}
 \begin{bmatrix}
 i a \\
 b + \sqrt{a^2 + b^2}
@@ -307,7 +304,6 @@ b + \sqrt{a^2 + b^2}
 \end{equation}
 
 Letting \(c = \sqrt{a^2 + b^2}\), this is
-
 \begin{equation}\label{eqn:desaiCh5:208}
 \begin{aligned}
 \begin{bmatrix}
@@ -701,12 +697,12 @@ So our probability of measuring spin up state \(\ket{+\theta}\) given the state 
 \end{equation}
 
 Finally, the expectation value for \(\Bsigma \cdot \Bn\) with respect to \(\ket{+\theta}\) is
-
 \begin{equation}\label{eqn:desaiCh5:902}
 \begin{aligned}
 \begin{bmatrix}
 C_{\theta/2} & S_{\theta/2}
 \end{bmatrix}
+&
 \begin{bmatrix}
 C_\alpha & S_\alpha \\
 S_\alpha & -C_\alpha
@@ -714,7 +710,7 @@ S_\alpha & -C_\alpha
 \begin{bmatrix}
 C_{\theta/2} \\
 S_{\theta/2}
-\end{bmatrix}
+\end{bmatrix} \\
 &=
 \begin{bmatrix}
 C_{\theta/2} & S_{\theta/2}
@@ -738,21 +734,13 @@ C_\alpha ( C_{\theta/2}^2 -S_{\theta/2}^2 )
 
 Sanity checking this we observe that we have \(+1\) as desired for the \(\alpha = \theta\) case.
 } % answer
-
-
-
 \makeoproblem{}{problem:desaiCh5:5}{\citep{desai2009quantum} pr 5.5}{
-
 \index{ensemble average}
 \index{density matrix}
 Consider an arbitrary density matrix, \(\rho\), for a spin \(1/2\) system.  Express each matrix element in terms of the ensemble averages \([S_i]\) where \(i = x,y,z\).
-
 } % problem
-
 \makeanswer{problem:desaiCh5:5}{
-
 Let us omit the spin direction temporarily and write for the density matrix
-
 \begin{equation}\label{eqn:desaiCh5:922}
 \begin{aligned}
 \rho

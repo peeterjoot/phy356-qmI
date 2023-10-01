@@ -29,9 +29,7 @@ where \(\BR\) and \(\BP\) are quantum mechanical operators corresponding to posi
 
 
 \makeexample{Angular momentum commutators}{example:lecture6OrbitalandIntrinsicMomentum:1}{
-
 Determine the commutators \(\antisymmetric{L_x}{L_y}, \antisymmetric{L_y}{L_z}, \antisymmetric{L_z}{L_x}\) and
-
 \begin{equation}\label{eqn:lecture6OrbitalandIntrinsicMomentum:2040}
 \begin{aligned}
 \antisymmetric{L_x}{L_y}
@@ -43,8 +41,8 @@ Determine the commutators \(\antisymmetric{L_x}{L_y}, \antisymmetric{L_y}{L_z}, 
 (r_y p_z -r_z p_y) \\
 &=
 r_y p_z (r_z p_x -r_x p_z)
--r_z p_y (r_z p_x -r_x p_z)
-- r_z p_x (r_y p_z -r_z p_y)
+-r_z p_y (r_z p_x -r_x p_z) \\
+&\quad- r_z p_x (r_y p_z -r_z p_y)
 + r_x p_z (r_y p_z -r_z p_y) \\
 &=
 r_y p_z r_z p_x
@@ -59,21 +57,21 @@ r_y p_z r_z p_x
 \end{equation}
 
 With \(p_i r_j = r_j p_i - i \Hbar \delta_{ij}\), we have
-
 \begin{equation*}
+\begin{aligned}
 \antisymmetric{L_x}{L_y}
-=
+&=
 r_y r_z p_z p_x
 -r_y r_z p_x p_z
 -r_z r_y p_z p_x
-+r_z r_y p_x p_z
-- r_z r_x p_y p_z
++r_z r_y p_x p_z \\
+&\quad- r_z r_x p_y p_z
 + r_z r_x p_z p_y
 + r_x r_z p_y p_z
 - r_x r_z p_z p_y
 +
 -i \Hbar
-\left(
+\lr{
 %r_y p_z
 %+r_z p_x
 %-r_z p_z
@@ -82,7 +80,8 @@ r_y r_z p_z p_x
 %- r_x p_z
 r_y p_x
 - r_x p_y
-\right)
+}.
+\end{aligned}
 \end{equation*}
 
 Since the \(p_i p_j\) operators commute, all the first terms cancel, leaving just
