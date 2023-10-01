@@ -102,13 +102,13 @@ Followup: why assume \(\expectation{\Br \cdot \Bp}\) is independent of time?
 %\href{http://www.caelestis.de/dateien/UEA05_2.pdf}{http://www.caelestis.de/dateien/UEA05_2.pdf} (ie: we need the Hamiltonian commutator).
 } % answer
 
-
+%
 \makeoproblem{Application of virial theorem}{problem:desaiCh3:2}{\citep{desai2009quantum} pr 3.2}{
-
+%
 Calculate \(\expectation{T}\) with \(V = \lambda \ln(r/a)\).
 
 } % problem
-
+%
 \makeanswer{problem:desaiCh3:2}{
 \begin{equation}\label{eqn:desaiCh3:1181}
 \begin{aligned}
@@ -124,11 +124,11 @@ Calculate \(\expectation{T}\) with \(V = \lambda \ln(r/a)\).
 } % answer
 
 
-
+%
 \makeoproblem{Heisenberg Position operator representation}{problem:desaiCh3:3}{\citep{desai2009quantum} pr 3.3}{
 \index{Heisenberg picture!position operator}
 } % problem
-
+%
 \makeanswer{problem:desaiCh3:3}{
 \paragraph{Part I}
 Express \(x\) as an operator \(x_H\) for \(H = \Bp^2/2m\).
@@ -262,11 +262,11 @@ x_H = x \cos (\omega^2 t^2 /2) +
 I had not expect such a tidy result for an arbitrary \(V(x) = \lambda x^n\) potential.
 
 } % answer
-
+%
 \makeoproblem{Feynman-Hellman relation}{problem:desaiCh3:4}{\citep{desai2009quantum} pr 3.4}{
 \index{Feynman-Hellman relation}
 } % problem
-
+%
 \makeanswer{problem:desaiCh3:4}{
 For continuously parameterized eigenstate, eigenvalue and Hamiltonian \(\ket{\psi(\lambda)}\), \(E(\lambda)\) and \(H(\lambda)\) respectively, we can relate the derivatives
 %
@@ -298,9 +298,9 @@ which provides the desired identity
 \end{equation}
 } % answer
 
-
+%
 \makeoproblem{}{problem:desaiCh3:5}{\citep{desai2009quantum} pr 3.5}{
-
+%
 With eigenstates \(\ket{\phi_1}\) and \(\ket{\phi_2}\), of \(H\) with eigenvalues \(E_1\) and \(E_2\), respectively, and
 %
 \begin{equation}\label{eqn:desaiCh3:1361}
@@ -313,7 +313,7 @@ With eigenstates \(\ket{\phi_1}\) and \(\ket{\phi_2}\), of \(H\) with eigenvalue
 and \(\ket{\psi(0)} = \ket{\chi_1}\), determine \(\ket{\psi(t)}\) in terms of \(\ket{\phi_1}\) and \(\ket{\phi_2}\).
 
 } % problem
-
+%
 \makeanswer{problem:desaiCh3:5}{
 %
 \begin{equation}\label{eqn:desaiCh3:1381}
@@ -330,9 +330,9 @@ and \(\ket{\psi(0)} = \ket{\chi_1}\), determine \(\ket{\psi(t)}\) in terms of \(
 } % answer
 
 
-
+%
 \makeoproblem{}{problem:desaiCh3:6}{\citep{desai2009quantum} pr 3.6}{
-
+%
 Consider a Coulomb like potential \(-\lambda/r\) with angular momentum \(l=0\).  If the eigenfunction is
 %
 \begin{equation}\label{eqn:desaiCh3:700}
@@ -342,9 +342,9 @@ u(r) = u_0 e^{-\beta r}
 determine \(u_0\), \(\beta\), and the energy eigenvalue \(E\) in terms of \(\lambda\), and \(m\).
 
 } % problem
-
+%
 \makeanswer{problem:desaiCh3:6}{
-
+%
 We can start with the normalization constant \(u_0\) by integrating
 %
 \begin{equation}\label{eqn:desaiCh3:1401}
@@ -425,7 +425,7 @@ u_0 &= \frac{\sqrt{2 \lambda m}}{\Hbar}
 \end{equation}
 
 } % answer
-
+%
 \makeoproblem{}{problem:desaiCh3:7}{\citep{desai2009quantum} pr 3.7}{
 \index{expectation!acceleration}
 A particle in a uniform field \(\BE_0\).  Show that the expectation value of the position operator \(\expectation{\Br}\) satisfies
@@ -435,9 +435,9 @@ m \frac{d^2 \expectation{\Br} }{dt^2} = e \BE_0.
 \end{equation}
 
 } % problem
-
+%
 \makeanswer{problem:desaiCh3:7}{
-
+%
 This follows from \textAndIndex{Ehrenfest's theorem} once we formulate the force \(e \BE_0 = -\spacegrad \phi\), in terms of a potential \(\phi\).  That potential is
 %
 \begin{equation}\label{eqn:desaiCh3:601}
@@ -476,15 +476,15 @@ m \frac{d^2}{dt^2} \Be_k \expectation{x_k}
 \end{equation}
 
 } % answer
-
+%
 \makeoproblem{}{problem:desaiCh3:8}{\citep{desai2009quantum} pr 3.8}{
-
+%
 For Hamiltonian eigenstates \(\ket{E_n}\), \(C = AB\), \(A = \antisymmetric{B}{H}\), obtain the matrix element \(\bra{E_m} C \ket{E_n}\) in terms of the matrix element of \(A\).
 
 } % problem
-
+%
 \makeanswer{problem:desaiCh3:8}{
-
+%
 I was able to get most of what was asked for here, with a small exception.  I started with the matrix element for \(A\), which is
 %
 \begin{equation}\label{eqn:desaiCh3:800}
@@ -524,15 +524,15 @@ Next, computing the matrix element for \(C\) we have
 Except for the \(\bra{E_n} B \ket{E_n}\) part of this expression, the problem as stated is complete.  The relationship \eqnref{eqn:desaiCh3:800} is no help for with \(n = m\), so I see no choice but to leave that small part of the expansion in terms of \(B\).
 
 } % answer
-
+%
 \makeoproblem{}{problem:desaiCh3:9}{\citep{desai2009quantum} pr 3.9}{
-
+%
 Operator \(A\) has eigenstates \(\ket{a_i}\), with a unitary change of basis operation \(U \ket{a_i} = \ket{b_i}\).  Determine in terms of \(U\), and \(A\) the operator \(B\) and its eigenvalues for which \(\ket{b_i}\) are eigenstates.
 
 } % problem
-
+%
 \makeanswer{problem:desaiCh3:9}{
-
+%
 Consider for motivation the matrix element of \(A\) in terms of \(\ket{b_i}\).  We will also let \(A \ket{a_i} = \alpha_i \ket{a_i}\).  We then have
 %
 \begin{equation}\label{eqn:desaiCh3:1561}
@@ -566,9 +566,9 @@ U A U^\dagger \ket{b_i}
 So we see that the operators \(A\) and \(B = U A U^\dagger\) have common eigenvalues.
 
 } % answer
-
+%
 \makeoproblem{}{problem:desaiCh3:10}{\citep{desai2009quantum} pr 3.10}{
-
+%
 
 With \(H \ket{n} = E_n \ket{n}\), \(A = \antisymmetric{H}{F}\) and \(\bra{0} F \ket{0} = 0\), show that
 %
@@ -579,7 +579,7 @@ With \(H \ket{n} = E_n \ket{n}\), \(A = \antisymmetric{H}{F}\) and \(\bra{0} F \
 \end{equation}
 
 } % problem
-
+%
 \makeanswer{problem:desaiCh3:10}{
 %
 \begin{equation}\label{eqn:desaiCh3:1621}
@@ -630,7 +630,7 @@ This gives
 \end{equation}
 
 } % answer
-
+%
 %\makeoproblem{Commutator of angular momentum with Hamiltonian}{problem:desaiCh3:11}{\citep{desai2009quantum} pr 3.11}
 \makeoproblem{Angular momentum commutators.}{problem:desaiCh3:11}{\citep{desai2009quantum} pr 3.11}{
 \index{angular momentum}
