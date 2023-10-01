@@ -6,13 +6,13 @@
 \makeproblem{Free particle propagator (2007 PHY355H1F 1f)}{problem:qmIexamPractice2007Dec:2}{
 
 For a free particle moving in one-dimension, the propagator (i.e. the coordinate representation of the evolution operator),
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:1f:10}
 G(x,x';t) = \bra{x} U(t) \ket{x'}
 \end{equation}
 
 is given by
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:1f:20}
 G(x,x';t) = \sqrt{\frac{m}{2 \pi i \Hbar t}} e^{i m (x-x')^2/ (2 \Hbar t)}.
 \end{equation}
@@ -24,7 +24,7 @@ G(x,x';t) = \sqrt{\frac{m}{2 \pi i \Hbar t}} e^{i m (x-x')^2/ (2 \Hbar t)}.
 This problem is actually fairly straightforward, but it is nice to work it having had a similar problem set question where we were asked about this time evolution operator matrix element (ie: what it is physical meaning is).  Here we have a concrete example of the form of this matrix operator.
 
 Proceeding directly, we have
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:450}
 \begin{aligned}
 \bra{x} U \ket{x'}
@@ -60,7 +60,7 @@ e^{\frac{ i m (x-x')^2}{2 \Hbar t}},
 \end{equation}
 
 which is the desired result.  Now, let us look at how this would be used.  We can express our time evolved state using this matrix element by introducing an identity
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:470}
 \begin{aligned}
 \braket{x}{\psi(t)}
@@ -86,13 +86,13 @@ e^{i m (x-x')^2/ (2 \Hbar t)} \psi(x', 0)
 \end{equation}
 
 However, note that our free particle wave function at time zero is
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:1f:50}
 \psi(x, 0) = \frac{e^{i p x/\Hbar}}{\sqrt{2 \pi \Hbar}}
 \end{equation}
 
 So the convolution integral \eqnref{eqn:qmIexamPractice2007Dec:1f:40} does not exist.  We likely have to require that the solution be not a pure state, but instead a superposition of a set of continuous states (a wave packet in position or momentum space related by Fourier transforms).  That is
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:1f:60}
 \begin{aligned}
 \psi(x, 0) &=
@@ -103,7 +103,7 @@ So the convolution integral \eqnref{eqn:qmIexamPractice2007Dec:1f:40} does not e
 \end{equation}
 
 The time evolution of this wave packet is then determined by the propagator, and is
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:1f:70}
 \psi(x,t) =
 \sqrt{\frac{m}{2 \pi i \Hbar t}}
@@ -114,7 +114,7 @@ e^{i m (x-x')^2/ (2 \Hbar t)}
 \end{equation}
 
 or in terms of the position space wave packet evaluated at time zero
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:1f:80}
 \psi(x,t) =
 \sqrt{\frac{m}{2 \pi i \Hbar t}}
@@ -125,7 +125,7 @@ e^{i k (x' - x'')} \psi(x'', 0)
 \end{equation}
 
 We see that the propagator also ends up with a Fourier transform structure, and we have
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:1f:90}
 \begin{aligned}
 \psi(x,t) &= \int dx' U(x, x' ; t) \psi(x', 0) \\

@@ -23,7 +23,7 @@ Obtain \(S_x, S_y, S_z\) for \textAndIndex{spin 1} in the representation in whic
 \makeanswer{problem:desaiCh5:1}{
 
 For spin 1, we have
-
+%
 \begin{equation}\label{eqn:desaiCh5:100}
 \begin{aligned}
 S^2 = 1 (1+1) \Hbar^2 \BOne
@@ -31,7 +31,7 @@ S^2 = 1 (1+1) \Hbar^2 \BOne
 \end{equation}
 
 and are interested in the states \(\ket{1,-1}, \ket{1, 0}, and \ket{1,1}\).  If, like angular momentum, we assume that we have for \(m_s = -1,0,1\)
-
+%
 \begin{equation}\label{eqn:desaiCh5:101}
 \begin{aligned}
 S_z \ket{1,m_s} = m_s \Hbar \ket{1, m_s}
@@ -39,7 +39,7 @@ S_z \ket{1,m_s} = m_s \Hbar \ket{1, m_s}
 \end{equation}
 
 and introduce a column matrix representations for the kets as follows
-
+%
 \begin{equation}\label{eqn:desaiCh5:102}
 \begin{aligned}
 \ket{1,1} &=
@@ -78,7 +78,7 @@ S_z &= \Hbar
 Note that, like the Pauli matrices, and unlike angular momentum, the spin states \(\ket{-1, m_s}, \ket{0, m_s}\) have not been considered.  Do those have any physical interpretation?
 
 That question aside, we can proceed as in the text, utilizing the ladder operator commutators
-
+%
 \begin{equation}\label{eqn:desaiCh5:104}
 \begin{aligned}
 S_{\pm} &= S_x \pm i S_y,
@@ -86,7 +86,7 @@ S_{\pm} &= S_x \pm i S_y,
 \end{equation}
 
 to determine the values of \(S_x\) and \(S_y\) indirectly.  We find
-
+%
 \begin{equation}\label{eqn:desaiCh5:105}
 \begin{aligned}
 \antisymmetric{S_{+}}{S_{-}} &= 2 \Hbar S_z \\
@@ -156,7 +156,7 @@ Furthermore, from \(\antisymmetric{S_{+}}{S_{-}} = 2 \Hbar S_z\), we find
 
 We must have \(\Abs{b}^2 = \Abs{f}^2 = 2 \Hbar^2\).  We could probably pick any
 \(b = \sqrt{2} \Hbar e^{i\phi}\), and \(f = \sqrt{2} \Hbar e^{i\theta}\), but assuming we have no reason for a non-zero phase we try
-
+%
 \begin{equation}\label{eqn:desaiCh5:110}
 \begin{aligned}
 S_{+}
@@ -222,7 +222,7 @@ ia & -b
 \end{equation}
 
 Taking \(\Abs{A - \lambda I} = 0\) we get
-
+%
 \begin{equation}\label{eqn:desaiCh5:202}
 \begin{aligned}
 \lambda &= \pm \sqrt{a^2 + b^2},
@@ -359,7 +359,7 @@ or
 \end{equation}
 
 It is \(\Abs{\alpha}^2\) and \(\Abs{\beta}^2\) that are probabilities, and after a bit of algebra we find that those are
-
+%
 \begin{equation}\label{eqn:desaiCh5:210}
 \begin{aligned}
 \Abs{\alpha}^2 = \Abs{\beta}^2 = \inv{2},
@@ -371,7 +371,7 @@ so if the x spin of the system is measured as \(+1\), we have a \(50\%\) chance 
 Is that what the question was asking?  I think that I have actually got it backwards.  I think that the question was asking for the probability of finding state \(\ket{x+}\) (measuring a spin 1 value for \(\sigma_x\)) given the state \(\ket{1}\) or \(\ket{2}\).
 
 So, suppose that we have
-
+%
 \begin{equation}\label{eqn:desaiCh5:211}
 \begin{aligned}
 \mu_{+} \ket{x+} + \nu_{+} \ket{x-} &= \ket{1} \\
@@ -437,7 +437,7 @@ Obtain the expectation values of \(S_x, S_y, S_z\) for the case of a spin \(1/2\
 \makeanswer{problem:desaiCh5:3}{
 
 Let us work with \(\sigma_k\) instead of \(S_k\) to eliminate the \(\Hbar/2\) factors.  Before considering the expectation values in the arbitrary spin orientation, let us consider just the expectation values for \(\sigma_k\).  Introducing a matrix representation (assumed normalized) for a reference state
-
+%
 \begin{equation}\label{eqn:desaiCh5:300}
 \begin{aligned}
 \ket{\psi} &=
@@ -449,7 +449,7 @@ b
 \end{equation}
 
 we find
-
+%
 \begin{equation}\label{eqn:desaiCh5:301}
 \begin{aligned}
 \bra{\psi} \sigma_x \ket{\psi}
@@ -491,7 +491,7 @@ b
 \end{equation}
 
 Each of these expectation values are real as expected due to the Hermitian nature of \(\sigma_k\).  We also find that
-
+%
 \begin{equation}\label{eqn:desaiCh5:303}
 \begin{aligned}
 \sum_{k=1}^3 {\bra{\psi} \sigma_k \ket{\psi}}^2 &= (\Abs{a}^2 + \Abs{b}^2)^2 = 1
@@ -527,7 +527,7 @@ are just the Pauli matrices scaled by the components of \(\Bn\)
 \end{equation}
 
 so our \(S_k\) expectation values are by inspection
-
+%
 \begin{equation}\label{eqn:desaiCh5:308}
 \begin{aligned}
 \bra{\psi} S_x \ket{\psi} &= \frac{\Hbar}{2} \sin\alpha \cos\beta ( a^\conj b + b^\conj a ) \\
@@ -537,7 +537,7 @@ so our \(S_k\) expectation values are by inspection
 \end{equation}
 
 Is this correct?  While \((\Bsigma \cdot \Bn)^2 = \Bn^2 = I\) is a unit norm operator, we find that the expectation values of the coordinates of \(\Bsigma \cdot \Bn\) cannot be viewed as the coordinates of a unit vector.  Let us consider a specific case, with \(\Bn = (0,0,1)\), where the spin is oriented in the \(x,y\) plane.  That gives us
-
+%
 \begin{equation}\label{eqn:desaiCh5:309}
 \begin{aligned}
 \Bsigma \cdot \Bn = \sigma_z
@@ -554,7 +554,7 @@ so the expectation values of \(S_k\) are
 \end{equation}
 
 Given this is seems reasonable that from \eqnref{eqn:desaiCh5:308} we find
-
+%
 \begin{equation}\label{eqn:desaiCh5:311}
 \begin{aligned}
 \sum_k {\bra{\psi} S_k \ket{\psi}}^2 \ne \Hbar^2/4,
@@ -564,7 +564,7 @@ Given this is seems reasonable that from \eqnref{eqn:desaiCh5:308} we find
 (since we do not have any reason to believe that in general \(( a^\conj a - b^\conj b )^2 = 1\) is true).
 
 The most general statement we can make about these expectation values (an average observed value for the measurement of the operator) is that
-
+%
 \begin{equation}\label{eqn:desaiCh5:312}
 \begin{aligned}
 \Abs{\expectation{S_k}} \le \frac{\Hbar}{2}
@@ -584,7 +584,7 @@ FIXME: describe.
 
 Take the azimuthal angle, \(\beta = 0\), so that the spin is in the
 x-z plane at an angle \(\alpha\) with respect to the z-axis, and the unit vector is \(\Bn = (\sin\alpha, 0, \cos\alpha)\).  Write
-
+%
 \begin{equation}\label{eqn:boostCommutator:500}
 \begin{aligned}
 \ket{\chi_{n+}} = \ket{+\alpha}
@@ -592,7 +592,7 @@ x-z plane at an angle \(\alpha\) with respect to the z-axis, and the unit vector
 \end{equation}
 
 for this case.  Show that the probability that it is in the spin-up state in the direction \(\theta\) with respect to the z-axis is
-
+%
 \begin{equation}\label{eqn:boostCommutator:501}
 \begin{aligned}
 \Abs{ \braket{+\theta}{+\alpha} }^2 = \cos^2 \left( \frac{\alpha - \theta}{2} \right)
@@ -604,7 +604,7 @@ Also obtain the expectation value of \(\Bsigma \cdot \Bn\) with respect to the s
 \paragraph{Solution}
 
 For this orientation we have
-
+%
 \begin{equation}\label{eqn:boostCommutator:502}
 \begin{aligned}
 \Bsigma \cdot \Bn
@@ -619,7 +619,7 @@ For this orientation we have
 \end{equation}
 
 Confirmation that our eigenvalues are \(\pm 1\) is simple, and our eigenstates for the \(+1\) eigenvalue is found to be
-
+%
 \begin{equation}\label{eqn:boostCommutator:503}
 \begin{aligned}
 \ket{+\alpha} \propto
@@ -652,7 +652,7 @@ This last has unit norm, so we can write
 \end{equation}
 
 If the state has been measured to be
-
+%
 \begin{equation}\label{eqn:boostCommutator:505}
 \begin{aligned}
 \ket{\phi} = 1 \ket{+\alpha} + 0 \ket{-\alpha},
@@ -660,7 +660,7 @@ If the state has been measured to be
 \end{equation}
 
 then the probability of a second measurement obtaining \(\ket{+\theta}\) is
-
+%
 \begin{equation}\label{eqn:boostCommutator:506}
 \begin{aligned}
 \Abs{ \braket{+\theta}{\phi} }^2
@@ -670,7 +670,7 @@ then the probability of a second measurement obtaining \(\ket{+\theta}\) is
 \end{equation}
 
 Expanding just the inner product first we have
-
+%
 \begin{equation}\label{eqn:desaiCh5:882}
 \begin{aligned}
 \braket{+\theta}{+\alpha}
@@ -688,7 +688,7 @@ S_{\theta/2} S_{\alpha/2} + C_{\theta/2} C_{\alpha/2}  \\
 \end{equation}
 
 So our probability of measuring spin up state \(\ket{+\theta}\) given the state was known to have been in spin up state \(\ket{+\alpha}\) is
-
+%
 \begin{equation}\label{eqn:boostCommutator:508}
 \begin{aligned}
 \Abs{ \braket{+\theta}{+\alpha} }^2
@@ -796,7 +796,7 @@ and our density matrix becomes
 \end{equation}
 
 Utilizing
-
+%
 \begin{equation}\label{eqn:desaiCh5:1002}
 \begin{aligned}
 \ket{x+} &=
@@ -858,7 +858,7 @@ So we can write the density matrix in terms of any of the ensemble averages as
 \end{equation}
 
 Alternatively, defining \(\BP_i = [\sigma_i] \Be_i\), for any of the directions \(i = 1,2,3\) we can write
-
+%
 \begin{equation}\label{eqn:desaiCh5:503}
 \begin{aligned}
 \rho = \inv{2} (I + \Bsigma \cdot \BP_i )
@@ -873,7 +873,7 @@ In equation (5.109) we had a similar result in terms of the polarization vector 
 
 \index{spin!time evolution}
 If a Hamiltonian is given by \(\Bsigma \cdot \Bn\) where \(\Bn = (\sin\alpha\cos\beta, \sin\alpha\sin\beta, \cos\alpha)\), determine the time evolution operator as a 2 x 2 matrix.  If a state at \(t = 0\) is given by
-
+%
 \begin{equation}\label{eqn:desaiCh5:600}
 \begin{aligned}
 \ket{\phi(0)} =
@@ -891,7 +891,7 @@ then obtain \(\ket{\phi(t)}\).
 \makeanswer{problem:desaiCh5:6}{
 
 Before diving into the meat of the problem, observe that a tidy factorization of the Hamiltonian is possible as a composition of rotations.  That is
-
+%
 \begin{equation}\label{eqn:desaiCh5:1062}
 \begin{aligned}
 H
@@ -910,7 +910,7 @@ H
 \end{equation}
 
 So we have for the time evolution operator
-
+%
 \begin{equation}\label{eqn:desaiCh5:610}
 \begin{aligned}
 U(\Delta t)
@@ -929,7 +929,7 @@ U(\Delta t)
 Does this really help?  I guess not, but it is nice and tidy.
 
 Returning to the specifics of the problem, we note that squaring the Hamiltonian produces the identity matrix
-
+%
 \begin{equation}\label{eqn:desaiCh5:615}
 \begin{aligned}
 (\Bsigma \cdot \Bn)^2 &= I \Bn^2 = I.
@@ -937,7 +937,7 @@ Returning to the specifics of the problem, we note that squaring the Hamiltonian
 \end{equation}
 
 This allows us to exponentiate \(H\) by inspection utilizing
-
+%
 \begin{equation}\label{eqn:desaiCh5:620}
 \begin{aligned}
 e^{i \mu (\Bsigma \cdot \Bn) } = I \cos\mu + i (\Bsigma \cdot \Bn) \sin\mu
@@ -986,7 +986,7 @@ a C_{t/\Hbar} -a i S_{t/\Hbar} C_\alpha  - b i S_{t/\Hbar} S_\alpha e^{-i\beta} 
 \end{equation}
 
 It does not seem terribly illuminating to multiply this all out, but we can factor the results slightly to tidy it up.  That gives us
-
+%
 \begin{equation}\label{eqn:desaiCh5:650}
 \begin{aligned}
 U(t,0)
@@ -1027,7 +1027,7 @@ Consider a system of spin \(1/2\) particles in a mixed ensemble containing a mix
 \makeanswer{problem:desaiCh5:7}{
 
 We have
-
+%
 \begin{equation}\label{eqn:desaiCh5:1082}
 \begin{aligned}
 \rho
@@ -1082,7 +1082,7 @@ Giving us
 \end{equation}
 
 Note that we can also factor the identity out of this for
-
+%
 \begin{equation}\label{eqn:desaiCh5:1102}
 \begin{aligned}
 \rho
@@ -1112,7 +1112,7 @@ which is just:
 \end{equation}
 
 Recall that the ensemble average is related to the trace of the density and operator product
-
+%
 \begin{equation}\label{eqn:desaiCh5:1122}
 \begin{aligned}
 \tr( \rho A )
@@ -1173,7 +1173,7 @@ We can use this to compute the ensemble averages of the Pauli matrices
 \end{equation}
 
 We can also find without the explicit matrix multiplication from \eqnref{eqn:desaiCh5:701}
-
+%
 \begin{equation}\label{eqn:desaiCh5:1162}
 \begin{aligned}
 \expectation{\sigma_x}_{\text{av}} &= \tr \inv{2}\left(
@@ -1204,7 +1204,7 @@ Show that the quantity \(\Bsigma \cdot \Bp V(r) \Bsigma \cdot \Bp\), when simpli
 \makeanswer{problem:desaiCh5:8}{
 
 Consider the operation
-
+%
 \begin{equation}\label{eqn:desaiCh5:1182}
 \begin{aligned}
 \Bsigma \cdot \Bp V(r) \Psi
@@ -1217,7 +1217,7 @@ Consider the operation
 \end{equation}
 
 With \(r = \sqrt{\sum_j x_j^2}\), we have
-
+%
 \begin{equation}\label{eqn:desaiCh5:1202}
 \begin{aligned}
 \partial_k V(r) = \inv{2}\inv{r} 2 x_k \PD{r}{V(r)},
@@ -1225,7 +1225,7 @@ With \(r = \sqrt{\sum_j x_j^2}\), we have
 \end{equation}
 
 which gives us the commutator
-
+%
 \begin{equation}\label{eqn:desaiCh5:800}
 \begin{aligned}
 \antisymmetric{ \Bsigma \cdot \Bp}{V(r)}
@@ -1235,7 +1235,7 @@ which gives us the commutator
 \end{equation}
 
 Insertion into the operator in question we have
-
+%
 \begin{equation}\label{eqn:desaiCh5:801}
 \begin{aligned}
 \Bsigma \cdot \Bp V(r) \Bsigma \cdot \Bp =
@@ -1245,7 +1245,7 @@ Insertion into the operator in question we have
 \end{equation}
 
 With decomposition of the \((\Bsigma \cdot \Bx) (\Bsigma \cdot \Bp )\) into symmetric and antisymmetric components, we should have in the second term our \(\Bsigma \cdot \BL\)
-
+%
 \begin{equation}\label{eqn:desaiCh5:802}
 \begin{aligned}
 (\Bsigma \cdot \Bx) (\Bsigma \cdot \Bp )
@@ -1256,7 +1256,7 @@ With decomposition of the \((\Bsigma \cdot \Bx) (\Bsigma \cdot \Bp )\) into symm
 \end{equation}
 
 where we expect \(\Bsigma \cdot \BL \propto \antisymmetric{\Bsigma \cdot \Bx}{\Bsigma \cdot \Bp}\).  Alternately in components
-
+%
 \begin{equation}\label{eqn:desaiCh5:1222}
 \begin{aligned}
 (\Bsigma \cdot \Bx) (\Bsigma \cdot \Bp )

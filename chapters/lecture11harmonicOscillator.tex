@@ -13,7 +13,7 @@ It is relevant to describing the oscillation of molecules, quantum states of lig
 FIXME: projected picture of masses on springs, with a ladle shaped well, approximately Harmonic about the minimum of the bucket.
 
 The problem to solve is the one dimensional Hamiltonian
-
+%
 \begin{equation}\label{eqn:PHY356FLecture11:10}
 \begin{aligned}
 V(X) &= \inv{2} K X^2 \\
@@ -29,7 +29,7 @@ This problem can be used to illustrate some of the reasons why we study the diff
 We attack this with a non-intuitive, but cool technique.  Introduce the raising \(a^\dagger\) and lowering \(a\) operators:
 \index{operator!raising}
 \index{operator!lowering}
-
+%
 \begin{equation}\label{eqn:PHY356FLecture11:20}
 \begin{aligned}
 a &= \sqrt{\frac{m \omega}{2 \Hbar}} \left( X + i \frac{P}{m\omega} \right) \\
@@ -42,7 +42,7 @@ a^\dagger &= \sqrt{\frac{m \omega}{2 \Hbar}} \left( X - i \frac{P}{m\omega} \rig
 \paragraph{Answer:} No, this is precisely the Hermitian conjugation operation.
 
 Solving for \(X\) and \(P\) in terms of \(a\) and \(a^\dagger\), we have
-
+%
 \begin{equation}\label{eqn:lecture11harmonicOscillator:620}
 \begin{aligned}
 a + a^\dagger &= \sqrt{\frac{m \omega}{2 \Hbar}} 2 X  \\
@@ -59,7 +59,7 @@ P &= i \sqrt{\frac{\Hbar m \omega}{2}} (a^\dagger -a)
 \end{equation}
 
 Express \(H\) in terms of \(a\) and \(a^\dagger\)
-
+%
 \begin{equation}\label{eqn:lecture11harmonicOscillator:640}
 \begin{aligned}
 H
@@ -82,7 +82,7 @@ a^\dagger a^\dagger + a^2 + a a^\dagger + a^\dagger a
 \right) \\
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:PHY356FLecture11:66}
 H
 =
@@ -96,7 +96,7 @@ a a^\dagger + a^\dagger a
 \end{equation}
 
 Since \(\antisymmetric{X}{P} = i \Hbar \BOne\) then we can show that \(\antisymmetric{a}{a^\dagger} = \BOne\).  Solve for \(\antisymmetric{a}{a^\dagger}\) as follows
-
+%
 \begin{equation}\label{eqn:lecture11harmonicOscillator:660}
 \begin{aligned}
 i \Hbar
@@ -123,7 +123,7 @@ i \Hbar
 \end{equation}
 
 Comparing LHS and RHS we have as stated
-
+%
 \begin{equation}\label{eqn:PHY356FLecture11:40}
 \begin{aligned}
 \antisymmetric{a}{a^\dagger} = \BOne
@@ -131,13 +131,13 @@ Comparing LHS and RHS we have as stated
 \end{equation}
 
 and thus from \eqnref{eqn:PHY356FLecture11:66} we have
-
+%
 \begin{equation}\label{eqn:PHY356FLecture11:50}
 H = \Hbar \omega \left( a^\dagger a + \frac{\BOne}{2} \right)
 \end{equation}
 
 Let \(\ket{n}\) be the eigenstate of \(H\) so that \(H\ket{n} = E_n \ket{n}\).  From \eqnref{eqn:PHY356FLecture11:50} we have
-
+%
 \begin{equation}\label{eqn:PHY356FLecture11:60}
 H \ket{n}
 =
@@ -148,7 +148,7 @@ or
 \begin{equation}\label{eqn:PHY356FLecture11:70}
 a^\dagger a \ket{n} + \frac{\ket{n}}{2} = \frac{E_n}{\Hbar \omega} \ket{n}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:PHY356FLecture11:80}
 a^\dagger a \ket{n} = \left( \frac{E_n}{\Hbar \omega} - \inv{2} \right) \ket{n} = \lambda_n \ket{n}
 \end{equation}
@@ -156,7 +156,7 @@ a^\dagger a \ket{n} = \left( \frac{E_n}{\Hbar \omega} - \inv{2} \right) \ket{n} 
 We wish now to find the eigenstates of the ``Number'' operator \(a^\dagger a\), which are simultaneously eigenstates of the Hamiltonian operator.
 
 Observe that we have
-
+%
 \begin{equation}\label{eqn:lecture11harmonicOscillator:680}
 \begin{aligned}
 a^\dagger a (a^\dagger \ket{n} )
@@ -166,7 +166,7 @@ a^\dagger a (a^\dagger \ket{n} )
 \end{equation}
 
 where we used \(\antisymmetric{a}{a^\dagger} = a a^\dagger - a^\dagger a = \BOne\).
-
+%
 \begin{equation}\label{eqn:lecture11harmonicOscillator:700}
 \begin{aligned}
 a^\dagger a (a^\dagger \ket{n} )
@@ -183,13 +183,13 @@ a^\dagger a (a^\dagger \ket{n} ) = (\lambda_n + 1) (a^\dagger \ket{n} )
 The new state \(a^\dagger \ket{n}\) is presumed to lie in the same space, expressible as a linear combination of the basis states in this space.  We can see the effect of the operator \(a a^\dagger\) on this new state, we find that the energy is changed, but the state is otherwise unchanged.  Any state \(a^\dagger \ket{n}\) is an eigenstate of \(a^\dagger a\), and therefore also an eigenstate of the Hamiltonian.
 
 Play the same game and win big by discovering that
-
+%
 \begin{equation}\label{eqn:PHY356FLecture11:110}
 a^\dagger a ( a \ket{n} ) = (\lambda_n -1) (a \ket{n} )
 \end{equation}
 
 There will be some state \(\ket{0}\) such that
-
+%
 \begin{equation}\label{eqn:PHY356FLecture11:120}
 a \ket{0} = 0 \ket{0}
 \end{equation}
@@ -200,13 +200,13 @@ a^\dagger (a \ket{0}) = (a^\dagger a) \ket{0} = 0
 \end{equation}
 
 so from \eqnref{eqn:PHY356FLecture11:80} we have
-
+%
 \begin{equation}\label{eqn:PHY356FLecture11:140}
 \lambda_0 = 0
 \end{equation}
 
 Observe that we can identify \(\lambda_n = n\) for
-
+%
 \begin{equation}\label{eqn:PHY356FLecture11:150}
 \lambda_n = \left( \frac{E_n}{\Hbar\omega} - \inv{2} \right) = n,
 \end{equation}
@@ -224,7 +224,7 @@ E_n = \Hbar \omega \left( n + \inv{2} \right)
 where \(n = 0, 1, 2, \cdots\).
 
 We can write
-
+%
 \begin{equation}\label{eqn:lecture11harmonicOscillator:720}
 \begin{aligned}
 \Hbar \omega \left( a^\dagger a + \inv{2} \BOne \right) \ket{n} &= E_n \ket{n} \\
@@ -239,7 +239,7 @@ a^\dagger a \ket{n} = \left( \frac{E_n}{\Hbar \omega} - \inv{2} \right) \ket{n} 
 
 We call this operator \(a^\dagger a = N\), the number operator, so that
 \index{operator!number}
-
+%
 \begin{equation}\label{eqn:PHY356FLecture11:180}
 N \ket{n} = n \ket{n}
 \end{equation}
@@ -249,7 +249,7 @@ N \ket{n} = n \ket{n}
 \index{lowering operation}
 
 Recall the calculation we performed for
-
+%
 \begin{equation}\label{eqn:PHY356FLecture11:200}
 \begin{aligned}
 L_{+} \ket{lm} &= C_{+} \ket{l, m+1} \\
@@ -258,7 +258,7 @@ L_{-} \ket{lm} &= C_{+} \ket{l, m-1}
 \end{equation}
 
 Where \(C_{+}\), and \(C_{+}\) are constants.  The next game we are going to play is to work out \(C_n\) for the lowering operation
-
+%
 \begin{equation}\label{eqn:PHY356FLecture11:210}
 a\ket{n} = C_n \ket{n-1}
 \end{equation}
@@ -269,7 +269,7 @@ a^\dagger \ket{n} = B_n \ket{n+1}.
 \end{equation}
 
 For the Hermitian conjugate of \(a \ket{n}\) we have
-
+%
 \begin{equation}\label{eqn:PHY356FLecture11:220}
 (a \ket{n})^\dagger = ( C_n \ket{n-1} )^\dagger = C_n^\conj \ket{n-1}
 \end{equation}
@@ -332,13 +332,13 @@ B_n = \sqrt{n + 1}
 \index{time evolution}
 
 \paragraph{A:} Recall that for a general operator \(A\), we have for the time evolution of that operator
-
+%
 \begin{equation}\label{eqn:PHY356FLecture11:270}
 i \Hbar \frac{d A}{dt} = \antisymmetric{ A }{H}
 \end{equation}
 
 Let us solve this one.
-
+%
 \begin{equation}\label{eqn:lecture11harmonicOscillator:780}
 \begin{aligned}
 i \Hbar \frac{d a}{dt}
@@ -354,7 +354,7 @@ i \Hbar \frac{d a}{dt}
 \end{equation}
 
 Even though \(a\) is an operator, it can undergo a time evolution and we can think of it as a function, and we can solve for \(a\) in the differential equation
-
+%
 \begin{equation}\label{eqn:PHY356FLecture11:280}
 \frac{d a}{dt} = -i \omega a
 \end{equation}
@@ -394,7 +394,7 @@ with
 \end{equation}
 
 This gives, with \(\lambda = 2E/\Hbar\omega\),
-
+%
 \begin{equation}\label{eqn:PHY356FLecture11:420}
 \frac{d^2 u}{d\xi^2} + (\lambda - \xi^2) u = 0
 \end{equation}
@@ -442,7 +442,7 @@ Recall that our matrix operator is
 \begin{equation}\label{eqn:PHY356FLecture11:540}
 \bra{x'} P \ket{x} = \delta(x - x') \left( -i \Hbar \frac{d}{dx} \right)
 \end{equation}
-
+%
 \begin{equation}\label{eqn:lecture11harmonicOscillator:820}
 \begin{aligned}
 \bra{x} P \ket{0}
@@ -463,7 +463,7 @@ Recall that our matrix operator is
 \end{equation}
 
 We have then
-
+%
 \begin{equation}\label{eqn:PHY356FLecture11:600}
 0 =
 x u_0(x) + \frac{\Hbar}{m \omega} \frac{d u_0(x)}{dx}

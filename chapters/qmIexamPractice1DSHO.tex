@@ -5,7 +5,7 @@
 \makeproblem{One dimensional harmonic oscillator (2008 PHY355H1F final 3.)}{problem:qmIexamPractice:5}{
 
 Consider a one-dimensional harmonic oscillator with the Hamiltonian
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:3:11}
 H = \inv{2m}P^2 + \inv{2} m \omega^2 X^2
 \end{equation}
@@ -19,7 +19,7 @@ Evaluate \(\bra{n} X \ket{n}\) and \(\bra{n} X^2 \ket{n}\) for arbitrary \(\ket{
 \makesubproblem{}{problem:qmIexamPractice:5:b}
 
 Suppose that at \(t=0\) the system is prepared in the state
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:3:20}
 \ket{\psi(0)} = \inv{\sqrt{2}} ( \ket{0} + i \ket{1} ).
 \end{equation}
@@ -33,7 +33,7 @@ Now suppose the state given in (b) above were allowed to evolve for a time \(t\)
 \makesubproblem{}{problem:qmIexamPractice:5:d}
 
 Now suppose that initially the system were prepared in the ground state \(\ket{0}\), and then the resonance frequency is changed abruptly from \(\omega\) to \(\omega'\) so that the Hamiltonian becomes
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:3:10}
 H = \inv{2m}P^2 + \inv{2} m {\omega'}^2 X^2.
 \end{equation}
@@ -47,19 +47,19 @@ Immediately, an energy measurement is performed ; what is the probability of obt
 \makeSubAnswer{}{problem:qmIexamPractice:5:a}
 
 Writing \(X\) in terms of the raising and lowering operators we have
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:3:100}
 X = \frac{\alpha}{\sqrt{2}} (a^\dagger + a),
 \end{equation}
 
 so \(\expectation{X}\) is proportional to
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:3:110}
 \bra{n} a^\dagger + a \ket{n} = \sqrt{n+1} \braket{n}{n+1} + \sqrt{n} \braket{n}{n-1} = 0.
 \end{equation}
 
 For \(\expectation{X^2}\) we have
-
+%
 \begin{equation}\label{eqn:qmIexamPractice:730}
 \begin{aligned}
 \expectation{X^2}
@@ -94,19 +94,19 @@ We are left with just
 \makeSubAnswer{}{problem:qmIexamPractice:5:b}
 
 The probability that we started in state \(\ket{\psi(0)}\) and ended up in position \(x\) is governed by the amplitude \(\braket{x}{\psi(0)}\), and the probability of being within an interval \(\Delta x\), surrounding the point \(x\) is given by
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:3:200}
 \int_{x'=x-\Delta x/2}^{x+\Delta x/2} \Abs{ \braket{x'}{\psi(0)} }^2 dx'.
 \end{equation}
 
 In the limit as \(\Delta x \rightarrow 0\), this is just the squared amplitude itself evaluated at the point \(x\), so we are interested in the quantity
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:3:210}
 \Abs{ \braket{x}{\psi(0)} }^2  = \inv{2} \Abs{ \braket{x}{0} + i \braket{x}{1} }^2.
 \end{equation}
 
 We are given these wave functions in the supplemental formulas.  Namely,
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:3:220}
 \begin{aligned}
 \braket{x}{0} &= \psi_0(x) = \frac{e^{-x^2/2\alpha^2}}{ \sqrt{\alpha \sqrt{\pi}}} \\
@@ -115,7 +115,7 @@ We are given these wave functions in the supplemental formulas.  Namely,
 \end{equation}
 
 Substituting these into \eqnref{eqn:qmIexamPractice2008Dec:3:210} we have
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:3:230}
 \Abs{ \braket{x}{\psi(0)} }^2
 =
@@ -170,7 +170,7 @@ e^{-i \omega t/2 } \ket{0}
 \end{equation}
 
 We have already demonstrated that \(\bra{n} X \ket{n} = 0\), so we must only expand the cross terms, but those are just \(\bra{0} a^\dagger + a \ket{1} = 1\).  This leaves
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:3:310}
 \bra{\psi(t)} X \ket{\psi(t)}
 =
@@ -205,13 +205,13 @@ e^{-i \omega t/2 } \ket{0}
 \end{equation}
 
 Noting that \((a^\dagger + a) \ket{0} = \ket{1}\), and \((a^\dagger + a)^2 \ket{0} = (a^\dagger + a)\ket{1} = \sqrt{2} \ket{2} + \ket{0}\), so we see the last two terms are zero.  The first two we can evaluate using our previous result \eqnref{eqn:qmIexamPractice2008Dec:3:140} which was \(\expectation{X^2} = \frac{\alpha^2}{2} (2n + 1)\).  This leaves
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:3:330}
 \bra{\psi(t)} X^2 \ket{\psi(t)} = \alpha^2
 \end{equation}
 
 Since \(\expectation{X}^2 = \alpha^2 \cos^2(\omega t)/2\), we have
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:3:340}
 (\Delta X)^2 = \expectation{X^2} - \expectation{X}^2 = \alpha^2 \left(1 - \inv{2} \cos^2(\omega t) \right)
 \end{equation}
@@ -219,13 +219,13 @@ Since \(\expectation{X}^2 = \alpha^2 \cos^2(\omega t)/2\), we have
 \makeSubAnswer{}{problem:qmIexamPractice:5:d}
 
 This energy measurement \(E = \Hbar \omega' (3/2) = \Hbar \omega' (1 + 1/2)\), corresponds to an observation of state \(\ket{1'}\), after an initial observation of \(\ket{0}\).  The probability of such a measurement is
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:3:400}
 \Abs{ \braket{1'}{0} }^2
 \end{equation}
 
 Note that
-
+%
 \begin{equation}\label{eqn:qmIexamPractice:790}
 \begin{aligned}
 \braket{1'}{0}
@@ -245,7 +245,7 @@ The wave functions above are
 \end{equation}
 
 Putting the pieces together we have
-
+%
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:3:810}
 \begin{aligned}
 \braket{1'}{0}

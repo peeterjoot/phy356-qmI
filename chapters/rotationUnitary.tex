@@ -13,7 +13,7 @@
 \index{unitary}
 \index{rotation!matrix exponential}
 In \citep{desai2009quantum} it is noted in problem 1.3 that any Unitary operator can be expressed in exponential form
-
+%
 \begin{equation}\label{eqn:rotationUnitary:1}
 U = e^{iC},
 \end{equation}
@@ -26,31 +26,31 @@ where \(C\) is Hermitian.  This is a powerful result hiding away in this problem
 \index{unitary matrix!logarithm}
 
 By inspection we can invert \eqnref{eqn:rotationUnitary:1} for \(C\), by taking the logarithm
-
+%
 \begin{equation}\label{eqn:rotationUnitary:2}
 C = -i \ln U.
 \end{equation}
 
 The problem becomes one of evaluating the logarithm, or even giving meaning to it.  I will assume that the functions of matrices that we are interested in are all polynomial in powers of the matrix, as in
-
+%
 \begin{equation}\label{eqn:rotationUnitary:3}
 f(U) = \sum_k \alpha_k U^k,
 \end{equation}
 
 and that such series are convergent.  Then using a spectral decomposition, possible since Unitary matrices are normal, we can write for diagonal \(\Sigma = {\begin{bmatrix} \lambda_i \end{bmatrix}}_i\)
-
+%
 \begin{equation}\label{eqn:rotationUnitary:4}
 U = V \Sigma V^\dagger,
 \end{equation}
 
 and
-
+%
 \begin{equation}\label{eqn:rotationUnitary:3b}
 f(U) = V \left( \sum_k \alpha_k \Sigma^k \right) V^\dagger = V {\begin{bmatrix} f(\lambda_i) \end{bmatrix}}_i V^\dagger.
 \end{equation}
 
 Provided the logarithm has a convergent power series representation for \(U\), we then have for our Hermitian matrix \(C\)
-
+%
 \begin{equation}\label{eqn:rotationUnitary:5}
 C = -i V (\ln \Sigma) V^\dagger
 \end{equation}
@@ -58,7 +58,7 @@ C = -i V (\ln \Sigma) V^\dagger
 \paragraph{Evaluate this logarithm for an \(x,y\) plane rotation}
 
 Given the rotation matrix
-
+%
 \begin{equation}\label{eqn:rotationUnitary:6}
 U =
 \begin{bmatrix}
@@ -69,7 +69,7 @@ U =
 
 We find that the eigenvalues are \(e^{\pm i\theta}\), with eigenvectors proportional to \((1, \pm i)\) respectively.  Our decomposition for \(U\) is then given by
 \eqnref{eqn:rotationUnitary:4}, and
-
+%
 \begin{equation}\label{eqn:rotationUnitary:7}
 \begin{aligned}
 V &= \inv{\sqrt{2}}
@@ -86,7 +86,7 @@ e^{i\theta} & 0 \\
 \end{equation}
 
 Taking logs we have
-
+%
 \begin{equation}\label{eqn:rotationUnitary:63}
 \begin{aligned}
 C
@@ -123,7 +123,7 @@ i\theta & 0
 \end{equation}
 
 With the Pauli matrix
-
+%
 \begin{equation}\label{eqn:rotationUnitary:8a}
 \sigma_2 =
 \begin{bmatrix}
@@ -133,7 +133,7 @@ i & 0
 \end{equation}
 
 we then have for an \(x,y\) plane rotation matrix just:
-
+%
 \begin{equation}\label{eqn:rotationUnitary:8}
 C = \theta \sigma_2
 \end{equation}
@@ -155,7 +155,7 @@ By inspection one can see that this takes us full circle back to the original ma
 \index{exponential rotation}
 
 By inspection, we can augment our matrix \(C\) for a three dimensional rotation in the \(x,y\) plane, or a \(y,z\) rotation, or a \(x,z\) rotation.  Those are, respectively
-
+%
 \begin{equation}\label{eqn:rotationUnitary:30}
 \begin{aligned}
 U_{x,y}
@@ -207,7 +207,7 @@ and
 \index{Lorentz boost}
 
 The next obvious thing to try with this matrix representation is a Lorentz boost.
-
+%
 \begin{equation}\label{eqn:rotationUnitary:40}
 L =
 \begin{bmatrix}
@@ -221,7 +221,7 @@ where \(\cosh\alpha = \gamma\), and \(\tanh\alpha = \beta\).
 \index{spectral decomposition}
 
 This matrix has a spectral decomposition given by
-
+%
 \begin{equation}\label{eqn:rotationUnitary:41}
 \begin{aligned}
 V &= \inv{\sqrt{2}}
@@ -238,7 +238,7 @@ e^\alpha & 0 \\
 \end{equation}
 
 Taking logs and computing \(C\) we have
-
+%
 \begin{equation}\label{eqn:rotationUnitary:123}
 \begin{aligned}
 C
@@ -287,7 +287,7 @@ Again we have one of the Pauli spin matrices.  This time it is
 
 So we can write our Lorentz boost \eqnref{eqn:rotationUnitary:40} as just
 \index{boost}
-
+%
 \begin{equation}\label{eqn:rotationUnitary:43}
 L = e^{-\alpha \sigma_1} = I \cosh\alpha - \sigma_1 \sinh\alpha.
 \end{equation}

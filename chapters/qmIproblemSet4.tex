@@ -28,7 +28,7 @@ The pair of figures in the text \citep{desai2009quantum} for these potentials do
 The physics is not changed by picking a different point for the reference energy level, so let us compare the two potentials, and their solutions using \(V(x) = 0\) outside of the well for both cases.  The method used to solve the finite well problem in the text is hard to follow, so re-doing this from scratch in a slightly tidier way does not hurt.
 
 Schr\"{o}dinger's equation for the finite well, in the \(\Abs{x} > a\) region is
-
+%
 \begin{equation}\label{eqn:qmIproblemSet4:110}
 \begin{aligned}
 -\frac{\Hbar^2}{2m} u'' = E u = - E_B u,
@@ -79,7 +79,7 @@ u(x) = A e^{i\alpha x} + B e^{-i\alpha x}.
 \end{equation}
 
 As was done for the wave functions outside of the well, the normalization constants can be expressed in terms of the values of the wave functions on the boundary.  That provides a pair of equations to solve
-
+%
 \begin{equation}\label{eqn:qmIproblemSet4:135}
 \begin{aligned}
 \begin{bmatrix}
@@ -136,7 +136,7 @@ u(-a)
 \end{equation}
 
 Expanding the last of these matrix products the wave function is close to completely specified.
-
+%
 \begin{equation}\label{eqn:qmIproblemSet4:140}
 u(x) =
 \left\{
@@ -153,13 +153,13 @@ u(a) e^{-\beta(x-a)}
 \end{equation}
 
 There are still two unspecified constants \(u(\pm a)\) and the constraints on \(E_B\) have not been determined (both \(\alpha\) and \(\beta\) are functions of that energy level).  It should be possible to eliminate at least one of the \(u(\pm a)\) by computing the wavefunction normalization, and since the well is being narrowed the \(\alpha\) term will not be relevant.  Since only the vanishingly narrow case where \(a \rightarrow 0, x \in [-a,a]\) is of interest, the wave function in that interval approaches
-
+%
 \begin{equation}\label{eqn:qmIproblemSet4:145}
 u(x) \rightarrow \inv{2} (u(a) + u(-a)) + \frac{x}{2} ( u(a) - u(-a) ) \rightarrow \inv{2} (u(a) + u(-a)).
 \end{equation}
 
 Since no discontinuity is expected this is just \(u(a) = u(-a)\).  Let us write \(\lim_{a\rightarrow 0} u(a) = A\) for short, and the limited width well wave function becomes
-
+%
 \begin{equation}\label{eqn:qmIproblemSet4:150}
 u(x) =
 \left\{
@@ -175,13 +175,13 @@ A e^{-\beta x}
 This is now the same form as the delta function potential, and normalization also gives \(A = \sqrt{\beta}\).
 
 One task remains before the attractive delta function potential can be considered a limiting case for the finite well, since the relation between \(a, V_0\), and \(g\) has not been established.  To do so integrate the Schr\"{o}dinger equation over the infinitesimal range \([-a,a]\).  This was done in the text for the delta function potential, and that provided the relation
-
+%
 \begin{equation}\label{eqn:qmIproblemSet4:155a}
 \beta = \frac{mg}{\Hbar^2}
 \end{equation}
 
 For the finite well this is
-
+%
 \begin{equation}\label{eqn:qmIproblemSet4:151}
 \int_{-a}^a -\frac{\Hbar^2}{2m} u'' - V_0 \int_{-a}^a u = -E_B \int_{-a}^a u \\
 \end{equation}
@@ -197,7 +197,7 @@ Some care is required with the \(V_0 a\) term since \(a \rightarrow 0\) as \(V_0
 \end{equation}
 
 The exponential vanishes in the limit and leaves
-
+%
 \begin{equation}\label{eqn:qmIproblemSet4:155}
 \beta = \frac{m (2 a) V_0}{\Hbar^2}
 \end{equation}

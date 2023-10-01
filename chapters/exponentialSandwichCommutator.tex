@@ -26,7 +26,7 @@ It turns out that the solution of this sandwich expansion is also known as the `
 %\section{Guts}
 
 Let us expand a sandwich of this form in series, and shuffle the summation order so that we sum over all the index plane diagonals \(k + m = \text{constant}\).  That is
-
+%
 \begin{equation}\label{eqn:exponentialSandwichCommutator:24}
 \begin{aligned}
 e^{A} B e^{-A}
@@ -45,13 +45,13 @@ Assuming that these interior sums can be written as commutators, we will shortly
 
 \begin{itemize}
 \item \(r=1\)
-
+%
 \begin{equation}\label{eqn:exponentialSandwichCommutator:44}
 \binom{1}{0} A B + \binom{1}{1} B (-A) = \antisymmetric{A}{B}
 \end{equation}
 
 \item \(r=2\)
-
+%
 \begin{equation}\label{eqn:exponentialSandwichCommutator:64}
 \binom{2}{0} A^2 B + \binom{2}{1} A B (-A) + \binom{2}{2} B (-A)^2 = A^2 B - 2 A B A + B A
 \end{equation}
@@ -91,7 +91,7 @@ A^3 B - 3 A^2 B A + 3 A B A^2 -B A^3 \\
 \end{itemize}
 
 The induction pattern is clear.  Let us write the \(r\) fold commutator as
-
+%
 \begin{equation}\label{eqn:exponentialSandwichCommutator:2}
 C_r(A,B) \equiv
 \mathLabelBox{[A, [A, \cdots, [A,}{\(r\) times}
@@ -100,7 +100,7 @@ B]] \cdots ]
 \end{equation}
 
 and calculate this for the \(r+1\) case to verify the induction hypothesis.  We have
-
+%
 \begin{equation}\label{eqn:exponentialSandwichCommutator:144}
 \begin{aligned}
 C_{r+1}&(A,B) \\
@@ -134,7 +134,7 @@ A^{r+1} B
 \end{equation}
 
 We now have to sum those binomial coefficients.  I like the search and replace technique for this, picking two visibly distinct numbers for \(r\), and \(k\) that are easy to manipulate without abstract confusion.  How about \(r=7\), and \(k=3\).  Using those we have
-
+%
 \begin{equation}\label{eqn:exponentialSandwichCommutator:164}
 \begin{aligned}
 \binom{7}{3+1} + \binom{7}{3}
@@ -152,7 +152,7 @@ We now have to sum those binomial coefficients.  I like the search and replace t
 \end{equation}
 
 Straight text replacement of \(7\) and \(3\) with \(r\) and \(k\) respectively now gives the harder to follow, but more general identity
-
+%
 \begin{equation}\label{eqn:exponentialSandwichCommutator:184}
 \begin{aligned}
 \binom{r}{k+1} + \binom{r}{k}
@@ -172,7 +172,7 @@ Straight text replacement of \(7\) and \(3\) with \(r\) and \(k\) respectively n
 \end{equation}
 
 For our commutator we now have
-
+%
 \begin{equation}\label{eqn:exponentialSandwichCommutator:204}
 \begin{aligned}
 C_{r+1}(A,B)
@@ -192,7 +192,7 @@ A^{r+1} B
 \end{equation}
 
 That completes the inductive proof and allows us to write
-
+%
 \begin{equation}\label{eqn:exponentialSandwichCommutator:3}
 \begin{aligned}
 e^A B e^{-A}

@@ -6,7 +6,7 @@ Deal with operators that have continuous eigenvalues and eigenvectors.
 \index{continuous eigenvalues}
 \index{continuous eigenvectors}
 We now express
-
+%
 \begin{equation}\label{eqn:lecture5BigReviewCh2Operators:20}
 \ket{\phi} = \int dk
 \mathLabelBox
@@ -19,7 +19,7 @@ We now express
 \end{equation}
 
 Now if we project onto \(k'\)
-
+%
 \begin{equation}\label{eqn:lecture5BigReviewCh2Operators:40}
 \begin{aligned}
 \braket{k'}{\phi}
@@ -41,14 +41,14 @@ Example 2.
 \end{equation}
 
 Now if we project x onto both sides
-
+%
 \begin{equation}\label{eqn:lecture5BigReviewCh2Operators:80}
 \braket{x}{\phi}
 = \int dk f(k) \braket{x}{k}
 \end{equation}
 
 With \(\braket{x}{k} = u_k(x)\)
-
+%
 \begin{equation}\label{eqn:lecture5BigReviewCh2Operators:100}
 \begin{aligned}
 \phi(x)
@@ -59,14 +59,14 @@ With \(\braket{x}{k} = u_k(x)\)
 \end{equation}
 
 This is with periodic boundary value conditions for the normalization.  The infinite normalization is also possible.
-
+%
 \begin{equation}\label{eqn:lecture5BigReviewCh2Operators:120}
 \phi(x)
 = \inv{\sqrt{L}} \int dk f(k) e^{ikx}
 \end{equation}
 
 Multiply both sides by \(e^{-ik'x}/\sqrt{L}\) and integrate.  This is analogous to multiplying \(\ket{\phi} = \int f(k) \ket{k} dk\) by \(\bra{k'}\).  We get
-
+%
 \begin{equation}\label{eqn:lecture5BigReviewCh2Operators:140}
 \begin{aligned}
 \int \phi(x) \inv{\sqrt{L}} e^{-ik'x} dx
@@ -76,7 +76,7 @@ Multiply both sides by \(e^{-ik'x}/\sqrt{L}\) and integrate.  This is analogous 
 &= f(k')
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:lecture5BigReviewCh2Operators:160}
 f(k') = \int \phi(x) \inv{\sqrt{L}} e^{-ik'x} dx
 \end{equation}
@@ -84,7 +84,7 @@ f(k') = \int \phi(x) \inv{\sqrt{L}} e^{-ik'x} dx
 We can talk about the state vector in terms of its position basis \(\phi(x)\) or in the momentum space via Fourier transformation.  This is the equivalent thing, but just expressed different.  The question of interpretation in terms of probabilities works out the same.  Either way we look at the probability density.
 
 The quantity
-
+%
 \begin{equation}\label{eqn:lecture5BigReviewCh2Operators:180}
 \ket{\phi} = \int dk f(k) \ket{k}
 \end{equation}

@@ -16,7 +16,7 @@
 \makeoproblem{}{problem:desaiCh9:1}{\citep{desai2009quantum} pr 9.1}{
 
 Assume \(x(t)\) and \(p(t)\) to be Heisenberg operators with \(x(0) = x_0\) and \(p(0) = p_0\).  For a Hamiltonian corresponding to the harmonic oscillator show that
-
+%
 \begin{equation}\label{eqn:desaiCh9:100}
 \begin{aligned}
 x(t) &= x_0 \cos \omega t + \frac{p_0}{m \omega} \sin \omega t \\
@@ -29,7 +29,7 @@ p(t) &= p_0 \cos \omega t - m \omega x_0 \sin \omega t.
 \makeanswer{problem:desaiCh9:1}{
 
 Recall that the Hamiltonian operators were defined by factoring out the time evolution from a set of states
-
+%
 \begin{equation}\label{eqn:desaiCh9:101}
 \bra{\alpha(t) } A \ket{ \beta(t) }
 =
@@ -37,7 +37,7 @@ Recall that the Hamiltonian operators were defined by factoring out the time evo
 \end{equation}
 
 So one way to complete the task is to compute these exponential sandwiches.  Recall from the appendix of chapter 10, that we have
-
+%
 \begin{equation}\label{eqn:desaiCh9:102}
 e^A B e^{-A}
 = B + \antisymmetric{A}{B}
@@ -47,7 +47,7 @@ e^A B e^{-A}
 Perhaps there is also some smarter way to do this, but lets first try the obvious way.
 
 Let us summarize the variables we will work with
-
+%
 \begin{equation}\label{eqn:desaiCh9:103}
 \begin{aligned}
 \alpha &= \sqrt{\frac{m \omega}{\Hbar}} \\
@@ -59,19 +59,19 @@ H &= \Hbar \omega ( a^\dagger a + 1/2 ) \\
 \end{equation}
 
 The operator in the exponential sandwich is
-
+%
 \begin{equation}\label{eqn:desaiCh9:104}
 A = i H t/\Hbar = i \omega t ( a^\dagger a + 1/2 )
 \end{equation}
 
 Note that the constant \(1/2\) factor will commute with all operators, which reduces the computation required
-
+%
 \begin{equation}\label{eqn:desaiCh9:105}
 \antisymmetric{i H t/\Hbar} {B } = (i\omega t) \antisymmetric{a^\dagger a}{B}
 \end{equation}
 
 For \(B = X\), or \(B = P\), we will want some intermediate results
-
+%
 \begin{equation}\label{eqn:desaiCh9:823}
 \begin{aligned}
 \antisymmetric{a^\dagger a}{a}
@@ -85,7 +85,7 @@ a^\dagger a a - (a^\dagger a + 1) a \\
 \end{equation}
 
 and
-
+%
 \begin{equation}\label{eqn:desaiCh9:843}
 \begin{aligned}
 \antisymmetric{a^\dagger a}{a^\dagger}
@@ -99,7 +99,7 @@ a^\dagger
 \end{equation}
 
 Using these we can evaluate the commutators for the position and momentum operators.  For position we have
-
+%
 \begin{equation}\label{eqn:desaiCh9:863}
 \begin{aligned}
 \antisymmetric{i H t /\Hbar }{X}
@@ -110,7 +110,7 @@ Using these we can evaluate the commutators for the position and momentum operat
 \end{equation}
 
 Since \(\alpha^2 \Hbar = m \omega\), we have
-
+%
 \begin{equation}\label{eqn:desaiCh9:106}
 \antisymmetric{i H t /\Hbar }{X} = (\omega t) \frac{P}{m \omega }.
 \end{equation}
@@ -131,7 +131,7 @@ So we have
 \end{equation}
 
 The expansion of the exponential series of nested commutators can now be written down by inspection and we get
-
+%
 \begin{equation}\label{eqn:desaiCh9:108}
 X_H = X + (\omega t) \frac{P}{m \omega} - \frac{(\omega t)^2}{2!} X - \frac{(\omega t)^3}{3!} \frac{P}{m \omega} + \cdots
 \end{equation}
@@ -152,7 +152,7 @@ P_H = P \cos(\omega t) - (m \omega) X \sin(\omega t)
 \makeoproblem{}{problem:desaiCh9:2}{\citep{desai2009quantum} pr X.2}{
 
 On the basis of the results already derived for the harmonic oscillator, determine the energy eigenvalues and the ground-state wavefunction for the truncated oscillator
-
+%
 \begin{equation}\label{eqn:desaiCh9:903}
 \begin{aligned}
 V(x) &= \inv{2} K x^2 \theta(x)
@@ -164,7 +164,7 @@ V(x) &= \inv{2} K x^2 \theta(x)
 \makeanswer{problem:desaiCh9:2}{
 
 We require \(u(0) = 0\), so our solutions are limited to the truncated odd harmonic oscillator solutions.  The normalization will be different since only the \(x>0\) integration range is significant.  Our energy eigenvalues are
-
+%
 \begin{equation}\label{eqn:desaiCh9:200}
 \begin{aligned}
 E_n = \left( n + \inv{2} \right) \Hbar \omega, n = 1, 3, 5, \cdots
@@ -172,7 +172,7 @@ E_n = \left( n + \inv{2} \right) \Hbar \omega, n = 1, 3, 5, \cdots
 \end{equation}
 
 And its wave function is
-
+%
 \begin{equation}\label{eqn:desaiCh9:201}
 \begin{aligned}
 v_1(x) \propto u_1(x) \theta(x) = A x e^{-\alpha^2 x^2/2} \theta(x)
@@ -180,7 +180,7 @@ v_1(x) \propto u_1(x) \theta(x) = A x e^{-\alpha^2 x^2/2} \theta(x)
 \end{equation}
 
 where \(u_1(x)\) is the first odd wavefunction for the non-truncated oscillator.  Normalizing this we find \(A^2 \sqrt{\pi}/4 \alpha^3 = 1\), or
-
+%
 \begin{equation}\label{eqn:desaiCh9:202}
 \begin{aligned}
 v_1(x) = 2 \left( \frac{\alpha^3}{\sqrt{\pi}}\right)^{1/2} x e^{-\alpha^2 x^2/2} \theta(x)
@@ -191,7 +191,7 @@ v_1(x) = 2 \left( \frac{\alpha^3}{\sqrt{\pi}}\right)^{1/2} x e^{-\alpha^2 x^2/2}
 
 \makeoproblem{}{problem:desaiCh9:3}{\citep{desai2009quantum} pr X.3}{
 Show that for the harmonic oscillator in the state \(\ket{n}\), the following uncertainty product holds.
-
+%
 \begin{equation}\label{eqn:desaiCh9:300}
 \Delta x \Delta p = \left( n + \inv{2} \right) \Hbar
 \end{equation}
@@ -200,7 +200,7 @@ Show that for the harmonic oscillator in the state \(\ket{n}\), the following un
 \makeanswer{problem:desaiCh9:3}{
 
 I tried this first explicitly with the first two wave functions
-
+%
 \begin{equation}\label{eqn:desaiCh9:301}
 \begin{aligned}
 u_0(x) &= \left(\frac{\alpha^2}{\pi}\right)^{1/4} e^{- \alpha^2 x^2/2} \\
@@ -209,7 +209,7 @@ u_1(x) &= \sqrt{2 \alpha^2} \left(\frac{\alpha^2}{\pi}\right)^{1/4} x e^{- \alph
 \end{equation}
 
 For the \(\ket{0}\) state we find easily that \(\expectation{X} = 0\)
-
+%
 \begin{equation}\label{eqn:desaiCh9:923}
 \begin{aligned}
 \bra{0} X \ket{0}
@@ -239,7 +239,7 @@ For the \(\ket{1}\) state this we have
 Since each \(u_n(x)\) is a polynomial times a \(e^{-\alpha^2 x^2/2}\) factor we have \(\expectation{X} = 0\) for all states \(\ket{n}\).
 
 The momentum expectation values for states \(\ket{0}\) and \(\ket{1}\) are also fairly simple to compute.  We have
-
+%
 \begin{equation}\label{eqn:desaiCh9:963}
 \begin{aligned}
 \bra{n} P \ket{n}
@@ -255,7 +255,7 @@ The momentum expectation values for states \(\ket{0}\) and \(\ket{1}\) are also 
 \end{equation}
 
 For the \(\ket{0}\) state our derivative is odd since a factor of \(x\) is brought down, and we are again integrating an odd function over an even range.  For the \(\ket{1}\) case our derivative is proportional to
-
+%
 \begin{equation}\label{eqn:desaiCh9:983}
 \begin{aligned}
 \PD{x}{} u_1(x)
@@ -268,7 +268,7 @@ For the \(\ket{0}\) state our derivative is odd since a factor of \(x\) is broug
 
 Again, this is an even function, while \(u_1(x)\) is odd, so we have zero.  Noting that we can express each \(u_n(x)\) in terms of Hankel functions
 \index{Hankel function}
-
+%
 \begin{equation}\label{eqn:desaiCh9:302}
 \begin{aligned}
 u_n(x) &= \left( \frac{ \alpha}{\sqrt{\pi} 2^n n!} \right)^{1/2} H_n(\alpha x) e^{ -\alpha^2 x^2/2}
@@ -278,7 +278,7 @@ u_n(x) &= \left( \frac{ \alpha}{\sqrt{\pi} 2^n n!} \right)^{1/2} H_n(\alpha x) e
 where \(H_{2n}(x)\) is even and \(H_{2n-1}(x)\) is odd, we note that this expectation value will always be zero since we will have an even times odd function in the integration kernel.
 
 Knowing that the position and momentum expectation values are zero reduces this problem to the calculation of \(\bra{n} X^2 \ket{n} \bra{n} P^2 \ket{n}\).  Either of these expectation values are again not too hard to compute for \(n=0,1\).  However, we now have to keep track of the proportionality constants.  As expected this yields
-
+%
 \begin{equation}\label{eqn:desaiCh9:303}
 \begin{aligned}
 \bra{0} X^2 \ket{0} \bra{0} P^2 \ket{0} &= \Hbar^2/4  \\
@@ -295,7 +295,7 @@ These are respectively
 \end{equation}
 
 However, these integrals were only straightforward (albeit tedious) to calculate because we had explicit representations for \(u_0(x)\) and \(u_1(x)\).  For the general wave function, what we have to work with is either the Hankel function representation of \eqnref{eqn:desaiCh9:302} or the derivative form
-
+%
 \begin{equation}\label{eqn:desaiCh9:302b}
 \begin{aligned}
 u_n(x) &= (-1)^n
@@ -307,7 +307,7 @@ e^{ -\alpha^2 x^2}
 \end{equation}
 
 Expanding this explicitly for arbitrary \(n\) is not going to be feasible.  We can reduce the scope of the problem by trying to be lazy and see how some work can be avoided.  One possible trick is noting that we can express the squared momentum expectation in terms of the Hamiltonian
-
+%
 \begin{equation}\label{eqn:desaiCh9:1003}
 \begin{aligned}
 \bra{n} P^2 \ket{n}
@@ -323,7 +323,7 @@ Expanding this explicitly for arbitrary \(n\) is not going to be feasible.  We c
 \end{equation}
 
 So we can get away with only calculating \(\bra{n} X^2 \ket{n}\), an exercise in integration by parts
-
+%
 \begin{equation}\label{eqn:desaiCh9:1023}
 \begin{aligned}
 \bra{n} X^2 \ket{n}
@@ -412,7 +412,7 @@ e^{ -y^2 }
 \end{equation}
 
 The second term in this remaining integral is proportional to \(\braket{n}{n+2} = 0\), which leaves us with
-
+%
 \begin{equation}\label{eqn:desaiCh9:310}
 \begin{aligned}
 \bra{n} X^2 \ket{n}
@@ -434,7 +434,7 @@ Our squared momentum expectation value is then
 \end{equation}
 
 This completes the problem, and we are left with
-
+%
 \begin{equation}\label{eqn:desaiCh9:320}
 \begin{aligned}
 \Delta x \Delta p = \left( n + \inv{2} \right) \Hbar.
@@ -446,7 +446,7 @@ This completes the problem, and we are left with
 \makeoproblem{}{problem:desaiCh9:4}{\citep{desai2009quantum} pr X.4}{
 
 Consider the following two-dimensional harmonic oscillator problem:
-
+%
 \begin{equation}\label{eqn:desaiCh9:400}
 \begin{aligned}
 -\frac{\Hbar^2}{2m} \frac{\partial^2 u}{\partial x^2}
@@ -464,7 +464,7 @@ where \((x,y)\) are the coordinates of the particle.  Use the separation of vari
 \makeanswer{problem:desaiCh9:4}{
 
 Write \(u = A(x) B(y)\).  Substitute and dividing throughout by \(u\) we have
-
+%
 \begin{equation}\label{eqn:desaiCh9:401}
 \begin{aligned}
 \left( -\frac{\Hbar^2}{2m} \frac{A''}{A} + \inv{2} K_1 x^2 \right)
@@ -474,7 +474,7 @@ Write \(u = A(x) B(y)\).  Substitute and dividing throughout by \(u\) we have
 \end{equation}
 
 Introduction of a pair of constants \(E_1, E_2\) for each of the independent terms we have
-
+%
 \begin{equation}\label{eqn:desaiCh9:403}
 \begin{aligned}
 H_1 A &= -\frac{\Hbar^2}{2m} A'' + \inv{2} K_1 x^2 A = E_1 A \\
@@ -485,7 +485,7 @@ E  &= E_1 + E_2
 \end{equation}
 
 For each of these equations we have a set of quantized eigenvalues and can write
-
+%
 \begin{equation}\label{eqn:desaiCh9:404}
 \begin{aligned}
 E_{1m} &= \left(m + \inv{2}\right) \Hbar \sqrt{\frac{K_1}{m}} \\
@@ -496,7 +496,7 @@ H_2 A_n(y) &= E_{2n} B_n(y)
 \end{equation}
 
 The complete eigenstates are then
-
+%
 \begin{equation}\label{eqn:desaiCh9:405}
 \begin{aligned}
 u_{mn}(x,y) &= A_m(x) B_n(y)
@@ -512,7 +512,7 @@ H u_{mn}(x,y) &=
 \end{equation}
 
 A general state requires a double sum over the possible combinations of states \(\Psi = \sum_{mn} c_{mn} u_{mn}\), however if \(K_1 = K_2 = K\), we cannot distinguish between \(u_{mn}\) and \(u_{nm}\) based on the energy eigenvalues
-
+%
 \begin{equation}\label{eqn:desaiCh9:407}
 \begin{aligned}
 H u_{mn}(x,y) &= \Hbar\sqrt{\frac{K}{m}} \left( m + n + 1 \right) u_{mn}(x,y) = H u_{nm}(x,y)
@@ -525,7 +525,7 @@ In this case, we can write the wave function corresponding to a general state fo
 \makeoproblem{}{problem:desaiCh9:5}{\citep{desai2009quantum} pr X.5,6}{
 
 Consider now a variation on Problem 4 in which we have a coupled oscillator with the potential given by
-
+%
 \begin{equation}\label{eqn:desaiCh9:500}
 \begin{aligned}
 V(x,y) = \inv{2} K \Bigl( x^2 + y^2 + 2 \lambda x y \Bigr)
@@ -539,7 +539,7 @@ Obtain the energy eigenvalues by changing variables \((x,y)\) to \((x', y')\) su
 \makeanswer{problem:desaiCh9:5}{
 
 This has the look of a diagonalization problem so we write the potential in matrix form
-
+%
 \begin{equation}\label{eqn:desaiCh9:501}
 \begin{aligned}
 V(x,y)
@@ -624,7 +624,7 @@ Squaring and summing we have
 \end{equation}
 
 Our transformed Hamiltonian operator is thus
-
+%
 \begin{equation}\label{eqn:desaiCh9:506}
 \begin{aligned}
 -\frac{\Hbar^2}{2m} \frac{\partial^2 u}{\partial {x'}^2}
@@ -642,7 +642,7 @@ So, provided \(\Abs{\lambda} < 1\), the energy eigenvalue equation is given by \
 \makeoproblem{}{problem:desaiCh9:7}{\citep{desai2009quantum} pr X.7}{
 
 Consider two coupled harmonic oscillators in one dimension of natural length \(a\) and spring constant \(K\) connecting three particles located at \(x_1, x_2\), and \(x_3\).  The corresponding Schr\"{o}dinger equation is given as
-
+%
 \begin{equation}\label{eqn:desaiCh9:700}
 \begin{aligned}
 -\frac{\Hbar^2}{2m} \frac{\partial^2 u}{\partial {x_1}^2}
@@ -664,7 +664,7 @@ Obtain the energy eigenvalues using the matrix method.
 \makeanswer{problem:desaiCh9:7}{
 
 Let us start with an initial simplifying substitution to get rid of the factors of \(a\).  Write
-
+%
 \begin{equation}\label{eqn:desaiCh9:701}
 \begin{aligned}
 r_1 &= x_1 + a \\
@@ -674,7 +674,7 @@ r_3 &= x_3 - a
 \end{equation}
 
 These were picked so that the differences in our quadratic terms involve only factors of \(r_k\)
-
+%
 \begin{equation}\label{eqn:desaiCh9:702}
 \begin{aligned}
 x_2 - x_1 - a &= r_2 - r_1 \\
@@ -683,7 +683,7 @@ x_3 - x_2 - a &= r_3 - r_2
 \end{equation}
 
 Schr\"{o}dinger's equation is now
-
+%
 \begin{equation}\label{eqn:desaiCh9:700a}
 \begin{aligned}
 -\frac{\Hbar^2}{2m} \frac{\partial^2 u}{\partial {r_1}^2}
@@ -699,7 +699,7 @@ Schr\"{o}dinger's equation is now
 \end{equation}
 
 Putting our potential into matrix form, we have
-
+%
 \begin{equation}\label{eqn:desaiCh9:703}
 \begin{aligned}
 V(r_1, r_2, r_3) &=
@@ -764,7 +764,7 @@ e_3 &=
 \end{equation}
 
 Writing
-
+%
 \begin{equation}\label{eqn:desaiCh9:706}
 \begin{aligned}
 U = [e_0 e_1 e_3]
@@ -776,7 +776,7 @@ U = [e_0 e_1 e_3]
 \end{bmatrix}
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:desaiCh9:707}
 \begin{aligned}
 M = U
@@ -792,7 +792,7 @@ U D \tilde{U}
 \end{equation}
 
 Writing \(R' = \tilde{U} R\), and \(\spacegrad' = \tilde{U} \spacegrad\), we see that the Laplacian has no mixed partial terms after transformation
-
+%
 \begin{equation}\label{eqn:desaiCh9:1063}
 \begin{aligned}
 \spacegrad' \cdot \spacegrad'
@@ -828,7 +828,7 @@ Or
 \end{equation}
 
 Separation of variables provides us with one free particle wave equation, and two harmonic oscillator equations
-
+%
 \begin{equation}\label{eqn:desaiCh9:708c}
 \begin{aligned}
 -\frac{\Hbar^2}{2m} \frac{\partial^2 u_1}{\partial {r_1'}^2} &= E_1 u_1 \\
@@ -850,7 +850,7 @@ As a variation of Problem 7 assume that the middle particle at \(x_2\) has a dif
 \makeanswer{problem:desaiCh9:8}{
 
 We write \(\sqrt{M} x_2 = \sqrt{m} x_2', x_1 + a = x_1', x_3 - a = x_3'\), and then  Schr\"{o}dinger's equation takes the form
-
+%
 \begin{equation}\label{eqn:desaiCh9:800}
 \begin{aligned}
 \left( -\frac{\Hbar^2}{2m} {\spacegrad'}^2 + V(X') \right) u &= E u
@@ -883,7 +883,7 @@ X'
 \end{equation}
 
 We find that this symmetric matrix has eigenvalues \(0, 1, 1 + 2 \mu^2\), and eigenvectors
-
+%
 \begin{equation}\label{eqn:desaiCh9:803}
 \begin{aligned}
 e_0 &=

@@ -22,7 +22,7 @@ Draw a picture for \(V(X)\) with infinite spikes at \(\pm a\). (ie: figure 8.1 i
 
 \paragraph{SOLVE}
 First task is to solve the time independent Schr\"{o}dinger equation.
-
+%
 \begin{equation}\label{eqn:PHY356Lecture9:1}
 \begin{aligned}
 H \ket{\Psi} = E \ket{\Psi}
@@ -37,7 +37,7 @@ H \ket{\Psi} = i \Hbar \PD{t}{} \ket{\Psi}
 \end{equation}
 
 In the position representation, we project \(\bra{x}\) onto \(H \ket{\Psi}\) and solve for \(\braket{x}{\Psi} = \Psi(x)\).  For the problems in Chapter 8,
-
+%
 \begin{equation}\label{eqn:PHY356Lecture9:3}
 \begin{aligned}
 H = \frac{\BP^2}{2m} + V(X,Y,Z),
@@ -58,7 +58,7 @@ We should be careful to be strict about the notation, and not interchange the op
 Here the potential energy operator \(V(X,Y,Z)\) is time independent.
 
 If \(i \Hbar \frac{d\ket{\Psi}}{dt} = H \ket{\Psi}\) and \(H\) is time independent then \(\ket{\Psi} = \ket{u} e^{-i E t/\Hbar}\) implies
-
+%
 \begin{equation}\label{eqn:lecture9boundStates:80}
 \begin{aligned}
 i \Hbar \frac{ -i E }{\Hbar} \ket{u} e^{-i E t/\Hbar} = H \ket{u} e^{-i E t/\Hbar}
@@ -73,7 +73,7 @@ E \ket{u} = H \ket{u}
 \end{equation}
 
 Here \(E\) is the energy eigenvalue, and \(\ket{u}\) is the energy eigenstate.  Our differential equation now becomes
-
+%
 \begin{equation}\label{eqn:PHY356Lecture9:5}
 \begin{aligned}
 -\frac{\Hbar^2 }{2m} \frac{d^2 u(x)}{dx^2} + V(x) u(x) = E u(x)
@@ -83,7 +83,7 @@ Here \(E\) is the energy eigenvalue, and \(\ket{u}\) is the energy eigenstate.  
 where \(V(x) = 0\) for \(\Abs{x} < a\).  We will not find anything like this for real, but this is our first approximation to the quantum dot.
 
 Our differential equation in the well is now
-
+%
 \begin{equation}\label{eqn:PHY356Lecture9:6}
 \begin{aligned}
 -\frac{\Hbar^2 }{2m} \frac{d^2 u(x)}{dx^2} = E u(x)
@@ -91,7 +91,7 @@ Our differential equation in the well is now
 \end{equation}
 
 or with \(\alpha = \sqrt{2m E/\Hbar^2}\)
-
+%
 \begin{equation}\label{eqn:PHY356Lecture9:7}
 \begin{aligned}
 \frac{d^2 u(x)}{dx^2} u(x) = -\frac{2 m E}{\Hbar^2} u(x) = - \alpha^2 u(x)
@@ -99,7 +99,7 @@ or with \(\alpha = \sqrt{2m E/\Hbar^2}\)
 \end{equation}
 
 Our solution for \(\Abs{x} < a\) is then
-
+%
 \begin{equation}\label{eqn:PHY356Lecture9:8}
 \begin{aligned}
 u(x) = A \cos \alpha x + B \sin\alpha x
@@ -119,7 +119,7 @@ A \cos \alpha a - B \sin\alpha a &= 0
 
 \paragraph{Type I}
 \(B=0\), \(A \cos\alpha a = 0\).  For \(A \ne 0\) we must have
-
+%
 \begin{equation}\label{eqn:lecture9boundStates:120}
 \begin{aligned}
 \cos \alpha a = 0
@@ -127,7 +127,7 @@ A \cos \alpha a - B \sin\alpha a &= 0
 \end{equation}
 
 or \(\alpha a = n \frac{\pi}{2}\), where \(n = 1, 3, 5, ...\), so our solution is
-
+%
 \begin{equation}\label{eqn:PHY356Lecture9:9}
 \begin{aligned}
 u(x) = A \cos \left( \frac{n \pi}{2 a} x \right)
@@ -136,7 +136,7 @@ u(x) = A \cos \left( \frac{n \pi}{2 a} x \right)
 
 \paragraph{Type II}
 \(A=0\), \(B \sin\alpha a = 0\).  For \(B \ne 0\) we must have
-
+%
 \begin{equation}\label{eqn:lecture9boundStates:140}
 \begin{aligned}
 \sin \alpha a = 0
@@ -144,7 +144,7 @@ u(x) = A \cos \left( \frac{n \pi}{2 a} x \right)
 \end{equation}
 
 or \(\alpha a = n \frac{\pi}{2}\), where \(n = 1, 2, 4, ...\), so our solution is
-
+%
 \begin{equation}\label{eqn:PHY356Lecture9:10}
 \begin{aligned}
 u(x) = B \sin \left( \frac{n \pi}{2 a} x \right)
@@ -169,7 +169,7 @@ B
 \end{equation}
 
 and then must have zero determinant, or
-
+%
 \begin{equation}\label{eqn:PHY356Lecture9:11}
 \begin{aligned}
 -2 \sin\alpha a \cos\alpha a = -\sin 2 \alpha a
@@ -193,7 +193,7 @@ or
 regardless of \(A\) and \(B\).  We can then determine the solutions \eqnref{eqn:PHY356Lecture9:9}, and \eqnref{eqn:PHY356Lecture9:10} simply by noting that this value for \(\alpha\) kills off either the sine or cosine terms of \eqnref{eqn:PHY356Lecture9:8} depending on whether \(n\) is even or odd.
 
 \paragraph{CHECK}
-
+%
 \begin{equation}\label{eqn:lecture9boundStates:220}
 \begin{aligned}
 u_n(x) &= A \cos \left( \frac{n \pi}{2 a} x \right) \\
@@ -202,7 +202,7 @@ u_n(x) &= B \sin \left( \frac{n \pi}{2 a} x \right)
 \end{equation}
 
 satisfy the time independent Schr\"{o}dinger equation, and the corresponding eigenvalues from from
-
+%
 \begin{equation}\label{eqn:lecture9boundStates:240}
 \begin{aligned}
 \alpha = \sqrt{\frac{2 m E}{\Hbar^2}},
@@ -210,7 +210,7 @@ satisfy the time independent Schr\"{o}dinger equation, and the corresponding eig
 \end{equation}
 
 or
-
+%
 \begin{equation}\label{eqn:lecture9boundStates:260}
 \begin{aligned}
 E = \frac{\Hbar^2 \alpha^2}{2m} = \frac{\Hbar^2}{2m} \left( \frac{n \pi}{2a} \right)^2
@@ -222,7 +222,7 @@ for \(n = 1, 2, 3, \cdots\).
 \paragraph{On the derivative of \(u\) at the boundaries}
 
 Integrating
-
+%
 \begin{equation}\label{eqn:PHY356Lecture9:20}
 \begin{aligned}
 -\frac{\Hbar^2 }{2m} \frac{d^2 u(x)}{dx^2} u(x) + V(x) u(x) = E u(x),
@@ -230,7 +230,7 @@ Integrating
 \end{equation}
 
 over \([a-\epsilon,a+\epsilon]\) we have
-
+%
 \begin{equation}\label{eqn:PHY356Lecture9:21}
 \begin{aligned}
 -\frac{\Hbar^2 }{2m} &
@@ -249,7 +249,7 @@ E u(x) dx \\
 \end{equation}
 
 which gives us
-
+%
 \begin{equation}\label{eqn:PHY356Lecture9:22}
 \begin{aligned}
 \left.\frac{du}{dx}\right\vert_{a + \epsilon}
@@ -290,7 +290,7 @@ and outside of the well \(\Abs{x} > a\)
 \end{equation}
 
 Inside of the well, we have the solution worked previously, with \(\alpha = \sqrt{2m E/\Hbar^2}\)
-
+%
 \begin{equation}\label{eqn:PHY356Lecture9:32}
 \begin{aligned}
 u(x) &= A \cos\alpha x + B \sin\alpha x
@@ -305,7 +305,7 @@ Then we have outside of the well the same form
 \end{equation}
 
 With \(\beta = \sqrt{ 2m (V_0 - E)/\Hbar^2}\), this is
-
+%
 \begin{equation}\label{eqn:PHY356Lecture9:34}
 \begin{aligned}
 \frac{d^2 u(x)}{dx^2} u(x) = \beta^2 u(x)
@@ -315,7 +315,7 @@ With \(\beta = \sqrt{ 2m (V_0 - E)/\Hbar^2}\), this is
 If \(V_0 - E > 0\), we have \(V_0 > E\), and the states are ``bound'' or ``localized'' in the well.
 
 Our solutions for this \(V_0 > E\) case are then
-
+%
 \begin{equation}\label{eqn:PHY356Lecture9:35}
 \begin{aligned}
 u(x) &= D e^{\beta x} \\
@@ -326,7 +326,7 @@ u(x) &= C e^{-\beta x}
 for \(x \le a\), and \(x \ge a\) respectively.
 
 \paragraph{Question:} Why can we not have
-
+%
 \begin{equation}\label{eqn:PHY356Lecture9:36}
 \begin{aligned}
 u(x) = D e^{\beta x} + C e^{-\beta x}
@@ -336,7 +336,7 @@ u(x) = D e^{\beta x} + C e^{-\beta x}
 for \(x \le -a\)?
 
 \paragraph{Answer:} As \(x \rightarrow -\infty\) we would then have
-
+%
 \begin{equation}\label{eqn:lecture9boundStates:280}
 \begin{aligned}
 u(x) \rightarrow C e^{\beta \infty} \rightarrow \infty
@@ -346,7 +346,7 @@ u(x) \rightarrow C e^{\beta \infty} \rightarrow \infty
 This is a non-physical solution, and we discard it based on our normalization requirement.
 
 Our total solution, in regions \(x < -a\), \(\Abs{x} \le a\), and \(x > a\) respectively
-
+%
 \begin{equation}\label{eqn:lecture9boundStates:300}
 \begin{aligned}
 u_1(x) &= D e^{\beta x} \\
@@ -358,7 +358,7 @@ u_3(x) &= C e^{-\beta x}
 To find the coefficients, set \(u_1(-a) = u_2(-a)\), \(u_2(a) = u_3(a)\) \(u_1'(-a) = u_2'(-a)\), \(u_2'(a) = u_3'(a)\), and NORMALIZE \(u(x)\).
 
 Now, how about in region 2 (\(x < -a\)), \(V_0 < E\) implies that our equation is
-
+%
 \begin{equation}\label{eqn:PHY356Lecture9:40}
 \begin{aligned}
 \frac{d^2 u(x)}{dx^2} u(x) = - \frac{2m}{\Hbar^2} (E - V_0) u(x) = - k^2 u(x)
@@ -366,7 +366,7 @@ Now, how about in region 2 (\(x < -a\)), \(V_0 < E\) implies that our equation i
 \end{equation}
 
 We no longer have quantized energy for such a solution.  These correspond to the ``unbound'' or ``continuum'' states.  Even though we do not have quantized energy we still have quantum effects.  Our solution becomes
-
+%
 \begin{equation}\label{eqn:lecture9boundStates:320}
 \begin{aligned}
 u_1(x) &=
@@ -391,7 +391,7 @@ Observe that this is not normalizable as is.  We require ``delta-function'' norm
 
 \paragraph{Note to self.}
 We probably really we want to consider a wave packet of states, something like:
-
+%
 \begin{equation}\label{eqn:lecture9boundStates:340}
 \begin{aligned}
 \Psi_1(x) &= \int dk f_1(k) e^{i k x} \\

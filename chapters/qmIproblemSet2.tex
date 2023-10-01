@@ -18,7 +18,7 @@ A particle of mass \(m\) is free to move along the x-direction such that \(V(X)=
 \index{matrix element!momentum}
 
 We can expand the time evolution operator in series
-
+%
 \begin{equation}\label{eqn:qmIproblemSet2:5020}
 \begin{aligned}
 U(t,t_0)
@@ -29,7 +29,7 @@ U(t,t_0)
 \end{equation}
 
 We can now evaluate the momentum matrix element \(\bra{p} U(t,t_0) \ket{p'}\), which will essentially require the value of \(\bra{p} P^{2k} \ket{p'}\).  That is
-
+%
 \begin{equation}\label{eqn:qmIproblemSet2:5040}
 \begin{aligned}
 \bra{p} P^{2k} \ket{p'}
@@ -41,7 +41,7 @@ We can now evaluate the momentum matrix element \(\bra{p} U(t,t_0) \ket{p'}\), w
 \end{equation}
 
 The momentum matrix element is therefore reduced to
-
+%
 \begin{equation}\label{eqn:qmIproblemSet2:1}
 \bra{p} U(t,t_0) \ket{p'}
 =
@@ -60,7 +60,7 @@ For the position matrix element we have a similar sum
 \end{equation}
 
 and require \(\bra{x} P^{2k} \ket{x'}\) to continue.  That is
-
+%
 \begin{equation}\label{eqn:qmIproblemSet2:5080}
 \begin{aligned}
 \bra{x} P^{2k} \ket{x'}
@@ -76,7 +76,7 @@ and require \(\bra{x} P^{2k} \ket{x'}\) to continue.  That is
 \end{equation}
 
 Our position matrix element is therefore the differential operator
-
+%
 \begin{equation}\label{eqn:qmIproblemSet2:10}
 \bra{x} U(t,t_0) \ket{x'}
 =
@@ -89,7 +89,7 @@ Our position matrix element is therefore the differential operator
 Finally, we need to determine the physical meaning of such a matrix element operator.
 
 With the delta function that this matrix element operator includes it really only takes on a meaning with a convolution integral.  The simplest such integral would be
-
+%
 \begin{equation}\label{eqn:qmIproblemSet2:5100}
 \begin{aligned}
 \int dx' \bra{x} U \ket{x'} \braket{x'}{\phi_0}
@@ -108,7 +108,7 @@ or
 \end{equation}
 
 The LHS has a physical meaning, and in the absolute square
-
+%
 \begin{equation}\label{eqn:qmIproblemSet2:5000}
 \int_{x_0}^{x_0+ \Delta x} \Abs{\phi(x,t)}^2 dx,
 \end{equation}
@@ -120,7 +120,7 @@ If we ignore the absolute square requirement and think of the (presumed normaliz
 Observe that the integral on the RHS of \eqnref{eqn:qmIproblemSet2:5000} is a summation over all \(x'\), so we can think of this as adding the probabilities that the particle was at each point to arrive at the total probability for finding it at the new location \(x\).  The time evolution operator matrix element provides the weighting in this conditional probability.
 
 In \eqnref{eqn:qmIproblemSet2:10} we found that the time evolution operators matrix element is differential operator in the position representation.  In the general case this means that this probability weighting is not just numeric since the operation of the matrix element initial time wave function can produce wave functions for additional states.  In some special cases, we may find that this weighting is strictly numeric, and one such example would be the Gaussian wave packet \(\phi(x',0) = e^{-a{x'}^2}\).  Application of the differential operations would then produce polynomial weighted multiples of the original Gaussian.  In this special case we would be able to write
-
+%
 \begin{equation}\label{eqn:qmIproblemSet2:5140}
 \phi(x,t) = \int dx' \bra{x} U \ket{x'} \phi(x',0) = \int dx' K(x,x',t) \phi(x',0)
 \end{equation}

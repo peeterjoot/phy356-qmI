@@ -21,7 +21,7 @@ Assume that \(X\) and \(P = -i \Hbar \PDi{x}{}\) are the x-direction position an
 \paragraph{Avoiding Dirac notation}
 
 We can get a rough idea where we are going by temporarily avoiding the Dirac notation that complicates things.  To do so, consider the commutator action on an arbitrary wave function \(\psi(x)\)
-
+%
 \begin{equation}\label{eqn:qmIproblemSet1:28}
 \begin{aligned}
 (x P - P x)\psi
@@ -42,7 +42,7 @@ x P - P x = i\Hbar \BOne
 \end{equation}
 
 Having evaluated the commutator, the matrix element is simple to compute.  It is
-
+%
 \begin{equation}\label{eqn:qmIproblemSet1:48}
 \begin{aligned}
 \bra{x} XP - PX \ket{x'}
@@ -54,7 +54,7 @@ i \Hbar \braket{x}{x'}.
 \end{equation}
 
 This braket has a delta function action, so this matrix element reduces to
-
+%
 \begin{equation}\label{eqn:qmIproblemSet1:2}
 \bra{x} XP - PX \ket{x'}
 =
@@ -109,7 +109,7 @@ What is a good justification for not allowing \(P\) to act on the ket?  A pragma
 Another point to follow up on later is the justification for the order of operations.  If the derivatives had been evaluated first before the evaluation at \(x=x'\), then we would have nothing left due to the \(\PDi{x}{x'} = 0\).  Perhaps a good answer for that is that the zero times delta function is not well behaved.  One has to eliminate the delta function first to see if the magnitudes of the zero of that we would have from a pre-evaluated \(\PDi{x}{x'}\) is "more zero", than the infinity of the delta function at \(x = x'\).  This procedure still screams out ad-hoc, and the only real resolution is likely in the framework of distribution theory.
 
 Anyways, assuming the correctness of all the manipulations above, let us return to the problem.  We refer back to \eqnref{eqn:qmIproblemSet1:4} and see that we now have
-
+%
 \begin{equation}\label{eqn:qmIproblemSet1:88}
 \begin{aligned}
 \bra{x} XP - PX \ket{\psi}
@@ -124,7 +124,7 @@ Anyways, assuming the correctness of all the manipulations above, let us return 
 Since this is true for all \(\bra{x}\), and \(\ket{\psi}\), we must have \(XP - PX = i \Hbar \BOne\) as desired.
 
 Also referring back to \eqnref{eqn:qmIproblemSet1:4} we can write
-
+%
 \begin{equation}\label{eqn:qmIproblemSet1:108}
 \begin{aligned}
 \int dx' \bra{x} XP - PX \ket{x'} \psi(x')
@@ -136,13 +136,13 @@ i\Hbar \psi(x)  \\
 \end{equation}
 
 Taking differences we have for all \(\psi(x')\)
-
+%
 \begin{equation}\label{eqn:qmIproblemSet1:128}
 \int dx' \Bigl( \bra{x} XP - PX \ket{x'} -i \Hbar \delta(x-x') \Bigl) \psi(x') = 0,
 \end{equation}
 
 which we utilize to produce the identification
-
+%
 \begin{equation}\label{eqn:qmIproblemSet1:5}
 \bra{x} XP - PX \ket{x'} = i \Hbar \delta(x-x')
 \end{equation}
@@ -283,7 +283,7 @@ The state of a one-dimensional system is given by \(\ket{x_0}\). Does this syste
 \makeanswer{problem:qmIproblemSet1:2}{
 
 Yes, the system obeys the position-momentum uncertainty relation.  Note that in long form the uncertainty relation takes the following form:
-
+%
 \begin{equation}\label{eqn:qmIproblemSet1:8}
 \begin{aligned}
 \sqrt{\expectation{ (X - \expectation{X})^2 }}
@@ -292,7 +292,7 @@ Yes, the system obeys the position-momentum uncertainty relation.  Note that in 
 \end{equation}
 
 Each of these expectation values is with respect to some specific state
-
+%
 \begin{equation}\label{eqn:qmIproblemSet1:7}
 \begin{aligned}
 \expectation{ X } \equiv \bra{\psi} X \ket{\psi},
@@ -300,7 +300,7 @@ Each of these expectation values is with respect to some specific state
 \end{equation}
 
 so one could write this out in still longer form:
-
+%
 \begin{equation}\label{eqn:qmIproblemSet1:8b}
 \sqrt{\bra{\psi}{ (X - \bra{\psi}{X}\ket{\psi})^2 } \ket{\psi} }
 \sqrt{\bra{\psi}{ (P - \bra{\psi}{P}\ket{\psi})^2 } \ket{\psi} } \ge \frac{\Hbar}{2}.
@@ -311,7 +311,7 @@ This inequality holds for all states \(\ket{\psi}\) that the system could be obs
 \paragraph{My grade}
 
 I completely misunderstood this, and got only \(0.5/5\) on it.  What he was looking for was that if \(\ket{x_0}\) is a position eigenstate in a continuous vector space, then one cannot form the expectation with respect to this state, let alone the variance.  For example with respect to this state we have
-
+%
 \begin{equation}\label{eqn:qmIproblemSet1:148}
 \begin{aligned}
 \expectation{X}

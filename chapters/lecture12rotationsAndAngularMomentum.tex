@@ -19,7 +19,7 @@ PICTURE: Standard right handed coordinate system with point \((x,y,z)\). We woul
 Our problem is to find in the rotated coordinate system from \((x,y,z)\) to \((x', y', z')\).
 
 There is clearly a relationship between the representations.  That relationship between \(x', y', z'\) and \(x,y,z\) for a counter-clockwise rotation about the \(z\) axis is
-
+%
 \begin{equation}\label{eqn:PHY356FDec7:10}
 \begin{aligned}
 x' &= x \cos \phi - y \sin\phi \\
@@ -29,7 +29,7 @@ z' &= z
 \end{equation}
 
 Treat \((x,y,z)\) and \((x',y',z')\) like vectors and write
-
+%
 \begin{equation}\label{eqn:PHY356FDec7:20}
 \begin{bmatrix}
 x'  \\
@@ -68,7 +68,7 @@ z
 \paragraph{Q: Is \(R_z(\phi)\) a unitary operator?}
 
 Definition \(U\) is unitary if \(U^\dagger U = \BOne\), where \(\BOne\) is the identity operator.  We take Hermitian conjugates, which in this case is just the transpose since all elements of the matrix are real, and multiply
-
+%
 \begin{equation}\label{eqn:lecture12rotationsAndAngularMomentum:240}
 \begin{aligned}
 (R_z(\phi))^\dagger R_z(\phi) &=
@@ -99,13 +99,13 @@ Definition \(U\) is unitary if \(U^\dagger U = \BOne\), where \(\BOne\) is the i
 \end{equation}
 
 Apply the above to a vector \(\Bv = (v_x, v_y, v_z)\) and write \(\Bv' = (v_x', v_y', v_z')\).  These are related as
-
+%
 \begin{equation}\label{eqn:PHY356FDec7:40}
 \Bv = R_z(\phi) \Bv
 \end{equation}
 
 Now we want to consider the infinitesimal case where we allow the rotation angle to get arbitrarily small.  Consider this specific \(z\) axis rotation case, and assume that \(\phi\) is very small.  Let \(\phi = \epsilon\) and write
-
+%
 \begin{equation}\label{eqn:PHY356FDec7:55}
 \begin{aligned}
 \Bv' &=
@@ -212,7 +212,7 @@ Many infinitesimal rotations can be combined to create a finite rotation via
 \lim_{N \rightarrow \infty} \left( 1 + \frac{\alpha}{N} \right)^N = e^\alpha
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:PHY356FDec7:85}
 \alpha = -i \phi S_z/\Hbar
 \end{equation}
@@ -226,7 +226,7 @@ e^{ -i \frac{\phi S_z}{\Hbar} }
 \end{equation}
 
 Now think about transforming \(g(x,y,z)\), an arbitrary function.  Take \(\epsilon\) is very small so that
-
+%
 \begin{equation}\label{eqn:PHY356FDec7:100}
 \begin{aligned}
 x' &= x \cos \phi - y \sin\phi = x \cos \epsilon - y \sin\epsilon \approx x - y \epsilon \\
@@ -282,7 +282,7 @@ g( x, y ,z )
 \end{equation}
 
 For a finite rotation with angle \(\phi\) we have
-
+%
 \begin{equation}\label{eqn:PHY356FDec7:130}
 g(x', y', z')
 =
@@ -295,7 +295,7 @@ g( x, y ,z )
 I did not follow the reasoning briefly mentioned on the board since it looks right to me.  Perhaps this is the age old mixup between rotating the coordinates and the basis vectors.  Review what is in the text carefully.  Can also check by
 
 If you rotate a ket, and examine how the state representation of that ket changes under rotation, we have
-
+%
 \begin{equation}\label{eqn:PHY356FDec7:140}
 \ket{x', y', z'} = \ket{x - \epsilon y, y + \epsilon x, z}
 \end{equation}
@@ -347,7 +347,7 @@ e^{ - \frac{i \phi L_z} {\Hbar} } \Psi(x , y , z)
 Vatche has mentioned \href{https://plato.stanford.edu/entries/qt-quantcomp/#QuanGate}{some devices being researched right now} where there is an attempt to isolate the spin orientation so that, say, only spin up or spin down electrons are allowed to flow.  There are some possible interesting applications here to Quantum computation.  Can we actually make a quantum computing device that is actually usable?  We can make NAND devices as mentioned in the article above.  Can this be scaled?  We do not know how to do this yet.
 
 Recall that one description of a ``particle'' that has both a position and spin representation is
-
+%
 \begin{equation}\label{eqn:PHY356FDec7:190}
 \ket{\Psi} = \ket{u} \directproduct \ket{s m}
 \end{equation}
@@ -389,7 +389,7 @@ Here we have also used
 \end{equation}
 
 We can now ask the question of how this thing transforms.  We transform each component of this as a vector.  The transformation of
-
+%
 \begin{equation}\label{eqn:lecture12rotationsAndAngularMomentum:360}
 \begin{aligned}
 \begin{bmatrix}
