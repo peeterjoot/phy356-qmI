@@ -15,7 +15,7 @@ Both of the computation tasks for the hydrogen like atom require expansion of a 
 \begin{equation}\label{eqn:qmIproblemSet4:200}
 \bra{nlm} A(R) \ket{nlm},
 \end{equation}
-
+%
 where \(A(R) = R = (X^2 + Y^2 + Z^2)^{1/2}\) or \(A(R) = 1/R\).
 
 \index{identity!spherical}
@@ -26,14 +26,14 @@ The spherical representation of the identity resolution is required to convert t
 \ket{ r \theta \phi}
 \bra{ r \theta \phi},
 \end{equation}
-
+%
 where the spherical wave function is given by the braket \(\braket{ r \theta \phi}{nlm} = R_{nl}(r) Y_{lm}(\theta,\phi)\).
 
 Additionally, the radial form of the delta function will be required, which is
 \begin{equation}\label{eqn:qmIproblemSet4:204}
 \delta(\Bx - \Bx') = \inv{r^2 \sin\theta} \delta(r - r') \delta(\theta - \theta') \delta(\phi - \phi')
 \end{equation}
-
+%
 Two applications of the identity operator to the braket yield
 \begin{equation}\label{eqn:qmIproblemSet4Problem2Hydrogen:246}
 \begin{aligned}
@@ -61,13 +61,13 @@ R_{nl}(r) Y_{lm}^\conj(\theta, \phi)
 R_{nl}(r') Y_{lm}(\theta', \phi') \\
 \end{aligned}
 \end{equation}
-
+%
 To continue an assumption about the matrix element \(\bra{ r \theta \phi} A(R) \ket{ r' \theta' \phi'}\) is required.  It seems reasonable that this would be
 \begin{equation}\label{eqn:qmIproblemSet4:206}
 \bra{ r \theta \phi} A(R) \ket{ r' \theta' \phi'} = \\
 \delta(\Bx - \Bx') A(r) = \inv{r^2 \sin\theta} \delta(r-r') \delta(\theta -\theta')\delta(\phi-\phi') A(r).
 \end{equation}
-
+%
 The braket can now be written completely in integral form as
 \begin{equation}\label{eqn:qmIproblemSet4Problem2Hydrogen:266}
 \begin{aligned}
@@ -91,7 +91,7 @@ R_{nl}(r) Y_{lm}^\conj(\theta, \phi) \\
 R_{nl}(r') Y_{lm}(\theta', \phi') \\
 \end{aligned}
 \end{equation}
-
+%
 Application of the delta functions then reduces the integral, since the only \(\theta\), and \(\phi\) dependence is in the (orthonormal) \(Y_{lm}\) terms they are found to drop out
 \begin{equation}\label{eqn:qmIproblemSet4Problem2Hydrogen:286}
 \begin{aligned}
@@ -117,7 +117,7 @@ Y_{lm}(\theta, \phi) }{\(=1\)}
 \\
 \end{aligned}
 \end{equation}
-
+%
 This leaves just the radial wave functions in the integral
 \begin{equation}\label{eqn:qmIproblemSet4:208}
 \bra{nlm} A(R) \ket{nlm}
@@ -128,7 +128,7 @@ r^2
 R_{nl}^2(r)
 A(r)
 \end{equation}
-
+%
 As a consistency check, observe that with \(A(r) = 1\), this integral evaluates to 1 according to equation (8.274) in the text, so we can think of \((r R_{nl}(r))^2\) as the radial probability density for functions of \(r\).
 
 The problem asks specifically for these expectation values for the \(\ket{211}\) state.  For that state the radial wavefunction is found in (8.277) as
@@ -137,7 +137,7 @@ The problem asks specifically for these expectation values for the \(\ket{211}\)
 R_{21}(r) =
 \left(\frac{Z}{2a_0}\right)^{3/2} \frac{ Z r }{a_0 \sqrt{3}} e^{-Z r/2 a_0}
 \end{equation}
-
+%
 The braket can now be written explicitly
 \begin{equation}\label{eqn:qmIproblemSet4:212}
 \bra{21m} A(R) \ket{21m}
@@ -150,7 +150,7 @@ r^4
 e^{-Z r/ a_0}
 A(r)
 \end{equation}
-
+%
 Now, let us consider the two functions \(A(r)\) separately.  First for \(A(r) = r\) we have
 \begin{equation}\label{eqn:qmIproblemSet4Problem2Hydrogen:306}
 \begin{aligned}
@@ -171,7 +171,7 @@ e^{-u}
 \\
 \end{aligned}
 \end{equation}
-
+%
 % 5 a_0 / Z
 The last integral evaluates to \(120\), leaving
 \begin{equation}\label{eqn:qmIproblemSet4:220a}
@@ -179,7 +179,7 @@ The last integral evaluates to \(120\), leaving
 =
 \frac{ 5 a_0 }{ Z }.
 \end{equation}
-
+%
 The expectation value associated with this \(\ket{21m}\) state for the radial position is found to be proportional to the Bohr radius.  For the hydrogen atom where \(Z=1\) this average value for repeated measurements of the physical quantity associated with the operator \(R\) is found to be 5 times the Bohr radius for \(n=2, l=1\) states.
 
 Our problem actually asks for the inverse of this expectation value, and for reference this is
@@ -188,7 +188,7 @@ Our problem actually asks for the inverse of this expectation value, and for ref
 =
 \frac{ Z }{ 5 a_0 } %= n^2 \frac{a_0}{Z}
 \end{equation}
-
+%
 Performing the same task for \(A(R) = 1/R\)
 \begin{equation}\label{eqn:qmIproblemSet4Problem2Hydrogen:326}
 \begin{aligned}
@@ -208,12 +208,12 @@ u^3
 e^{-u}.
 \end{aligned}
 \end{equation}
-
+%
 This last integral has value \(6\), and we have the second part of the computational task complete
 \begin{equation}\label{eqn:qmIproblemSet4:225}
 \bra{21m} 1/R \ket{21m} = \inv{4} \frac{ Z }{ a_0 }
 \end{equation}
-
+%
 The question of whether or not \eqnref{eqn:qmIproblemSet4:220}, and \eqnref{eqn:qmIproblemSet4:225} are equal is answered.  They are not.
 
 Still remaining for this problem is the question of the what these quantities represent physically.
@@ -231,7 +231,7 @@ As a confirmation of the results obtained, we can check \eqnref{eqn:qmIproblemSe
 \expectation{1/R} &= \frac{1}{n^2 a_0}
 \end{aligned}
 \end{equation}
-
+%
 It is curious to me that the general expectation values noted in \eqnref{eqn:qmIproblemSet4:226} we have a \(l\) quantum number dependence for \(\expectation{R}\), but only the \(n\) quantum number dependence for \(\expectation{1/R}\).  It is not obvious to me why this would be the case.
 } % answer
 %%%\subsection{Suggested non-submission problem 1}

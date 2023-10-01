@@ -27,7 +27,7 @@ U(t,t_0)
 &= 1 + \sum_{k=1}^\infty \inv{k!} \left( -i \frac{P^2 (t-t_0)}{2m \Hbar} \right)^k.
 \end{aligned}
 \end{equation}
-
+%
 We can now evaluate the momentum matrix element \(\bra{p} U(t,t_0) \ket{p'}\), which will essentially require the value of \(\bra{p} P^{2k} \ket{p'}\).  That is
 %
 \begin{equation}\label{eqn:qmIproblemSet2:5040}
@@ -39,7 +39,7 @@ We can now evaluate the momentum matrix element \(\bra{p} U(t,t_0) \ket{p'}\), w
 &= \braket{p}{p'} (p')^{2k}.
 \end{aligned}
 \end{equation}
-
+%
 The momentum matrix element is therefore reduced to
 %
 \begin{equation}\label{eqn:qmIproblemSet2:1}
@@ -48,7 +48,7 @@ The momentum matrix element is therefore reduced to
 \braket{p}{p'} \exp\left( -i \frac{p^2 (t-t_0)}{2m \Hbar} \right)
 = \delta(p-p') \exp\left( -i \frac{p^2 (t-t_0)}{2m \Hbar} \right)
 \end{equation}
-
+%
 \paragraph{Position matrix element}
 \index{matrix element!position}
 For the position matrix element we have a similar sum
@@ -58,7 +58,7 @@ For the position matrix element we have a similar sum
 \braket{x}{x'}
 + \sum_{k=1}^\infty \inv{k!} \bra{x} \left( -i \frac{P^2 (t-t_0)}{2m \Hbar} \right)^k \ket{x'},
 \end{equation}
-
+%
 and require \(\bra{x} P^{2k} \ket{x'}\) to continue.  That is
 %
 \begin{equation}\label{eqn:qmIproblemSet2:5080}
@@ -74,7 +74,7 @@ and require \(\bra{x} P^{2k} \ket{x'}\) to continue.  That is
 &= \braket{x}{x'} \left( (-i\Hbar) \frac{d}{dx'} \right)^{2k}
 \end{aligned}
 \end{equation}
-
+%
 Our position matrix element is therefore the differential operator
 %
 \begin{equation}\label{eqn:qmIproblemSet2:10}
@@ -83,7 +83,7 @@ Our position matrix element is therefore the differential operator
 \braket{x}{x'} \exp\left( \frac{i (t-t_0)\Hbar}{2m} \frac{d^2}{d{x'}^2} \right)
 =\delta(x-x') \exp\left( \frac{i (t-t_0)\Hbar}{2m} \frac{d^2}{d{x'}^2} \right)
 \end{equation}
-
+%
 \paragraph{Physical interpretation of the position matrix element operator}
 
 Finally, we need to determine the physical meaning of such a matrix element operator.
@@ -101,18 +101,18 @@ With the delta function that this matrix element operator includes it really onl
 \phi(x,t),
 \end{aligned}
 \end{equation}
-
+%
 or
 \begin{equation}\label{eqn:qmIproblemSet2:5120}
 \phi(x,t) = \int dx' \bra{x} U \ket{x'} \phi(x',0)
 \end{equation}
-
+%
 The LHS has a physical meaning, and in the absolute square
 %
 \begin{equation}\label{eqn:qmIproblemSet2:5000}
 \int_{x_0}^{x_0+ \Delta x} \Abs{\phi(x,t)}^2 dx,
 \end{equation}
-
+%
 provides the probability that the particle will be found in the region \([x_0, x_0+ \Delta x]\).
 
 If we ignore the absolute square requirement and think of the (presumed normalized) wave function \(\phi(x,t)\) more loosely as representing a probability directly, then we can in turn give a meaning to the matrix element \(\bra{x} U \ket{x'}\) for the time evolution operator.  This provides an operator valued weighting function that provides us with the probability that a particle initially at position \(x'\) will be at position \(x\) at time \(t\).  This probability is indirect since we need to absolute square and sum over a finite interval to obtain the probability of finding the particle in that interval.
@@ -124,7 +124,7 @@ In \eqnref{eqn:qmIproblemSet2:10} we found that the time evolution operators mat
 \begin{equation}\label{eqn:qmIproblemSet2:5140}
 \phi(x,t) = \int dx' \bra{x} U \ket{x'} \phi(x',0) = \int dx' K(x,x',t) \phi(x',0)
 \end{equation}
-
+%
 Where \(K(x,x',t)\) is a polynomial valued function (and is in fact another exponential), and now just provides a numerical weighting for the conditional probability for the particle to move from \(x'\) to \(x\) in time \(t\).  In \citep{liboff2003iqm}, this \(K(x,x',t)\) is called the Propagator function.  It is perhaps justifiable to also call our similar operator valued matrix element a Propagator.
 
 %Based on this, I would be inclined to state that the position matrix element of the time evolution operator \(\bra{x} U \ket{x'}\) represents something akin to an operator form of probability amplitude for a particle to travel between two points.

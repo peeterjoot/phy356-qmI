@@ -15,7 +15,7 @@ A particle of mass m moves along the x-direction such that \(V(X)=\inv{2}KX^2\).
 \begin{equation}\label{eqn:qmIproblemSet5:5}
 u(\xi) = B \xi e^{+\xi^2/2},
 \end{equation}
-
+%
 where \(\xi\) is given by Eq. (9.60), \(B\) is a constant, and time \(t=0\), an energy eigenstate of the system?  What is probability per unit length for measuring the particle at position \(x=0\) at \(t=t_0>0\)?  Explain the physical meaning of the above results.
 
 } % problem
@@ -28,7 +28,7 @@ Recall that \(\xi = \alpha x\), \(\alpha = \sqrt{m\omega/\Hbar}\), and \(K = m \
 \begin{equation}\label{eqn:qmIproblemSet5:10}
 \frac{d^2 u}{d\xi^2} - \xi^2 u = -\frac{2 E }{\Hbar\omega} u
 \end{equation}
-
+%
 While we can blindly substitute a function of the form \(\xi e^{\xi^2/2}\) into this to get
 %
 \begin{equation}\label{eqn:qmIproblemSet5:530}
@@ -42,7 +42,7 @@ While we can blindly substitute a function of the form \(\xi e^{\xi^2/2}\) into 
 3 \xi e^{\xi^2/2}
 \end{aligned}
 \end{equation}
-
+%
 and formally make the identification \(E = -3 \omega \Hbar/2 = -(1 + 1/2) \omega \Hbar\), this is not a normalizable wavefunction, and has no physical relevance, unless we set \(B = 0\).
 
 By changing the problem, this state could be physically relevant.  We would require a potential of the form
@@ -57,13 +57,13 @@ g(x) & \quad \mbox{if \(x > b\)} \\
 \end{array}
 \right.
 \end{equation}
-
+%
 For example, \(f(x) = V_1, g(x) = V_2\), for constant \(V_1, V_2\).  For such a potential, within the harmonic well, a general solution of the form
 %
 \begin{equation}\label{eqn:qmIproblemSet5:19}
 u(x,t) = \sum_n H_n(\xi) \Bigl(A_n e^{-\xi^2/2} + B_n e^{\xi^2/2} \Bigr) e^{-i E_n t/\Hbar},
 \end{equation}
-
+%
 is possible since normalization would not prohibit non-zero \(B_n\) values in that situation.  For the wave function to be a physically relevant, we require it to be (absolute) square integrable, and must also integrate to unity over the entire interval.
 
 \paragraph{Probability per unit length at \(x=0\)}
@@ -91,13 +91,13 @@ Suppose we form the wavefunction for a superposition of all the normalizable sta
 \begin{equation}\label{eqn:qmIproblemSet5:20}
 u(x,t) = \sum_n A_n H_n(\xi) e^{-\xi^2/2} e^{-i E_n t/\Hbar}
 \end{equation}
-
+%
 Here it is assumed that the \(A_n\) coefficients yield unit probability
 %
 \begin{equation}\label{eqn:qmIproblemSet5:30}
 \int \Abs{u(x,0)}^2 dx = \sum_n \Abs{A_n}^2 = 1
 \end{equation}
-
+%
 For the impure state of \eqnref{eqn:qmIproblemSet5:20} we have for the probability density
 %
 \begin{equation}\label{eqn:qmIproblemSet5:550}
@@ -150,7 +150,7 @@ e^{-\xi^2} \\
 } \\
 \end{aligned}
 \end{equation}
-
+%
 Evaluation at the point \(x = 0\), we have
 \begin{equation}\label{eqn:qmIproblemSet5:500}
 \begin{aligned}
@@ -171,7 +171,7 @@ For a pure state and its wavefunction \(u(x,t) = N_n H_n(\xi) e^{-\xi^2/2} e^{-i
 =
 N_n^2 (H_n(0))^2 = \frac{\alpha}{\sqrt{\pi} 2^n n!} H_n(0)^2
 \end{equation}
-
+%
 This is zero for odd \(n\).  For even \(n\) is appears that \((H_n(0))^2\) may equal \(2^n\) (this is true at least up to n=4).  If that is the case, we have for non-mixed states, with even numbered energy quantum numbers, at \(x=0\) a probability per unit length value of \(\Abs{u(0,t_0)}^2 = \frac{\alpha}{\sqrt{\pi} n!}\).
 
 \paragraph{Grading notes}

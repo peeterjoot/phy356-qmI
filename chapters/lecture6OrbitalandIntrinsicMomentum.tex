@@ -11,12 +11,12 @@ Orbital angular momentum in classical physics and quantum physics is expressed a
 \begin{equation}\label{eqn:PHY356Foct19:1000}
 \BL = \Br \cross \Bp,
 \end{equation}
-
+%
 and
 \begin{equation}\label{eqn:PHY356Foct19:1001}
 \BL = \BR \cross \BP,
 \end{equation}
-
+%
 where \(\BR\) and \(\BP\) are quantum mechanical operators corresponding to position and momentum
 %
 \begin{equation}\label{eqn:PHY356Foct19:1002}
@@ -26,7 +26,7 @@ where \(\BR\) and \(\BP\) are quantum mechanical operators corresponding to posi
 \BL &= L_x \xcap + L_y \ycap + L_z \zcap
 \end{aligned}
 \end{equation}
-
+%
 
 \makeexample{Angular momentum commutators}{example:lecture6OrbitalandIntrinsicMomentum:1}{
 Determine the commutators \(\antisymmetric{L_x}{L_y}, \antisymmetric{L_y}{L_z}, \antisymmetric{L_z}{L_x}\) and
@@ -55,7 +55,7 @@ r_y p_z r_z p_x
 - r_x p_z r_z p_y \\
 \end{aligned}
 \end{equation}
-
+%
 With \(p_i r_j = r_j p_i - i \Hbar \delta_{ij}\), we have
 \begin{equation*}
 \begin{aligned}
@@ -83,13 +83,13 @@ r_y p_x
 }.
 \end{aligned}
 \end{equation*}
-
+%
 Since the \(p_i p_j\) operators commute, all the first terms cancel, leaving just
 \begin{equation}\label{eqn:lecture6OrbitalandIntrinsicMomentum:2060}
 \antisymmetric{L_x}{L_y}
 =i \Hbar L_z
 \end{equation}
-
+%
 %Oops.  Mistake above to fix.  Much easier to do this problem in abstract index notation.
 
 } % example
@@ -100,7 +100,7 @@ The answer is
 \begin{equation}\label{eqn:PHY356Foct19:1003}
 L_z \leftrightarrow -i \Hbar \PD{\phi}{}
 \end{equation}
-
+%
 FIXME: Work through this.
 } % example
 
@@ -121,13 +121,13 @@ L_z Y_{lm}(\theta, \phi)
 &= \Hbar m Y_{lm}(\theta, \phi)
 \end{aligned}
 \end{equation}
-
+%
 The z-component is quantized since, \(m\) is an integer \(m = 0, \pm 1, \pm 2, ...\).  The total angular momentum
 %
 \begin{equation}\label{eqn:PHY356Foct19:1005}
 \BL^2 = \BL \cdot \BL = L_x^2 + L_y^2 + L_z^2
 \end{equation}
-
+%
 is also quantized (details in the book).
 
 The eigenvalue properties here represent very important physical features.  This is also important in the hydrogen atom problem.  In the hydrogen atom problem, the particle is effectively free in the angular components, having only \(r\) dependence.  This allows us to apply the work for the free particle to our subsequent potential bounded solution.
@@ -136,7 +136,7 @@ Note that for the above, we also have the alternate, abstract ket notation, meth
 \begin{equation}\label{eqn:PHY356Foct19:1006}
 L_z \ket{lm} = \Hbar m \ket{lm}
 \end{equation}
-
+%
 Just like
 \begin{equation}\label{eqn:PHY356Foct19:1007}
 \begin{aligned}
@@ -144,20 +144,20 @@ X \ket{x} &= x \ket{x} \\
 P \ket{p} &= p \ket{p}
 \end{aligned}
 \end{equation}
-
+%
 For the total angular momentum our spherical harmonic eigenfunctions have the property
 %
 \begin{equation}\label{eqn:PHY356Foct19:1008}
 \BL^2 \ket{lm} = \Hbar^2 l (l + 1)\ket{l m}
 \end{equation}
-
+%
 with \(l = 0, 1, 2, \cdots\).
 
 Alternately in plain old non-abstract notation we can write this as
 \begin{equation}\label{eqn:PHY356Foct19:1009}
 \BL^2 Y_{lm}(\theta, \phi) = \Hbar^2 l (l + 1) Y_{lm}(\theta, \phi)
 \end{equation}
-
+%
 Now we can introduce the Raising and Lowering Operators, which are
 %
 \begin{equation}\label{eqn:PHY356Foct19:1010}
@@ -166,7 +166,7 @@ L_{+} &= L_x + i L_y \\
 L_{-} &= L_x - i L_y,
 \end{aligned}
 \end{equation}
-
+%
 respectively.  These are abstract quantities, but also physically important since they relate quantum levels of the angular momentum.  How do we show this?
 
 Last time, we saw that
@@ -176,18 +176,18 @@ Last time, we saw that
 \antisymmetric{L_z}{L_{-}} &= -\Hbar L_{-}
 \end{aligned}
 \end{equation}
-
+%
 Note that it is implied that we are operating on ket vectors
 %
 \begin{equation}\label{eqn:lecture6OrbitalandIntrinsicMomentum:2100}
 L_z (L_{-} \ket{lm} )
 \end{equation}
-
+%
 with
 \begin{equation}\label{eqn:PHY356Foct19:1012}
 \ket{lm} \leftrightarrow Y_{lm}(\theta, \phi)
 \end{equation}
-
+%
 Question: What is \(L_{-} \ket{lm}\)?
 
 Substitute
@@ -212,13 +212,13 @@ L_{-} m \Hbar \ket{lm} - L_{-} \ket{lm} \\
 \Hbar (m-1) \left( L_{-} \ket{lm} \right)
 \end{aligned}
 \end{equation}
-
+%
 So \(L_{-} \ket{lm} = \ket{\psi}\) is another spherical harmonic, and we have
 %
 \begin{equation}\label{eqn:PHY356Foct19:1013}
 L_z \ket{\psi} = \Hbar (m-1) \ket{\psi}
 \end{equation}
-
+%
 This lowering operator quantity causes a physical change in the state of the system, lowering the observable state (ie: the eigenvalue) by \(\Hbar\).
 
 Now we want to normalize \(\ket{\psi} = L_{-} \ket{lm}\), via \(\braket{\psi}{\psi} = 1\).
@@ -231,14 +231,14 @@ Now we want to normalize \(\ket{\psi} = L_{-} \ket{lm}\), via \(\braket{\psi}{\p
 &= \bra{lm} L_{+} L_{-} \ket{\psi}
 \end{aligned}
 \end{equation}
-
+%
 We can use
 \begin{equation}\label{eqn:PHY356Foct19:1014}
 \begin{aligned}
 L_{+} L_{-} = \BL^2 - L_z^2 + \Hbar L_z,
 \end{aligned}
 \end{equation}
-
+%
 So, knowing (how exactly?) that
 %
 \begin{equation}\label{eqn:PHY356Foct19:1015}
@@ -246,7 +246,7 @@ So, knowing (how exactly?) that
 L_{-} \ket{lm} = C \ket{l,m-1}
 \end{aligned}
 \end{equation}
-
+%
 we have from \eqnref{eqn:PHY356Foct19:1014}
 %
 \begin{equation}\label{eqn:lecture6OrbitalandIntrinsicMomentum:2180}
@@ -265,7 +265,7 @@ we have from \eqnref{eqn:PHY356Foct19:1014}
 &= \Hbar^2 \left(l(l+1) - m^2 + m \right).
 \end{aligned}
 \end{equation}
-
+%
 we have
 \begin{equation}\label{eqn:PHY356Foct19:1016}
 \Abs{C}^2
@@ -277,19 +277,19 @@ we have
 {\braket{l,m-1}{l,m-1}}{\(1\)}
 = \Hbar^2 \left(l(l+1) - m^2 + m \right).
 \end{equation}
-
+%
 and can normalize the functions \(\ket{\psi}\) as
 %
 \begin{equation}\label{eqn:PHY356Foct19:1017}
 L_{-} \ket{lm} = \Hbar \left(l(l+1) - m^2 + m \right)^{1/2} \ket{l, m-1}
 \end{equation}
-
+%
 Abstract notation side note:
 %
 \begin{equation}\label{eqn:PHY356Foct19:1018}
 \braket{\theta,\phi}{lm} = Y_{lm}(\theta, \phi)
 \end{equation}
-
+%
 \paragraph{Generalizing orbital angular momentum}
 \index{orbital angular momentum}
 
@@ -306,7 +306,7 @@ We assume the commutation relations
 \antisymmetric{S_z}{S_x} &= i \Hbar S_y
 \end{aligned}
 \end{equation}
-
+%
 Where we have the analogous eigenproperties
 %
 \begin{equation}\label{eqn:PHY356Foct19:2001}
@@ -315,7 +315,7 @@ Where we have the analogous eigenproperties
 S_z \ket{sm} &= \Hbar m \ket{sm}
 \end{aligned}
 \end{equation}
-
+%
 with \(s = 0, 1/2, 1, 3/2, ...\)
 
 Electrons and protons are examples of particles that have spin one half.
@@ -335,7 +335,7 @@ S_z \ket{z-} &= -\frac{\Hbar}{2} \ket{z-} \\
 \BS^2 \ket{z\pm} &= \inv{2} \left( \inv{2} + 1 \right) \Hbar^2 \ket{z\pm}
 \end{aligned}
 \end{equation}
-
+%
 where
 \begin{equation}\label{eqn:PHY356Foct19:2006}
 \begin{aligned}
@@ -343,7 +343,7 @@ where
 \ket{z-} &= \ket{ \inv{2} -\inv{2} }
 \end{aligned}
 \end{equation}
-
+%
 %You can imagine p
 
 What about \(S_x\)?  We can leave the detector in the \(x,z\) plane, but rotate the magnet so that it lies in the \(x\) direction.
@@ -353,7 +353,7 @@ We have the correspondence
 \begin{equation}\label{eqn:PHY356Foct19:2007}
 S_z \leftrightarrow \frac{\Hbar}{2} \PauliX,
 \end{equation}
-
+%
 but this is perhaps more properly viewed as the matrix representation of the less specific form
 %
 \begin{equation}\label{eqn:PHY356Foct19:2008}
@@ -362,7 +362,7 @@ S_z = \frac{\Hbar}{2} \left(
 -\ket{z-} \bra{z-}
 \right).
 \end{equation}
-
+%
 Where the translation to the form of \eqnref{eqn:PHY356Foct19:2007} is via the matrix elements
 %
 \begin{equation}\label{eqn:PHY356Foct19:2020}
@@ -373,7 +373,7 @@ Where the translation to the form of \eqnref{eqn:PHY356Foct19:2007} is via the m
 &\bra{z-} S_z \ket{z-}.
 \end{aligned}
 \end{equation}
-
+%
 We can work out the same for \(S_x\) using \(S_{+}\) and \(S_{-}\), or equivalently for \(\sigma_x\) using \(\sigma_{+}\) and \(\sigma_{-}\), where
 %
 \begin{equation}\label{eqn:PHY356Foct19:2009}
@@ -383,7 +383,7 @@ S_y &= \frac{\Hbar}{2} \sigma_y \\
 S_z &= \frac{\Hbar}{2} \sigma_z
 \end{aligned}
 \end{equation}
-
+%
 The operators \(\sigma_x, \sigma_y, \sigma_z\) are the \textAndIndex{Pauli operators}, and avoid the pesky \(\Hbar/2\) factors.
 
 We find
@@ -395,7 +395,7 @@ We find
 \sigma_z &= \PauliZ
 \end{aligned}
 \end{equation}
-
+%
 And from \(\Abs{\sigma_x - \lambda I} = (-\lambda)^2 -1\), we have eigenvalues \(\lambda = \pm 1\) for the \(\sigma_x\) operator.
 
 The corresponding eigenkets in column matrix notation are found
@@ -417,7 +417,7 @@ a_2
 a_2 &= \pm a_1
 \end{aligned}
 \end{equation}
-
+%
 Or
 \begin{equation}\label{eqn:lecture6OrbitalandIntrinsicMomentum:2220}
 \ket{x\pm} \propto
@@ -432,7 +432,7 @@ a_1
 \pm 1
 \end{bmatrix}
 \end{equation}
-
+%
 which can be normalized as
 \begin{equation}\label{eqn:PHY356Foct19:2011}
 \ket{x\pm} =
@@ -442,7 +442,7 @@ which can be normalized as
 \pm 1
 \end{bmatrix}
 \end{equation}
-
+%
 We see that this is different from
 %
 \begin{equation}\label{eqn:PHY356Foct19:2012}
@@ -452,6 +452,6 @@ We see that this is different from
 0
 \end{bmatrix}
 \end{equation}
-
+%
 We will still end up with two spots, but there has been a projection of spin in a different fashion?  Does this mean the measurement will be different.  There is still a lot more to learn before understanding exactly how to relate the spin operators to a real physical system.
 

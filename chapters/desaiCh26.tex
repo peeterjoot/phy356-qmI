@@ -27,7 +27,7 @@ To verify equations 26.3-5 in the text it is worth noting that
 &= \cos a \cos b - \sin a \sin b
 \end{aligned}
 \end{equation}
-
+%
 and
 \begin{equation}\label{eqn:desaiCh26:170}
 \begin{aligned}
@@ -37,7 +37,7 @@ and
 &= \cos a \sin b + \sin a \cos b
 \end{aligned}
 \end{equation}
-
+%
 So, for
 \begin{equation}\label{eqn:desaiCh26:10}
 \begin{aligned}
@@ -45,7 +45,7 @@ x &= \rho \cos\alpha \\
 y &= \rho \sin\alpha
 \end{aligned}
 \end{equation}
-
+%
 the transformed coordinates are
 \begin{equation}\label{eqn:desaiCh26:190}
 \begin{aligned}
@@ -55,7 +55,7 @@ x'
 &= x \cos \phi - y \sin \phi
 \end{aligned}
 \end{equation}
-
+%
 and
 \begin{equation}\label{eqn:desaiCh26:210}
 \begin{aligned}
@@ -65,7 +65,7 @@ y'
 &= x \sin \phi + y \cos \phi \\
 \end{aligned}
 \end{equation}
-
+%
 This allows us to read off the rotation matrix.  Without all the messy trig, we can also derive this matrix with geometric algebra.
 %
 \begin{equation}\label{eqn:desaiCh26:230}
@@ -79,7 +79,7 @@ This allows us to read off the rotation matrix.  Without all the messy trig, we 
 + \Be_2 (v_2 \cos\phi + v_1 \sin\phi)
 \end{aligned}
 \end{equation}
-
+%
 Here we use the Pauli-matrix like identities
 %
 \begin{equation}\label{eqn:desaiCh26:20}
@@ -88,7 +88,7 @@ Here we use the Pauli-matrix like identities
 \Be_i \Be_j &= -\Be_j \Be_i,\quad i\ne j
 \end{aligned}
 \end{equation}
-
+%
 and also note that \(\Be_3\) commutes with the bivector for the \(x,y\) plane \(\Be_1 \Be_2\).  We can also read off the rotation matrix from this.
 
 \section{Infinitesimal transformations}
@@ -142,7 +142,7 @@ Recall that in the problems of Chapter 5, one representation of spin one matrice
 \end{bmatrix}
 \end{aligned}
 \end{equation}
-
+%
 \section{Verifying the commutator relations}
 \index{commutator relations}
 
@@ -152,7 +152,7 @@ Given the (summation convention) matrix representation for the spin one operator
 \begin{equation}\label{eqn:desaiCh26:40}
 (S_i)_{jk} = - i \Hbar \epsilon_{ijk},
 \end{equation}
-
+%
 let us demonstrate the commutator relation of (26.25).
 %
 \begin{equation}\label{eqn:desaiCh26:250}
@@ -168,7 +168,7 @@ let us demonstrate the commutator relation of (26.25).
 -(-i\Hbar)^2 \sum_t \epsilon_{tir} \epsilon_{tjs} - \epsilon_{tjr} \epsilon_{tis} \\
 \end{aligned}
 \end{equation}
-
+%
 Now we can employ the summation rule for sums products of antisymmetric tensors over one free index (4.179)
 %
 \begin{equation}\label{eqn:desaiCh26:50}
@@ -180,7 +180,7 @@ Now we can employ the summation rule for sums products of antisymmetric tensors 
 -\delta_{jb}
 \delta_{ka}.
 \end{equation}
-
+%
 Continuing we get
 \begin{equation}\label{eqn:desaiCh26:270}
 \begin{aligned}
@@ -212,7 +212,7 @@ i\Hbar \sum_t \epsilon_{tij} (S_t)_{rs}
 \qedmarker
 \end{aligned}
 \end{equation}
-
+%
 \section{General infinitesimal rotation}
 \index{infinitesimal rotation}
 
@@ -221,7 +221,7 @@ Equation (26.26) has for an infinitesimal rotation counterclockwise around the u
 \begin{equation}\label{eqn:desaiCh26:60}
 \BV' = \BV + \epsilon \Bn \cross \BV.
 \end{equation}
-
+%
 Let us derive this using the geometric algebra rotation expression for the same
 %
 \begin{equation}\label{eqn:desaiCh26:290}
@@ -244,7 +244,7 @@ e^{I\Bn \alpha/2} \\
 e^{I\Bn \alpha}
 \end{aligned}
 \end{equation}
-
+%
 We note that \(I\Bn\) and thus the exponential commutes with \(\Bn\), and the projection component in the normal direction.  Similarly \(I\Bn\) anticommutes with \((\BV \wedge \Bn) \Bn\).  This leaves us with
 %
 \begin{equation}\label{eqn:desaiCh26:310}
@@ -258,7 +258,7 @@ We note that \(I\Bn\) and thus the exponential commutes with \(\Bn\), and the pr
 ( \cos \alpha + I \Bn \sin\alpha)
 \end{aligned}
 \end{equation}
-
+%
 For \(\alpha = \epsilon \rightarrow 0\), this is
 %
 \begin{equation}\label{eqn:desaiCh26:330}
@@ -278,7 +278,7 @@ For \(\alpha = \epsilon \rightarrow 0\), this is
 \qedmarker
 \end{aligned}
 \end{equation}
-
+%
 \section{Position and angular momentum commutator}
 \index{position commutator}
 \index{momentum commutator}
@@ -287,18 +287,18 @@ Equation (26.71) is
 \begin{equation}\label{eqn:desaiCh26:70}
 \antisymmetric{x_i}{L_j} = i \Hbar \epsilon_{ijk} x_k.
 \end{equation}
-
+%
 Let us derive this.  Recall that we have for the position-momentum commutator
 %
 \begin{equation}\label{eqn:desaiCh26:80}
 \antisymmetric{x_i}{p_j} = i \Hbar \delta_{ij},
 \end{equation}
-
+%
 and for each of the angular momentum operator components we have
 \begin{equation}\label{eqn:desaiCh26:90}
 L_m = \epsilon_{mab} x_a p_b.
 \end{equation}
-
+%
 The commutator of interest is thus
 \begin{equation}\label{eqn:desaiCh26:350}
 \begin{aligned}
@@ -330,7 +330,7 @@ x_a
 \qedmarker
 \end{aligned}
 \end{equation}
-
+%
 \section{Angular momentum operator exponential sandwiches}
 \index{angular momentum operator}
 \index{exponential sandwiches}
@@ -340,12 +340,12 @@ In (26.73-74) we have
 e^{i \epsilon L_z/\Hbar} x e^{-i \epsilon L_z/\Hbar}
 = x + \frac{i \epsilon}{\Hbar} \antisymmetric{L_z}{x}
 \end{equation}
-
+%
 Observe that
 \begin{equation}\label{eqn:desaiCh26:110}
 \antisymmetric{x}{\antisymmetric{L_z}{x}} = 0
 \end{equation}
-
+%
 so from the first two terms of (10.99)
 %
 \begin{equation}\label{eqn:desaiCh26:120}
@@ -353,7 +353,7 @@ e^{A} B e^{-A}
 = B + \antisymmetric{A}{B}
 +\inv{2} \antisymmetric{A}{\antisymmetric{A}{B}} \cdots
 \end{equation}
-
+%
 we get the desired result.
 
 \section{Trace relation to the determinant}
@@ -364,5 +364,5 @@ Going from (26.90) to (26.91) we appear to have a mystery identity
 \begin{equation}\label{eqn:desaiCh26:130}
 \det \left( \BOne + \mu \BA \right) = 1 + \mu \tr \BA
 \end{equation}
-
+%
 According to wikipedia, under derivative of a \textAndIndex{determinant}, \citep{wiki:determinant}, this is good for small \(\mu\), and related to something called the \textAndIndex{Jacobi identity}.  Someday I should really get around to studying determinants in depth, and will take this one for granted for now.

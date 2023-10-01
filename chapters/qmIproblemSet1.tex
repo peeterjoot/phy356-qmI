@@ -35,12 +35,12 @@ x P \psi + i \Hbar \psi - x P \psi \\
 i \Hbar \psi
 \end{aligned}
 \end{equation}
-
+%
 Since this is true for all \(\psi(x)\) we can make the identification
 \begin{equation}\label{eqn:qmIproblemSet1:1}
 x P - P x = i\Hbar \BOne
 \end{equation}
-
+%
 Having evaluated the commutator, the matrix element is simple to compute.  It is
 %
 \begin{equation}\label{eqn:qmIproblemSet1:48}
@@ -52,7 +52,7 @@ Having evaluated the commutator, the matrix element is simple to compute.  It is
 i \Hbar \braket{x}{x'}.
 \end{aligned}
 \end{equation}
-
+%
 This braket has a delta function action, so this matrix element reduces to
 %
 \begin{equation}\label{eqn:qmIproblemSet1:2}
@@ -60,7 +60,7 @@ This braket has a delta function action, so this matrix element reduces to
 =
 i \Hbar \delta(x - x').
 \end{equation}
-
+%
 This could perhaps be considered the end of the problem (barring the physical meaning interpretation requirement to come).  However, given that the Dirac notation that is so central to the lecture notes and course text, it seems like cheating to avoid it.  It seems reasonable to follow this up with the same procedure utilizing the trickier Dirac notation, and this will be done next.  If nothing else, this should provide some experience with what sort of manipulations are allowed.
 
 \paragraph{Using Dirac notation}
@@ -101,7 +101,7 @@ i\Hbar \PD{x}{x} \psi(x) + i \Hbar (x - x )\PD{x}{\psi(x)}  \\
 i\Hbar \psi(x)
 \end{aligned}
 \end{equation}
-
+%
 The convolution with the delta function leaves us with only functions of \(x\), allowing all the derivatives to be evaluated.  In the manipulations above the wave function \(\psi(x')\) could be brought into the braket since it is just a (complex) scalar.  What was a bit sneaky, is the restriction of the action of the operator \(P\) to \(\psi(x')\), and \(x'\psi(x')\), but not to \(\ket{x'}\).  That was a key step in the reduction since it allows all the resulting terms to be brought out of the braket, leaving the delta function.
 
 What is a good justification for not allowing \(P\) to act on the ket?  A pragmatic one is that the desired result would not have been obtained otherwise.  After the fact I also see that this is consistent with \citep{wiki:braketNotation}, which states (without citation) that \(-i\Hbar \spacegrad \ket{\psi}\) is an abuse of notation since the operator should be viewed as operating on projections (ie: wave functions).
@@ -120,7 +120,7 @@ Anyways, assuming the correctness of all the manipulations above, let us return 
 0 &= \bra{x} XP - PX - i\Hbar \BOne \ket{\psi}
 \end{aligned}
 \end{equation}
-
+%
 Since this is true for all \(\bra{x}\), and \(\ket{\psi}\), we must have \(XP - PX = i \Hbar \BOne\) as desired.
 
 Also referring back to \eqnref{eqn:qmIproblemSet1:4} we can write
@@ -134,19 +134,19 @@ i\Hbar \psi(x)  \\
 \int dx' i\Hbar \delta(x-x') \psi(x').
 \end{aligned}
 \end{equation}
-
+%
 Taking differences we have for all \(\psi(x')\)
 %
 \begin{equation}\label{eqn:qmIproblemSet1:128}
 \int dx' \Bigl( \bra{x} XP - PX \ket{x'} -i \Hbar \delta(x-x') \Bigl) \psi(x') = 0,
 \end{equation}
-
+%
 which we utilize to produce the identification
 %
 \begin{equation}\label{eqn:qmIproblemSet1:5}
 \bra{x} XP - PX \ket{x'} = i \Hbar \delta(x-x')
 \end{equation}
-
+%
 This completes all the non-interpretation parts of this problem.
 
 %%%%XX
@@ -290,7 +290,7 @@ Yes, the system obeys the position-momentum uncertainty relation.  Note that in 
 \sqrt{\expectation{ (P - \expectation{P})^2 }} \ge \frac{\Hbar}{2}.
 \end{aligned}
 \end{equation}
-
+%
 Each of these expectation values is with respect to some specific state
 %
 \begin{equation}\label{eqn:qmIproblemSet1:7}
@@ -298,14 +298,14 @@ Each of these expectation values is with respect to some specific state
 \expectation{ X } \equiv \bra{\psi} X \ket{\psi},
 \end{aligned}
 \end{equation}
-
+%
 so one could write this out in still longer form:
 %
 \begin{equation}\label{eqn:qmIproblemSet1:8b}
 \sqrt{\bra{\psi}{ (X - \bra{\psi}{X}\ket{\psi})^2 } \ket{\psi} }
 \sqrt{\bra{\psi}{ (P - \bra{\psi}{P}\ket{\psi})^2 } \ket{\psi} } \ge \frac{\Hbar}{2}.
 \end{equation}
-
+%
 This inequality holds for all states \(\ket{\psi}\) that the system could be observed in.  This includes the state \(\ket{x_0}\) of this problem, associated with a specific observation of the system.
 
 \paragraph{My grade}
@@ -320,6 +320,6 @@ I completely misunderstood this, and got only \(0.5/5\) on it.  What he was look
 &= x_0 \delta(x_0 - x_0)
 \end{aligned}
 \end{equation}
-
+%
 We cannot evaluate this delta function, since it blows up at zero.  The implication would be that we have complete uncertainty of position in the one dimensional continuous vector space with respect to this state.  Despite bombing on the question, it is a nice one, since it points out some of the implicit assumptions for the uncertainty relation.  We can only say that the uncertainty relation applies with respect to normalizable states.  That said, is it a fair question?  I think the original question was fairly vague, and I would not consider the question well posed.
 } % answer

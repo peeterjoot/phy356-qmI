@@ -16,7 +16,7 @@ y &= r \sin\theta \sin\phi \\
 z &= r \cos\theta
 \end{aligned}
 \end{equation}
-
+%
 we have with \(u = u(r,\theta, \phi)\)
 %
 \begin{equation}\label{eqn:lecture5BigReviewAngularMomentum:5040}
@@ -28,7 +28,7 @@ we have with \(u = u(r,\theta, \phi)\)
 &= E u
 \end{aligned}
 \end{equation}
-
+%
 We see the start of a separation of variables attack with \(u = R(r) Y(\theta, \phi)\).  We end up with
 %
 \begin{equation}\label{eqn:lecture5BigReviewAngularMomentum:5060}
@@ -50,7 +50,7 @@ r (r R')' + \left( \frac{2m E}{\Hbar^2} r^2 - \lambda \right) R &= 0
 \inv{Y \sin\theta} \partial_\theta (\sin\theta \partial_\theta Y) + \inv{Y \sin^2\theta} \partial_{\phi\phi} Y &= -\lambda
 \end{aligned}
 \end{equation}
-
+%
 Application of separation of variables again, with \(Y = P(\theta) Q(\phi)\) gives us
 %
 \begin{equation}\label{eqn:lecture5BigReviewAngularMomentum:5120}
@@ -73,7 +73,7 @@ Application of separation of variables again, with \(Y = P(\theta) Q(\phi)\) giv
 \inv{Q } \partial_{\phi\phi} Q &= -\mu
 \end{aligned}
 \end{equation}
-
+%
 or
 \begin{equation}\label{eqn:PHY356F:1000}
 \begin{aligned}
@@ -85,7 +85,7 @@ or
 \partial_{\phi\phi} Q &= -\mu Q
 \end{aligned}
 \end{equation}
-
+%
 The equation for \(P\) can be solved using the \textAndIndex{Legendre function} \(P_l^m(\cos\theta)\) where \(\lambda = l(l+1)\) and \(l\) is an integer
 
 Replacing \(\mu\) with \(m^2\), where \(m\) is an integer
@@ -95,7 +95,7 @@ Replacing \(\mu\) with \(m^2\), where \(m\) is an integer
 \frac{d^2 Q}{d\phi^2} &= -m^2 Q
 \end{aligned}
 \end{equation}
-
+%
 Imposing a periodic boundary condition \(Q(\phi) = Q(\phi + 2\pi)\), where (\(m = 0, \pm 1, \pm 2, \cdots\)) we have
 %
 \begin{equation}\label{eqn:lecture5BigReviewAngularMomentum:5200}
@@ -103,7 +103,7 @@ Imposing a periodic boundary condition \(Q(\phi) = Q(\phi + 2\pi)\), where (\(m 
 Q &= \inv{\sqrt{2\pi}} e^{im\phi}
 \end{aligned}
 \end{equation}
-
+%
 There is the overall solution \(r(r,\theta,\phi) = R(r) Y(\theta, \phi)\) for a free particle.  The functions \(Y(\theta, \phi)\) are
 %
 \begin{equation}\label{eqn:lecture5BigReviewAngularMomentum:5220}
@@ -113,7 +113,7 @@ Y_{lm}(\theta, \phi)
 \mathLabelBox{ P_l^m(\cos\theta) }{\( -l \le m \le l\)}
 \end{aligned}
 \end{equation}
-
+%
 where \(N\) is a normalization constant, and \(m = 0, \pm 1, \pm 2, \cdots\).  \(Y_{lm}\) is an eigenstate of the \(\BL^2\) operator and \(L_z\) (two for the price of one).  There is no specific reason for the direction \(z\), but it is the direction picked out of convention.
 
 \index{angular momentum}
@@ -126,7 +126,7 @@ Angular momentum is given by
 \BL = \Br \cross \Bp
 \end{aligned}
 \end{equation}
-
+%
 where
 %
 \begin{equation}\label{eqn:lecture5BigReviewAngularMomentum:5260}
@@ -134,14 +134,14 @@ where
 \BR = x \xcap + y\ycap + z\zcap
 \end{aligned}
 \end{equation}
-
+%
 and
 \begin{equation}\label{eqn:lecture5BigReviewAngularMomentum:5280}
 \begin{aligned}
 \Bp = p_x \xcap + p_y\ycap + p_z\zcap
 \end{aligned}
 \end{equation}
-
+%
 The important thing to remember is that the aim of following all the math is to show that
 %
 \begin{equation}\label{eqn:lecture5BigReviewAngularMomentum:5300}
@@ -149,7 +149,7 @@ The important thing to remember is that the aim of following all the math is to 
 \BL^2 Y_{lm} = \Hbar^2 l (l+1) Y_{lm}
 \end{aligned}
 \end{equation}
-
+%
 and simultaneously
 %
 \begin{equation}\label{eqn:lecture5BigReviewAngularMomentum:5320}
@@ -157,7 +157,7 @@ and simultaneously
 \BL_z Y_{lm} = \Hbar m Y_{lm}
 \end{aligned}
 \end{equation}
-
+%
 Part of the solution involves working with \(\antisymmetric{L_z}{L_{+}}\), and \(\antisymmetric{L_z}{L_{-}}\), where
 %
 \begin{equation}\label{eqn:lecture5BigReviewAngularMomentum:5340}
@@ -166,7 +166,7 @@ L_{+} &= L_x + i L_y \\
 L_{-} &= L_x - i L_y
 \end{aligned}
 \end{equation}
-
+%
 An exercise (not in the book) is to evaluate
 \begin{equation}\label{eqn:PHY356F:4000}
 \begin{aligned}
@@ -174,7 +174,7 @@ An exercise (not in the book) is to evaluate
 &= L_z L_x + i L_z L_y - L_x L_z - i L_y L_z
 \end{aligned}
 \end{equation}
-
+%
 where
 \begin{equation}\label{eqn:PHY356F:5000}
 \begin{aligned}
@@ -183,7 +183,7 @@ where
 \antisymmetric{L_z}{L_x}  &= i \Hbar L_y
 \end{aligned}
 \end{equation}
-
+%
 Substitution back in \eqnref{eqn:PHY356F:4000} we have
 %
 \begin{equation}\label{eqn:lecture5BigReviewAngularMomentum:5360}

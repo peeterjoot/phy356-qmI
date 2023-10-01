@@ -13,13 +13,13 @@ This problem deals with the hydrogen atom, with an initial ket
 +\inv{\sqrt{3}} \ket{210}
 +\inv{\sqrt{3}} \ket{211},
 \end{equation}
-
+%
 where
 %
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:4:20}
 \braket{\Br}{100} = \Phi_{100}(\Br),
 \end{equation}
-
+%
 etc.
 } % problem
 %
@@ -30,7 +30,7 @@ If no measurement is made until time \(t = t_0\),
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:4:30}
 t_0 = \frac{\pi \Hbar}{ \frac{3}{4} (13.6 \text{eV}) } = \frac{ 4 \pi \Hbar }{ 3 E_I},
 \end{equation}
-
+%
 what is the ket \(\ket{\psi(t)}\) just before the measurement is made?
 
 \paragraph{A:}
@@ -43,7 +43,7 @@ Our time evolved state is
 +\inv{\sqrt{3}} e^{- i E_2 t_0/\Hbar }
 (\ket{210} + \ket{211}).
 \end{equation}
-
+%
 Also observe that this initial time was picked to make the exponential values come out nicely, and we have
 %
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:490}
@@ -53,7 +53,7 @@ Also observe that this initial time was picked to make the exponential values co
 &= - \frac{4 \pi }{ 3 n^2 },
 \end{aligned}
 \end{equation}
-
+%
 so our time evolved state is just
 %
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:4:100}
@@ -62,7 +62,7 @@ so our time evolved state is just
 +\inv{\sqrt{3}} e^{- i \pi / 3 }
 (\ket{210} + \ket{211}).
 \end{equation}
-
+%
 \paragraph{Q: (b)}
 
 Suppose that at time \(t_0\) an \(L_z\) measurement is made, and the outcome 0 is recorded.  What is the appropriate ket \(\psi_{\text{after}}(t_0)\) right after the measurement?
@@ -74,7 +74,7 @@ A measurement with outcome 0, means that the \(L_z\) operator measurement found 
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:4:200}
 L_z \ket{\phi} = m \Hbar \ket{\phi},
 \end{equation}
-
+%
 so a measurement of \(L_z\) with outcome zero means that we have \(m=0\).  Our measurement of \(L_z\) at time \(t_0\) therefore filters out all but the \(m=0\) states and our new state is proportional to the projection over all \(m=0\) states as follows
 %
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:510}
@@ -90,13 +90,13 @@ so a measurement of \(L_z\) with outcome zero means that we have \(m=0\).  Our m
 +\inv{\sqrt{3}} e^{- i \pi / 3 } \ket{210}
 \end{aligned}
 \end{equation}
-
+%
 A final normalization yields
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:4:210}
 \ket{\psi_{\text{after}}(t_0)}
 = \inv{\sqrt{2}} (\ket{210} - \ket{100})
 \end{equation}
-
+%
 \paragraph{Q: (c)}
 
 Right after this \(L_z\) measurement, what is \(\Abs{\psi_{\text{after}}(t_0)}^2\)?
@@ -122,7 +122,7 @@ e^{-r/2 a_0}
 \right),
 \end{aligned}
 \end{equation}
-
+%
 so the probability density is
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:4:300}
 \Abs{\braket{\Br}{\psi_{\text{after}}(t_0)}}^2
@@ -133,7 +133,7 @@ e^{-r/a_0}
 -e^{-r/2 a_0}
 \right)^2
 \end{equation}
-
+%
 \paragraph{Q: (d)}
 
 If then a position measurement is made immediately, which if any components of the expectation value of \(\BR\) will be non-vanishing?  Justify your answer.
@@ -148,7 +148,7 @@ a_{nlm}^\conj a_{n'l'm'}
 \bra{nlm} X_i
 \ket{n'l'm'},
 \end{equation}
-
+%
 where \(X_1 = X = R \sin\Theta \cos\Phi, X_2 = Y = R \sin\Theta \sin\Phi, X_3 = Z = R \cos\Phi\).
 
 Consider one of the matrix elements, and expand this by introducing an identity twice
@@ -195,6 +195,6 @@ x_i
 \\
 \end{aligned}
 \end{equation}
-
+%
 Because our state has only \(m=0\) contributions, the only \(\phi\) dependence for the \(X\) and \(Y\) components of \(\BR\) come from those components themselves.  For \(X\), we therefore integrate \(\int_0^{2\pi} \cos\phi d\phi = 0\), and for \(Y\) we integrate \(\int_0^{2\pi} \sin\phi d\phi = 0\), and these terms vanish.  Our expectation value for \(\BR\) for this state, therefore lies completely on the \(z\) axis.
 } % answer

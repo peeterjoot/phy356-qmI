@@ -18,7 +18,7 @@ H =
 - \ket{b}\bra{a}
 )
 \end{equation}
-
+%
 where \(\Delta\) and \(\Omega\) are real positive constants.
 
 Find the energy eigenvalues and the normalized energy eigenvectors (expressed in terms of the \(\{\ket{a}, \ket{b}\}\) basis).
@@ -45,7 +45,7 @@ The eigenvalue part of this problem is probably easier to do in matrix form.  Le
 \end{bmatrix}.
 \end{aligned}
 \end{equation}
-
+%
 Our Hamiltonian is then
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:2:30}
 H = \frac{\Hbar}{2}
@@ -54,13 +54,13 @@ H = \frac{\Hbar}{2}
 -i \Omega & \Delta
 \end{bmatrix}.
 \end{equation}
-
+%
 Computing \(\det{H - \lambda I} = 0\), we get
 %
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:2:40}
 \lambda = \pm \frac{\Hbar}{2} \sqrt{ \Delta^2 + \Omega^2 }.
 \end{equation}
-
+%
 Let \(\delta = \sqrt{ \Delta^2 + \Omega^2 }\).  Our normalized eigenvectors are found to be
 %
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:2:50}
@@ -70,7 +70,7 @@ i \Omega \\
 \Delta \pm \delta
 \end{bmatrix}.
 \end{equation}
-
+%
 In terms of \(\ket{a}\) and \(\ket{b}\), we then have
 %
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:2:60}
@@ -79,13 +79,13 @@ In terms of \(\ket{a}\) and \(\ket{b}\), we then have
 i \Omega \ket{a}
 + (\Delta \pm \delta) \ket{b} \right).
 \end{equation}
-
+%
 Note that our Hamiltonian has a simple form in this basis.  That is
 %
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:2:70}
 H = \frac{\delta \Hbar}{2} (\ket{+}\bra{+} - \ket{-}\bra{-} )
 \end{equation}
-
+%
 Observe that once we do the diagonalization, we have a Hamiltonian that appears to have the form of a scaled projector for an open Stern-Gerlach apparatus.
 
 Observe that the diagonalized Hamiltonian operator makes the time evolution operator's form also simple, which is, by inspection
@@ -95,7 +95,7 @@ U(t) =
 e^{-i t \frac{\delta}{2}} \ket{+}\bra{+}
 + e^{i t \frac{\delta}{2}} \ket{-}\bra{-}.
 \end{equation}
-
+%
 Since we are asked for this in terms of \(\ket{a}\), and \(\ket{b}\), the projectors \(\ket{\pm}\bra{\pm}\) are required.  These are
 %
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:690}
@@ -119,7 +119,7 @@ Since we are asked for this in terms of \(\ket{a}\), and \(\ket{b}\), the projec
 )
 \Bigr)
 \end{equation}
-
+%
 Substitution into \eqnref{eqn:qmIexamPractice2008Dec:2:80} and a fair amount of algebra leads to
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:2:100}
 \begin{aligned}
@@ -144,7 +144,7 @@ Most of the work is already done.  Computation of \(\ket{\phi(t)} = U(t) \ket{\p
 \ket{b} +i \ket{a}
 \Bigr).
 \end{equation}
-
+%
 \paragraph{Q: (c)}
 
 Suppose that an observable, specified by the operator \(X = \ket{a}\bra{b} + \ket{b}\bra{a}\), is measured for this system.  What is the probability that, at time \(t\), the result \(1\) is obtained?  Plot this probability as a function of time, showing the maximum and minimum values of the function, and the corresponding values of \(t\).
@@ -158,7 +158,7 @@ We can calculate the eigenvectors for this operator easily enough and find them 
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:2:120}
 \ket{X+} = \inv{\sqrt{2}} \Bigl( \ket{a} + \ket{b} \Bigr).
 \end{equation}
-
+%
 The question of what the probability for this measurement is then really a question asking for the computation of the amplitude
 %
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:2:130}
@@ -167,7 +167,7 @@ The question of what the probability for this measurement is then really a quest
 \braket{
  (a + b)}{\phi(t)}}^2
 \end{equation}
-
+%
 From \eqnref{eqn:qmIexamPractice2008Dec:2:110} we find this probability to be
 %
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:710}
@@ -185,7 +185,7 @@ From \eqnref{eqn:qmIexamPractice2008Dec:2:110} we find this probability to be
 \inv{4} \left( 1 + 3 \frac{\Omega^2}{\delta^2} + \frac{\Delta^2}{\delta^2} \cos (\delta t) + 2 \frac{ \Omega}{\delta} \sin(\delta t) \right)
 \end{aligned}
 \end{equation}
-
+%
 We have a simple superposition of two sinusoids out of phase, periodic with period \(2 \pi/\delta\).  I had attempted a rough sketch of this on paper, but will not bother scanning it here or describing it further.
 
 \paragraph{Q: (d)}
@@ -213,7 +213,7 @@ To get there I note that we can express the states \(\ket{a}\), and \(\ket{b}\) 
 \ket{b} \\
 \end{bmatrix}.
 \end{equation}
-
+%
 Skipping all the algebra one finds
 %
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:2:160}
@@ -232,7 +232,7 @@ Skipping all the algebra one finds
 \ket{-} \\
 \end{bmatrix}.
 \end{equation}
-
+%
 Unfortunately, this does not seem helpful.  I find
 %
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:2:170}
@@ -240,7 +240,7 @@ Unfortunately, this does not seem helpful.  I find
 \frac{\ket{+}}{\sqrt{\delta - \Delta}}( \Omega - i (\delta - \Delta) )
 -\frac{\ket{-}}{\sqrt{\delta + \Delta}}( \Omega + i (\delta + \Delta) )
 \end{equation}
-
+%
 There is no obvious way to pick \(\Omega\) and \(\Delta\) to leave just \(\ket{+}\) or \(\ket{-}\).  When I did this on paper originally I got a different answer for this sum, but looking at it now, I can not see how I managed to get that answer (it had no factors of \(i\) in the result as the one above does).
 
 \paragraph{A physical system for this Hamiltonian}
@@ -250,6 +250,6 @@ I wondered what physical system such a Hamiltonian would correspond to, and note
 \begin{equation}\label{eqn:qmIexamPractice2008Dec:2:180}
 H = E_0 ( {\lvert {b} \rangle}{\langle {b} \rvert}+ {\lvert {a} \rangle}{\langle {a} \rvert})- A( {\lvert {a} \rangle}{\langle {b} \rvert}+ {\lvert {b} \rangle}{\langle {a} \rvert}).
 \end{equation}
-
+%
 In Feynman's treatment, the Hamiltonian is just specified by giving values to \(H_{ij}\), but the expression can easily seen to be equivalent.  While these do not look equivalent on the surface, they both have the same diagonalization, which allows us to give a physical interpretation to this sort of problem (one which is recurrant in the old QMI exams).
 } % answer

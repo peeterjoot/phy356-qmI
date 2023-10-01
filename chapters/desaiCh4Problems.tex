@@ -22,7 +22,7 @@ For the Cartesian coordinates case we have
 H = -\frac{\Hbar^2}{2m} (\partial_{xx} + \partial_{yy}) = i \Hbar \partial_t
 \end{aligned}
 \end{equation}
-
+%
 Application of separation of variables with \(\Psi = XYT\) gives
 %
 \begin{equation}\label{eqn:desaiCh4:101}
@@ -30,7 +30,7 @@ Application of separation of variables with \(\Psi = XYT\) gives
 -\frac{\Hbar^2}{2m} \left( \frac{X''}{X} +\frac{Y''}{Y} \right) = i \Hbar \frac{T'}{T} = E .
 \end{aligned}
 \end{equation}
-
+%
 Immediately, we have the time dependence
 %
 \begin{equation}\label{eqn:desaiCh4:102}
@@ -38,7 +38,7 @@ Immediately, we have the time dependence
 T \propto e^{-i E t/\Hbar},
 \end{aligned}
 \end{equation}
-
+%
 with the PDE reduced to
 %
 \begin{equation}\label{eqn:desaiCh4:103}
@@ -46,7 +46,7 @@ with the PDE reduced to
 \frac{X''}{X} +\frac{Y''}{Y} = - \frac{2m E}{\Hbar^2}.
 \end{aligned}
 \end{equation}
-
+%
 Introducing separate independent constants
 %
 \begin{equation}\label{eqn:desaiCh4:104}
@@ -55,7 +55,7 @@ Introducing separate independent constants
 \frac{Y''}{Y} &= b^2
 \end{aligned}
 \end{equation}
-
+%
 provides the pre-normalized wave function and the constraints on the constants
 \begin{equation}\label{eqn:desaiCh4:105}
 \begin{aligned}
@@ -66,7 +66,7 @@ e^{-iE t/\Hbar} \\
 a^2 + b^2 &= -\frac{2 m E}{\Hbar^2}.
 \end{aligned}
 \end{equation}
-
+%
 \paragraph{Rectangular normalization}
 \index{normalization!rectangular}
 
@@ -78,7 +78,7 @@ e^{ax} &= e^{a(x + \lambda_x)} \\
 e^{ay} &= e^{a(y + \lambda_y)} ,
 \end{aligned}
 \end{equation}
-
+%
 or
 %
 \begin{equation}\label{eqn:desaiCh4:108}
@@ -87,7 +87,7 @@ a\lambda_x &= 2 \pi i m \\
 a\lambda_y &= 2 \pi i n.
 \end{aligned}
 \end{equation}
-
+%
 This provides a more explicit form for the energy expression
 %
 \begin{equation}\label{eqn:desaiCh4:109}
@@ -98,7 +98,7 @@ E_{mn} &= \inv{2m} 4 \pi^2 \Hbar^2 \left(
 \right).
 \end{aligned}
 \end{equation}
-
+%
 We can also add in the area normalization using
 %
 \begin{equation}\label{eqn:desaiCh4:110}
@@ -108,7 +108,7 @@ We can also add in the area normalization using
 \int_{y=0}^{\lambda_x} dy \psi^\conj(x,y) \phi(x,y).
 \end{aligned}
 \end{equation}
-
+%
 Our eigenfunctions are now completely specified
 %
 \begin{equation}\label{eqn:desaiCh4:111}
@@ -119,7 +119,7 @@ e^{2 \pi i y/\lambda_y}
 e^{-iE t/\Hbar}.
 \end{aligned}
 \end{equation}
-
+%
 The interesting thing about this solution is that we can make arbitrary linear combinations
 %
 \begin{equation}\label{eqn:desaiCh4:112}
@@ -127,7 +127,7 @@ The interesting thing about this solution is that we can make arbitrary linear c
 f(x,y) = a_{mn} u_{mn}
 \end{aligned}
 \end{equation}
-
+%
 and then ``solve'' for \(a_{mn}\), for an arbitrary \(f(x,y)\) by taking inner products
 %
 \begin{equation}\label{eqn:desaiCh4:113}
@@ -137,7 +137,7 @@ a_{mn} = \braket{u_mn}{f} =
 \int_{y=0}^{\lambda_x} dy f(x,y) u_mn^\conj(x,y).
 \end{aligned}
 \end{equation}
-
+%
 This gives the appearance that any function \(f(x,y)\) is a solution, but the equality of \eqnref{eqn:desaiCh4:112} only applies for functions in the span of this function vector space.  The procedure works for arbitrary square integrable functions \(f(x,y)\), but the equality really means that the RHS will be the periodic extension of \(f(x,y)\).
 
 \paragraph{Infinite space normalization}
@@ -151,7 +151,7 @@ An alternate normalization is possible by using the Fourier transform normalizat
 \frac{2 \pi n }{\lambda_y} &= k_y
 \end{aligned}
 \end{equation}
-
+%
 Our inner product is now
 %
 \begin{equation}\label{eqn:desaiCh4:115}
@@ -161,7 +161,7 @@ Our inner product is now
 \int_{\infty}^{\infty} dy \psi^\conj(x,y) \phi(x,y).
 \end{aligned}
 \end{equation}
-
+%
 And the corresponding normalized wavefunction and associated energy constant \(E\) are
 %
 \begin{equation}\label{eqn:desaiCh4:116}
@@ -177,7 +177,7 @@ e^{-iE t/\Hbar} \\
 E &= \frac{\Hbar^2 \Bk^2 }{2m}
 \end{aligned}
 \end{equation}
-
+%
 Now via this Fourier inner product we are able to construct a solution from any square integrable function.  Again, this will not be
 an exact equality since the Fourier transform has the effect of averaging across discontinuities.
 
@@ -189,7 +189,7 @@ In polar coordinates our gradient is
 \spacegrad &= \rcap \partial_r + \frac{\thetacap}{r} \partial_\theta.
 \end{aligned}
 \end{equation}
-
+%
 with
 \begin{equation}\label{eqn:desaiCh4:141}
 \begin{aligned}
@@ -197,7 +197,7 @@ with
 \thetacap &= \Be_2 e^{\Be_1 \Be_2 \theta} .
 \end{aligned}
 \end{equation}
-
+%
 Squaring the gradient for the Laplacian we will need the partials, which are
 %
 \begin{equation}\label{eqn:desaiCh4Problems:720}
@@ -208,7 +208,7 @@ Squaring the gradient for the Laplacian we will need the partials, which are
 \partial_\theta \thetacap &= -\rcap.
 \end{aligned}
 \end{equation}
-
+%
 The Laplacian is therefore
 %
 \begin{equation}\label{eqn:desaiCh4Problems:740}
@@ -228,7 +228,7 @@ The Laplacian is therefore
 + \frac{\thetacap}{r} \cdot (\partial_\theta \thetacap) \inv{r} \partial_\theta .
 \end{aligned}
 \end{equation}
-
+%
 Evaluating the derivatives we have
 %
 \begin{equation}\label{eqn:desaiCh4:150}
@@ -236,7 +236,7 @@ Evaluating the derivatives we have
 \spacegrad^2 = \partial_{rr} + \inv{r} \partial_r + \frac{1}{r^2} \partial_{\theta\theta},
 \end{aligned}
 \end{equation}
-
+%
 and are now prepared to move on to the solution of the Hamiltonian \(H = -(\Hbar^2/2m) \spacegrad^2\).  With separation of variables again using \(\Psi = R(r) \Theta(\theta) T(t)\) we have
 %
 \begin{equation}\label{eqn:desaiCh4:151}
@@ -244,7 +244,7 @@ and are now prepared to move on to the solution of the Hamiltonian \(H = -(\Hbar
 -\frac{\Hbar^2}{2m} \left( \frac{R''}{R} + \frac{R'}{rR} + \inv{r^2} \frac{\Theta''}{\Theta} \right) = i \Hbar \frac{T'}{T} = E.
 \end{aligned}
 \end{equation}
-
+%
 Rearranging to separate the \(\Theta\) term we have
 %
 \begin{equation}\label{eqn:desaiCh4:152}
@@ -252,7 +252,7 @@ Rearranging to separate the \(\Theta\) term we have
 \frac{r^2 R''}{R} + \frac{r R'}{R} + \frac{2 m E}{\Hbar^2} r^2 E = -\frac{\Theta''}{\Theta} = \lambda^2.
 \end{aligned}
 \end{equation}
-
+%
 The angular solutions are given by
 %
 \begin{equation}\label{eqn:desaiCh4:153}
@@ -260,7 +260,7 @@ The angular solutions are given by
 \Theta = \inv{\sqrt{2\pi}} e^{i \lambda \theta}
 \end{aligned}
 \end{equation}
-
+%
 Where the normalization is given by
 \begin{equation}\label{eqn:desaiCh4:160}
 \begin{aligned}
@@ -268,7 +268,7 @@ Where the normalization is given by
 \int_{0}^{2 \pi} d\theta \psi^\conj(\theta) \phi(\theta).
 \end{aligned}
 \end{equation}
-
+%
 And the radial by the solution of the PDE
 %
 \begin{equation}\label{eqn:desaiCh4:154}
@@ -276,7 +276,7 @@ And the radial by the solution of the PDE
 r^2 R'' + r R' + \left( \frac{2 m E}{\Hbar^2} r^2 E - \lambda^2 \right) R = 0
 \end{aligned}
 \end{equation}
-
+%
 } % answer
 %
 \makeoproblem{}{problem:desaiCh4Problems:2}{\citep{desai2009quantum} pr 4.2}{
@@ -288,7 +288,7 @@ Use the orthogonality property of \(P_l(\cos\theta)\)
 \int_{-1}^1 dx P_l(x) P_{l'}(x) = \frac{2}{2l+1} \delta_{l l'},
 \end{aligned}
 \end{equation}
-
+%
 confirm that at least the first two terms of (4.171)
 %
 \begin{equation}\label{eqn:desaiCh4:201}
@@ -296,7 +296,7 @@ confirm that at least the first two terms of (4.171)
 e^{i k r \cos\theta} = \sum_{l=0}^\infty (2l + 1) i^l j_l(kr) P_l(\cos\theta)
 \end{aligned}
 \end{equation}
-
+%
 are correct.
 
 } % problem
@@ -310,7 +310,7 @@ Taking the inner product using the integral of \eqnref{eqn:desaiCh4:200} we have
 \int_{-1}^1 dx e^{i k r x} P_l'(x) = 2 i^l j_l(kr)
 \end{aligned}
 \end{equation}
-
+%
 To confirm the first two terms we need
 %
 \begin{equation}\label{eqn:desaiCh4:203}
@@ -321,7 +321,7 @@ j_0(\rho) &= \frac{\sin\rho}{\rho} \\
 j_1(\rho) &= \frac{\sin\rho}{\rho^2} - \frac{\cos\rho}{\rho}.
 \end{aligned}
 \end{equation}
-
+%
 On the LHS for \(l'=0\) we have
 %
 \begin{equation}\label{eqn:desaiCh4:204}
@@ -329,7 +329,7 @@ On the LHS for \(l'=0\) we have
 \int_{-1}^1 dx e^{i k r x} = 2 \frac{\sin{kr}}{kr}
 \end{aligned}
 \end{equation}
-
+%
 On the LHS for \(l'=1\) note that
 \begin{equation}\label{eqn:desaiCh4Problems:760}
 \begin{aligned}
@@ -341,7 +341,7 @@ x \frac{e^{i k r x}}{ikr}
 - \frac{e^{i k r x}}{(ikr)^2}.
 \end{aligned}
 \end{equation}
-
+%
 So, integration in \([-1,1]\) gives us
 %
 \begin{equation}\label{eqn:desaiCh4:205}
@@ -349,7 +349,7 @@ So, integration in \([-1,1]\) gives us
 \int_{-1}^1 dx e^{i k r x} =  -2i \frac{\cos{kr}}{kr} + 2i \inv{(kr)^2} \sin{kr}.
 \end{aligned}
 \end{equation}
-
+%
 Now compare to the RHS for \(l'=0\), which is
 %
 \begin{equation}\label{eqn:desaiCh4:206}
@@ -357,7 +357,7 @@ Now compare to the RHS for \(l'=0\), which is
 2 j_0(kr) = 2 \frac{\sin{kr}}{kr},
 \end{aligned}
 \end{equation}
-
+%
 which matches \eqnref{eqn:desaiCh4:204}.  For \(l'=1\) we have
 %
 \begin{equation}\label{eqn:desaiCh4:207}
@@ -365,7 +365,7 @@ which matches \eqnref{eqn:desaiCh4:204}.  For \(l'=1\) we have
 2 i j_1(kr) = 2i \inv{kr} \left( \frac{\sin{kr}}{kr} - \cos{kr} \right),
 \end{aligned}
 \end{equation}
-
+%
 which in turn matches \eqnref{eqn:desaiCh4:205}, completing the exercise.
 
 } % answer
@@ -396,7 +396,7 @@ Expressing the product \(\BL \cross \BL\) in determinant form sheds some light o
 = \Be_i \epsilon_{ijk} \antisymmetric{L_j}{L_k}
 \end{aligned}
 \end{equation}
-
+%
 We see that evaluating this cross product in turn requires evaluation of the set of commutators.  We can do that with the canonical commutator relationships directly using \(L_i = \epsilon_{ijk} r_j p_k\) like so
 %
 \begin{equation}\label{eqn:desaiCh4Problems:780}
@@ -420,7 +420,7 @@ We see that evaluating this cross product in turn requires evaluation of the set
 - i \Hbar ( \epsilon_{imn} \epsilon_{jnb} r_m p_b - \epsilon_{jam} \epsilon_{imn} r_a p_n ).
 \end{aligned}
 \end{equation}
-
+%
 The first two terms cancel, and we can employ (4.179) to eliminate the antisymmetric tensors from the last two terms
 %
 \begin{equation}\label{eqn:desaiCh4Problems:800}
@@ -440,7 +440,7 @@ i \Hbar (
 + r_i p_j ) \\
 \end{aligned}
 \end{equation}
-
+%
 For \(k \ne i,j\), this is \(i\Hbar (\Br \cross \Bp)_k\), so we can write
 %
 \begin{equation}\label{eqn:desaiCh4:301}
@@ -448,7 +448,7 @@ For \(k \ne i,j\), this is \(i\Hbar (\Br \cross \Bp)_k\), so we can write
 \BL \cross \BL &= i\Hbar \Be_k \epsilon_{kij} ( r_i p_j - r_j p_i ) = i\Hbar \BL = i\Hbar \Be_k L_k = i\Hbar \BL.
 \end{aligned}
 \end{equation}
-
+%
 In \citep{liboff2003iqm}, the commutator relationships are summarized this way, instead of using the antisymmetric tensor (4.224)
 %
 \begin{equation}\label{eqn:desaiCh4:302}
@@ -456,7 +456,7 @@ In \citep{liboff2003iqm}, the commutator relationships are summarized this way, 
 \antisymmetric{L_i}{L_j} &= i \Hbar \epsilon_{ijk} L_k
 \end{aligned}
 \end{equation}
-
+%
 as here in Desai.  Both say the same thing.
 
 } % answer
@@ -476,14 +476,14 @@ In classical mechanics our Lagrangian for this system is
 \LL = \inv{2} m R^2 \thetadot^2,
 \end{aligned}
 \end{equation}
-
+%
 with the canonical momentum
 \begin{equation}\label{eqn:desaiCh4:501}
 \begin{aligned}
 p_\theta = \PD{\thetadot}{\LL} = m R^2 \thetadot.
 \end{aligned}
 \end{equation}
-
+%
 Thus the classical Hamiltonian is
 %
 \begin{equation}\label{eqn:desaiCh4:502}
@@ -491,14 +491,14 @@ Thus the classical Hamiltonian is
 H = \inv{2m R^2} {p_\theta}^2.
 \end{aligned}
 \end{equation}
-
+%
 By analogy the QM Hamiltonian operator will therefore be
 \begin{equation}\label{eqn:desaiCh4:503}
 \begin{aligned}
 H = -\frac{\Hbar^2}{2m R^2} \partial_{\theta\theta}.
 \end{aligned}
 \end{equation}
-
+%
 For \(\Psi = \Theta(\theta) T(t)\), separation of variables gives us
 %
 \begin{equation}\label{eqn:desaiCh4:820}
@@ -506,7 +506,7 @@ For \(\Psi = \Theta(\theta) T(t)\), separation of variables gives us
 -\frac{\Hbar^2}{2m R^2} \frac{\Theta''}{\Theta} = i \Hbar \frac{T'}{T} = E,
 \end{aligned}
 \end{equation}
-
+%
 from which we have
 \begin{equation}\label{eqn:desaiCh4:504}
 \begin{aligned}
@@ -514,7 +514,7 @@ T &\propto e^{-i E t/\Hbar} \\
 \Theta &\propto e^{ \pm i \sqrt{2m E} R \theta/\Hbar }.
 \end{aligned}
 \end{equation}
-
+%
 Requiring single valued \(\Theta\), equal at any multiples of \(2\pi\), we have
 %
 \begin{equation}\label{eqn:desaiCh4Problems:840}
@@ -522,14 +522,14 @@ Requiring single valued \(\Theta\), equal at any multiples of \(2\pi\), we have
 e^{ \pm i \sqrt{2m E} R (\theta + 2\pi)/\Hbar } = e^{ \pm i \sqrt{2m E} R \theta/\Hbar },
 \end{aligned}
 \end{equation}
-
+%
 or
 \begin{equation}\label{eqn:desaiCh4Problems:860}
 \begin{aligned}
 \pm \sqrt{2m E} \frac{R}{\Hbar} 2\pi = 2 \pi n,
 \end{aligned}
 \end{equation}
-
+%
 Suffixing the energy values with this index we have
 %
 \begin{equation}\label{eqn:desaiCh4:505}
@@ -537,7 +537,7 @@ Suffixing the energy values with this index we have
 E_n = \frac{n^2 \Hbar^2}{2 m R^2}.
 \end{aligned}
 \end{equation}
-
+%
 Allowing both positive and negative integer values for \(n\) we have
 %
 \begin{equation}\label{eqn:desaiCh4:506}
@@ -545,7 +545,7 @@ Allowing both positive and negative integer values for \(n\) we have
 \Psi = \inv{\sqrt{2\pi}} e^{i n \theta} e^{-i E_n t/\Hbar},
 \end{aligned}
 \end{equation}
-
+%
 where the normalization was a result of the use of a \([0,2\pi]\) inner product over the angles
 %
 \begin{equation}\label{eqn:desaiCh4:507}
@@ -553,7 +553,7 @@ where the normalization was a result of the use of a \([0,2\pi]\) inner product 
 \braket{\psi}{\phi} \equiv \int_0^{2\pi} \psi^\conj(\theta) \phi(\theta) d\theta.
 \end{aligned}
 \end{equation}
-
+%
 } % answer
 %
 \makeoproblem{}{problem:desaiCh4Problems:6}{\citep{desai2009quantum} pr 4.6}{
@@ -573,14 +573,14 @@ Since \(L_i\) contain only \(\theta\) and \(\phi\) partials, \(\antisymmetric{L_
 I &= \Be_1 \Be_2 \Be_3
 \end{aligned}
 \end{equation}
-
+%
 Evaluating the partials we have
 \begin{equation}\label{eqn:desaiCh4Problems:880}
 \begin{aligned}
 \partial_\theta \rcap = \rcap I \phicap
 \end{aligned}
 \end{equation}
-
+%
 With
 \begin{equation}\label{eqn:desaiCh4:602}
 \begin{aligned}
@@ -589,7 +589,7 @@ With
 \rcap &= \tilde{R} \Be_3 R
 \end{aligned}
 \end{equation}
-
+%
 where \(\tilde{R} R = 1\), and \(\thetacap \phicap \rcap = \Be_1 \Be_2 \Be_3\), we have
 %
 \begin{equation}\label{eqn:desaiCh4:601}
@@ -597,7 +597,7 @@ where \(\tilde{R} R = 1\), and \(\thetacap \phicap \rcap = \Be_1 \Be_2 \Be_3\), 
 \partial_\theta \rcap &= \tilde{R} \Be_3 \Be_1 \Be_2 \Be_3 \Be_2 R = \tilde{R} \Be_1 R = \thetacap
 \end{aligned}
 \end{equation}
-
+%
 For the \(\phi\) partial we have
 \begin{equation}\label{eqn:desaiCh4Problems:900}
 \begin{aligned}
@@ -607,7 +607,7 @@ For the \(\phi\) partial we have
 &= \sin\theta \phicap
 \end{aligned}
 \end{equation}
-
+%
 We are now prepared to evaluate the commutators.  Starting with the easiest we have
 %
 \begin{equation}\label{eqn:desaiCh4Problems:920}
@@ -619,7 +619,7 @@ We are now prepared to evaluate the commutators.  Starting with the easiest we h
 -i \Hbar (\partial_\phi \rcap) \Psi  \\
 \end{aligned}
 \end{equation}
-
+%
 So we have
 \begin{equation}\label{eqn:desaiCh4:610}
 \begin{aligned}
@@ -628,7 +628,7 @@ So we have
 -i \Hbar \sin\theta \phicap
 \end{aligned}
 \end{equation}
-
+%
 Observe that by virtue of chain rule, only the action of the partials on \(\rcap\) itself contributes, and all the partials applied to \(\Psi\) cancel out due to the commutator differences.  That simplifies the remaining commutator evaluations.  For reference the polar form of \(L_x\), and \(L_y\) are
 %
 \begin{equation}\label{eqn:desaiCh4:611}
@@ -637,7 +637,7 @@ L_x &= -i \Hbar (-S_\phi \partial_\theta - C_\phi \cot\theta \partial_\phi) \\
 L_y &= -i \Hbar (C_\phi \partial_\theta - S_\phi \cot\theta \partial_\phi),
 \end{aligned}
 \end{equation}
-
+%
 where the sines and cosines are written with \(S\), and \(C\) respectively for short.
 
 We therefore have
@@ -649,7 +649,7 @@ We therefore have
 &= -i \Hbar (-S_\phi \thetacap - C_\phi C_\theta \phicap ) \\
 \end{aligned}
 \end{equation}
-
+%
 and
 \begin{equation}\label{eqn:desaiCh4Problems:960}
 \begin{aligned}
@@ -658,7 +658,7 @@ and
 &= -i \Hbar (C_\phi \thetacap - S_\phi C_\theta \phicap ).
 \end{aligned}
 \end{equation}
-
+%
 Adding back in the factor of \(r\), and summarizing we have
 %
 \begin{equation}\label{eqn:desaiCh4:620}

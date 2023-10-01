@@ -10,7 +10,7 @@ For a free particle moving in one-dimension, the propagator (i.e. the coordinate
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:1f:10}
 G(x,x';t) = \bra{x} U(t) \ket{x'}
 \end{equation}
-
+%
 is given by
 %
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:1f:20}
@@ -58,7 +58,7 @@ Proceeding directly, we have
 e^{\frac{ i m (x-x')^2}{2 \Hbar t}},
 \end{aligned}
 \end{equation}
-
+%
 which is the desired result.  Now, let us look at how this would be used.  We can express our time evolved state using this matrix element by introducing an identity
 %
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:470}
@@ -75,7 +75,7 @@ e^{i m (x-x')^2/ (2 \Hbar t)}
 \braket{x'}{\psi(0)} \\
 \end{aligned}
 \end{equation}
-
+%
 This gives us
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:1f:40}
 \psi(x, t)
@@ -84,13 +84,13 @@ This gives us
 \int dx'
 e^{i m (x-x')^2/ (2 \Hbar t)} \psi(x', 0)
 \end{equation}
-
+%
 However, note that our free particle wave function at time zero is
 %
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:1f:50}
 \psi(x, 0) = \frac{e^{i p x/\Hbar}}{\sqrt{2 \pi \Hbar}}
 \end{equation}
-
+%
 So the convolution integral \eqnref{eqn:qmIexamPractice2007Dec:1f:40} does not exist.  We likely have to require that the solution be not a pure state, but instead a superposition of a set of continuous states (a wave packet in position or momentum space related by Fourier transforms).  That is
 %
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:1f:60}
@@ -101,7 +101,7 @@ So the convolution integral \eqnref{eqn:qmIexamPractice2007Dec:1f:40} does not e
 \inv{\sqrt{2 \pi \Hbar}} \int \psi(x'', 0) e^{-i p x''/\Hbar} dx''
 \end{aligned}
 \end{equation}
-
+%
 The time evolution of this wave packet is then determined by the propagator, and is
 %
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:1f:70}
@@ -112,7 +112,7 @@ The time evolution of this wave packet is then determined by the propagator, and
 e^{i m (x-x')^2/ (2 \Hbar t)}
 \hat{\psi}(p, 0) e^{i p x'/\Hbar} ,
 \end{equation}
-
+%
 or in terms of the position space wave packet evaluated at time zero
 %
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:1f:80}
@@ -123,7 +123,7 @@ or in terms of the position space wave packet evaluated at time zero
 e^{i m (x-x')^2/ (2 \Hbar t)}
 e^{i k (x' - x'')} \psi(x'', 0)
 \end{equation}
-
+%
 We see that the propagator also ends up with a Fourier transform structure, and we have
 %
 \begin{equation}\label{eqn:qmIexamPractice2007Dec:1f:90}
@@ -137,7 +137,7 @@ e^{i m (x - x' - u)^2/ (2 \Hbar t)}
 e^{i k u }
 \end{aligned}
 \end{equation}
-
+%
 Does that Fourier transform exist?  I had not be surprised if it ended up with a delta function representation.  I will hold off attempting to evaluate and reduce it until another day.
 
 } % answer
