@@ -1,0 +1,12 @@
+These are my personal lecture notes for the Fall 2010, University of Toronto Quantum mechanics I course (PHY356H1F), taught by Prof.\ Vatche Deyirmenjian.
+
+The official description of this course was:
+
+The general structure of wave mechanics; eigenfunctions and eigenvalues; operators; orbital angular momentum; spherical harmonics; central potential; separation of variables, hydrogen atom; Dirac notation; operator methods; harmonic oscillator and spin.
+
+This book contains
+
+* My lecture notes.
+Typos, if any, are probably mine (Peeter), and no claim nor attempt of spelling or grammar correctness will be made.
+* Some assigned problems.  I have corrected some the errors after receiving grading feedback, and where I have not done so I at least recorded some of the grading comments as a reference.
+* Some worked problems associated with exam preparation.

@@ -1,6 +1,10 @@
 THISDIR := phy356-qmI
 THISBOOK := phy356
 
+BIBLIOGRAPHY_PATH := classicthesis_mine
+HAVE_OWN_CONTENTS := 1
+MY_CLASSICTHESIS_FRONTBACK_FILES += ../latex/classicthesis_mine/FrontBackmatter/Index.tex
+
 include make.revision
 include ../latex/make.bookvars
 
