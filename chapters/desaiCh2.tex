@@ -7,13 +7,13 @@
 \label{chap:desaiCh2}
 %\blogpage{http://sites.google.com/site/peeterjoot/math2010/desaiCh2.pdf}
 %\date{Sept 19, 2010}
-
+%
 %\section{Motivation}
 %
 %Chapter II notes for \citep{desai2009quantum}.
 %
 \section{Canonical Commutator}
-
+%
 \index{commutator}
 Based on the canonical relationship \([X,P] = i\Hbar\), and \(\braket{x'}{x} = \delta(x'-x)\), Desai determines the form of the \(P\) operator in continuous space.  A consequence of this is that the matrix element of the momentum operator is found to have a delta function specification
 %
@@ -30,11 +30,11 @@ In particular the matrix element associated with the state \(\ket{\phi}\) is fou
 Compare this to \citep{liboff2003iqm}, where this last is taken as the definition of the momentum operator, and the relationship to the delta function is not spelled out explicitly.  This canonical commutator approach, while more abstract, seems to have less black magic involved in the setup.  We do require the commutator relationship \([X,P] = i\Hbar\) to be pulled out of a magic hat, but at least the magic show is a structured one based on a small set of core assumptions.
 
 It will likely be good to come back to this later when trying to reconcile this new (for me) Dirac notation with the more basic notation I am already comfortable with.  When trying to compare the two, it will be good to note that there is a matrix element that is implied in the more old fashioned treatment in a book such as \citep{bohm1989qt}.
-
+%
 There is one fundamental assumption that appears to be made in this section that is not justified by anything except the end result.  That is the assumption that \(P\) is a derivative like operator, acting with a product rule action.  That is used to obtain (2.28) and is a fairly black magic operation.  This same assumption, is also hiding, somewhat sneakily, in the manipulation for (2.44).
-
+%
 If one has to make that assumption that \(P\) is a derivative like operator, I do not feel this method of introducing it is any less arbitrary seeming.  It is still pulled out of a magic hat, only because the answer is known ahead of time.  The approach of \citep{bohm1989qt}, where the derivative nature is presented as consequence of transforming (via Fourier transforms) from the position to the momentum representation, seems much more intuitive and less arbitrary.
-
+%
 \section{Generalized momentum commutator}
 \index{momentum commutator}
 
@@ -75,7 +75,7 @@ and can insert that in our \([P,X^n]\) expansion for
 \end{equation}
 %
 \section{Uncertainty principle}
-
+%
 \index{uncertainty principle}
 
 The origin of the statement \([\Delta A, \Delta B] = [A, B]\) is not something that seemed obvious.  Expanding this out however is straightforward, and clarifies things.  That is
@@ -96,9 +96,9 @@ A B - B A \\
 \end{equation}
 %
 \section{Size of a particle}
-
+%
 I found it curious that using \(\Delta x \Delta p \approx \Hbar\) instead of \(\Delta x \Delta p \ge \Hbar/2\), was sufficient to obtain the hydrogen ground state energy \(E_{\text{min}} = -e^2/2 a_0\), without also having to do any factor of two fudging.
-
+%
 \section{Space displacement operator}
 \paragraph{Initial notes}
 \index{operator!displacement}
@@ -193,7 +193,7 @@ P &= -i \Hbar \frac{d}{dX}.
 \end{equation}
 %
 In the first, (2.32), I thought the \(P(x)\) was somehow different, just a helpful expression found along the way, but now it occurs to me that this was intended to be an unambiguous representation of the momentum operator itself.
-
+%
 \paragraph{A second try}
 \index{matrix element}
 
@@ -296,12 +296,12 @@ This shows nicely why the sign goes negative and it is no longer surprising when
 \end{equation}
 %
 That is a whole lot easier than the integral manipulation, but at least shows that we now have a feel for the notation, and have confirmed the exponential formulation of the operator nicely.
-
+%
 \section{Time evolution operator}
 \index{time evolution}
 
 The phrase ``we identify time evolution with the Hamiltonian''.  What a magic hat maneuver!  Is there a way that this would be logical without already knowing the answer?
-
+%
 \section{Dispersion delta function representation}
 \index{delta function}
 
