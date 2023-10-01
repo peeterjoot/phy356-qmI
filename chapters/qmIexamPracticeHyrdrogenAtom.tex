@@ -158,12 +158,14 @@ Consider one of the matrix elements, and expand this by introducing an identity 
 &=
 \int
 r^2 \sin\theta dr d\theta d\phi
-{r'}^2 \sin\theta' dr' d\theta' d\phi'
+{r'}^2 \sin\theta' dr' d\theta' d\phi' \\
+&\qquad
 \braket{nlm}{r \theta \phi} \bra{r \theta \phi} X_i \ket{r' \theta' \phi' }\braket{r' \theta' \phi'}{n'l'm'} \\
 &=
 \int
 r^2 \sin\theta dr d\theta d\phi
-{r'}^2 \sin\theta' dr' d\theta' d\phi'
+{r'}^2 \sin\theta' dr' d\theta' d\phi' \\
+&\qquad
 R_{nl}(r) Y_{lm}^\conj(\theta,\phi)
 \delta^3(\Bx - \Bx') x_i
 R_{n'l'}(r') Y_{l'm'}(\theta',\phi')
@@ -180,8 +182,9 @@ R_{n'l'}(r') Y_{l'm'}(\theta',\phi')
 &=
 \int
 r^2 \sin\theta dr d\theta d\phi
-dr' d\theta' d\phi'
-R_{nl}(r) Y_{lm}^\conj(\theta,\phi)
+dr' d\theta' d\phi' 
+R_{nl}(r) Y_{lm}^\conj(\theta,\phi) \\
+&\qquad
 \delta(r-r') \delta(\theta - \theta') \delta(\phi-\phi')
 x_i
 R_{n'l'}(r') Y_{l'm'}(\theta',\phi')
